@@ -2,40 +2,66 @@
 layout: default
 ---
 
-<!-- CSS untuk Menu Navigasi & Dark Mode -->
+<!-- CSS untuk Tampilan -->
 <style>
   :root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --link-color: #e83e8c; /* Warna pink/ungu ala al-folio */
-  }
-  body.dark-mode {
+    /* DEFAULT SEKARANG DARK MODE */
     --bg-color: #1a1a1a;
     --text-color: #f0f0f0;
     --link-color: #ff80bf;
+    /* Latar belakang dengan efek overlay gelap agar teks tetap terbaca */
+    --bg-image: linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.9)), url('https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop'); 
   }
+  
+  body.light-mode {
+    /* MODE TERANG KETIKA TOMBOL DIKLIK */
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #e83e8c;
+    --bg-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop');
+  }
+  
   body {
     background-color: var(--bg-color);
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Bikin background diam saat di-scroll */
     color: var(--text-color);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, background-image 0.3s;
     max-width: 900px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px 20px 40px 20px;
   }
+
+  /* Style untuk Foto Sampul / Banner */
+  .cover-photo {
+    width: 100%;
+    height: 250px;
+    background-image: url('https://via.placeholder.com/900x250/2c3e50/ecf0f1?text=Ganti+URL+Ini+Dengan+Foto+Sampul+Kamu');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
   .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center; /* Menu dibikin di tengah biar rapi */
+    flex-wrap: wrap;
     align-items: center;
     gap: 15px;
-    margin-bottom: 50px;
-    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.2);
     padding-bottom: 15px;
   }
   .navbar a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 500;
   }
   .navbar a:hover, .navbar a.active {
     color: var(--link-color);
@@ -46,18 +72,24 @@ layout: default
     cursor: pointer;
     color: var(--text-color);
     font-size: 18px;
+    margin-left: 10px;
   }
 </style>
 
+<!-- Foto Sampul (Banner) -->
+<div class="cover-photo"></div>
+
 <!-- Bagian Navigasi Atas -->
 <div class="navbar">
-  <a href="#" class="active">about</a>
-  <a href="#">blog</a>
-  <a href="#">publications</a>
-  <a href="#">projects</a>
+  <a href="/" class="active">Home</a>
+  <a href="#">Projects</a>
+  <a href="#">Skills</a>
+  <a href="#">Blog/Insight</a>
+  <a href="#">Publications</a>
+  <a href="#">About Me</a>
   <a href="/cv/">CV</a>
-  <button class="nav-btn" onclick="toggleLang()" title="Ganti Bahasa">🌐 ID/EN</button>
-  <button class="nav-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌓</button>
+  <a href="#">Contact</a>
+  <button class="nav-btn" onclick="toggleTheme()" title="Ganti Terang/Gelap">🌓</button>
 </div>
 
 <!-- Bagian Konten Utama -->
@@ -77,7 +109,7 @@ layout: default
 
   <!-- KOLOM KANAN: Foto Profil & Kontak -->
   <div style="flex: 0 0 250px;">
-    <img src="https://via.placeholder.com/250x300?text=Foto+Profil" alt="Rivaldi Fiqriyansah" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="https://via.placeholder.com/250x300/34495e/ecf0f1?text=Ganti+Foto+Profil" alt="Rivaldi Fiqriyansah" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
     
     <div style="font-size: 0.85em; margin-top: 15px; line-height: 1.6;">
       <strong>Kontak & Info:</strong><br>
@@ -91,13 +123,8 @@ layout: default
 
 <!-- Script JavaScript untuk interaksi tombol -->
 <script>
-  // Fungsi Dark Mode
+  // Fungsi ubah tema sekarang dari Dark (default) ke Light
   function toggleTheme() {
-    document.body.classList.toggle('dark-mode');
-  }
-  
-  // Fungsi Ganti Bahasa (Sementara)
-  function toggleLang() {
-    alert("Fitur ganti bahasa sedang disiapkan! Nanti kita aktifkan setelah konten halaman utama rapi.");
+    document.body.classList.toggle('light-mode');
   }
 </script>
