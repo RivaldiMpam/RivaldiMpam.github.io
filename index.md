@@ -91,12 +91,12 @@ layout: default
 <!-- Bagian Navigasi Atas -->
 <div class="navbar">
   <a href="/" class="active">Home</a> <span class="separator">|</span>
-  <a href="#">Journey</a> <span class="separator">|</span>
+  <a href="/journey/">Journey</a> <span class="separator">|</span>
   <a href="/cv/">Experience</a> <span class="separator">|</span>
-  <a href="#">Projects</a> <span class="separator">|</span>
-  <a href="#">Gallery</a> <span class="separator">|</span>
-  <a href="#">Writing</a> <span class="separator">|</span>
-  <a href="#">Contact</a>
+  <a href="/projects/">Projects</a> <span class="separator">|</span>
+  <a href="/gallery/">Gallery</a> <span class="separator">|</span>
+  <a href="/writing/">Writing</a> <span class="separator">|</span>
+  <a href="/contact/">Contact</a>
   <button class="nav-btn" onclick="toggleTheme()" title="Ganti Terang/Gelap">🌓</button>
 </div>
 
