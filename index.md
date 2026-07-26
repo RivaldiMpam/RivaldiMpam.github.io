@@ -18,7 +18,7 @@ layout: default
     --bg-color: #ffffff;
     --text-color: #333333;
     --link-color: #e83e8c;
-    --bg-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95)), url('https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop');
+    --bg-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95)), url('/images/background-utama.jpg');
   }
   
   body {
@@ -52,27 +52,36 @@ layout: default
     justify-content: center; /* Menu dibikin di tengah biar rapi */
     flex-wrap: wrap;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     margin-bottom: 40px;
     border-bottom: 1px solid rgba(150, 150, 150, 0.2);
     padding-bottom: 15px;
   }
+  
   .navbar a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: bold;
   }
+  
   .navbar a:hover, .navbar a.active {
     color: var(--link-color);
   }
+  
+  /* Style untuk pemisah ( | ) */
+  .separator {
+    color: var(--text-color);
+    font-size: 16px;
+  }
+
   .nav-btn {
     background: none;
     border: none;
     cursor: pointer;
     color: var(--text-color);
     font-size: 18px;
-    margin-left: 10px;
+    margin-left: 15px;
   }
 </style>
 
@@ -81,13 +90,12 @@ layout: default
 
 <!-- Bagian Navigasi Atas -->
 <div class="navbar">
-  <a href="/" class="active">Home</a>
-  <a href="#">Projects</a>
-  <a href="#">Skills</a>
-  <a href="#">Blog/Insight</a>
-  <a href="#">Publications</a>
-  <a href="#">About Me</a>
-  <a href="/cv/">CV</a>
+  <a href="/" class="active">Home</a> <span class="separator">|</span>
+  <a href="#">Journey</a> <span class="separator">|</span>
+  <a href="/cv/">Experience</a> <span class="separator">|</span>
+  <a href="#">Projects</a> <span class="separator">|</span>
+  <a href="#">Gallery</a> <span class="separator">|</span>
+  <a href="#">Writing</a> <span class="separator">|</span>
   <a href="#">Contact</a>
   <button class="nav-btn" onclick="toggleTheme()" title="Ganti Terang/Gelap">🌓</button>
 </div>
@@ -109,7 +117,7 @@ layout: default
 
   <!-- KOLOM KANAN: Foto Profil & Kontak -->
   <div style="flex: 0 0 250px;">
-    <img <img src="/images/foto-profil.jpg" alt="Rivaldi Fiqriyansah" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    <img src="/images/foto-profil.jpg" alt="Rivaldi Fiqriyansah" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
     
     <div style="font-size: 0.85em; margin-top: 15px; line-height: 1.6;">
       <strong>Kontak & Info:</strong><br>
