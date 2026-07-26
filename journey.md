@@ -4,12 +4,12 @@ title: Journey
 permalink: /journey/
 ---
 
-<!-- CSS untuk Layout ala Astra (Sidebar Kiri & Konten Kanan) dalam Dark Mode -->
+<!-- CSS untuk Layout Lebih Lebar & Fitur Slideshow -->
 <style>
   :root {
     --bg-dark: #1a1a1a;
     --sidebar-bg: #2d2d2d;
-    --active-blue: #0d6efd; /* Warna biru ala Astra untuk penanda aktif */
+    --active-blue: #0d6efd;
     --text-light: #f0f0f0;
     --text-muted: #a0a0a0;
   }
@@ -19,16 +19,17 @@ permalink: /journey/
     color: var(--text-light);
   }
 
+  /* 1. PERBAIKAN LEBAR AREA (Biar gak sempit di PC) */
   .journey-wrapper {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    max-width: 900px;
+    max-width: 1100px; /* Diperlebar dari 900px jadi 1100px */
+    width: 100%;
     margin: 40px auto;
     align-items: flex-start;
   }
 
-  /* Styling Sidebar Kiri */
   .journey-sidebar {
     flex: 0 0 250px;
     background-color: var(--sidebar-bg);
@@ -59,14 +60,12 @@ permalink: /journey/
     background-color: rgba(255, 255, 255, 0.05);
   }
 
-  /* State saat menu sedang aktif/diklik */
   .tab-button.active {
     color: var(--text-light);
     border-left: 4px solid var(--active-blue);
     background-color: rgba(13, 110, 253, 0.15);
   }
 
-  /* Styling Konten Kanan */
   .journey-content-area {
     flex: 1;
     background-color: rgba(255, 255, 255, 0.03);
@@ -74,70 +73,108 @@ permalink: /journey/
     border-radius: 12px;
     padding: 30px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    min-width: 0; /* Mencegah overflow */
   }
 
   .tab-content {
-    display: none; /* Disembunyikan secara default */
+    display: none; 
     animation: fadeIn 0.5s ease;
   }
 
   .tab-content.active {
-    display: block; /* Ditampilkan jika punya class active */
+    display: block; 
   }
 
-  .tab-content h2 {
-    color: var(--active-blue);
-    margin-top: 0;
-    margin-bottom: 5px;
+  .tab-content h2 { color: var(--active-blue); margin-top: 0; margin-bottom: 5px; }
+  .date-badge {
+    display: inline-block; background-color: #333; padding: 5px 12px; 
+    border-radius: 20px; font-size: 0.85em; color: #ccc; margin-bottom: 20px;
   }
 
-  .tab-content .date-badge {
-    display: inline-block;
-    background-color: #333;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.85em;
-    color: #ccc;
-    margin-bottom: 20px;
-  }
-
-  .tab-content img {
-    width: 100%;
+  /* 2. STYLE UNTUK SLIDESHOW FOTO */
+  .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: 25px auto 0;
     border-radius: 8px;
-    margin-top: 15px;
+    overflow: hidden;
     border: 1px solid #444;
   }
+
+  .mySlides {
+    display: none;
+    position: relative;
+  }
+
+  .mySlides img {
+    width: 100%;
+    height: 350px; /* Tinggi seragam untuk semua foto slider */
+    object-fit: cover; /* Biar foto proporsional gak gepeng */
+    display: block;
+  }
+
+  /* Teks Caption di atas foto */
+  .slide-caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #f2f2f2;
+    padding: 12px 15px;
+    text-align: center;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+
+  /* Tombol Prev & Next */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px 18px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.4);
+    text-decoration: none;
+  }
+  .next { right: 0; border-radius: 3px 0 0 3px; }
+  .prev:hover, .next:hover { background-color: rgba(13, 110, 253, 0.8); }
+
+  /* Titik Indikator (Dots) */
+  .dot-container {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+  .dot {
+    cursor: pointer;
+    height: 10px; width: 10px;
+    margin: 0 4px;
+    background-color: #555;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+  }
+  .active-dot, .dot:hover { background-color: var(--active-blue); }
 
   @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
   }
+  .fade-anim { animation-name: fadeIn; animation-duration: 0.8s; }
 
-  /* Responsif untuk layar HP (Sidebar berubah jadi di atas) */
   @media (max-width: 768px) {
-    .journey-wrapper {
-      flex-direction: column;
-    }
-    .journey-sidebar {
-      width: 100%;
-      flex: none;
-      display: flex;
-      flex-wrap: wrap;
-      padding: 10px;
-    }
-    .tab-button {
-      width: auto;
-      flex: 1;
-      border-left: none;
-      border-bottom: 3px solid transparent;
-      text-align: center;
-      padding: 10px;
-      font-size: 14px;
-    }
-    .tab-button.active {
-      border-left: none;
-      border-bottom: 3px solid var(--active-blue);
-    }
+    .journey-wrapper { flex-direction: column; }
+    .journey-sidebar { width: 100%; display: flex; padding: 10px; position: static; }
+    .tab-button { flex: 1; border-left: none; border-bottom: 3px solid transparent; text-align: center; padding: 10px; font-size: 14px; }
+    .tab-button.active { border-bottom: 3px solid var(--active-blue); }
+    .mySlides img { height: 250px; }
   }
 </style>
 
@@ -146,70 +183,198 @@ permalink: /journey/
 
 <div class="journey-wrapper">
   
-  <!-- KOLOM KIRI: Sidebar Navigasi -->
+  <!-- KIRI: Sidebar Navigasi -->
   <div class="journey-sidebar">
-    <!-- onclick akan memanggil fungsi bukaTab() di JavaScript bawah -->
     <button class="tab-button active" onclick="bukaTab(event, 'magang')">Magang</button>
     <button class="tab-button" onclick="bukaTab(event, 'kipi')">PT KIPI</button>
     <button class="tab-button" onclick="bukaTab(event, 'inti')">PT Inti Innovaco</button>
   </div>
 
-  <!-- KOLOM KANAN: Area Konten Storytelling -->
+  <!-- KANAN: Area Konten & Slideshow -->
   <div class="journey-content-area">
     
-    <!-- KONTEN 1: MAGANG -->
+    <!-- === TAB 1: MAGANG === -->
     <div id="magang" class="tab-content active">
       <h2>Masa Formatif & Langkah Pertama</h2>
       <span class="date-badge">Mei 2022 - Agustus 2022</span>
-      <p>Perjalanan karir profesional saya dimulai pada bulan Mei 2022. Selama 4 bulan, saya melaksanakan magang sebagai Asisten Surveyor sekaligus Analis GIS di PT Kalimantan Industrial Park Indonesia[cite: 1].</p>
-      <p>Fase ini menjadi titik krusial di mana saya mulai menerapkan langsung teori teknik geomatika yang telah saya pelajari ke dalam realitas lapangan industri skala besar. Ini adalah masa adaptasi dan observasi mendalam tentang bagaimana data spasial dikumpulkan dan dikelola.</p>
-      <!-- Ganti src dengan foto dokumentasi magang -->
-      <img src="/images/journey-magang.jpg" alt="Dokumentasi Magang">
+      <p>Perjalanan karir profesional saya dimulai pada bulan Mei 2022. Selama 4 bulan, saya melaksanakan magang sebagai Asisten Surveyor sekaligus Analis GIS di PT Kalimantan Industrial Park Indonesia[cite: 1]. Fase ini menjadi titik krusial di mana saya mulai menerapkan langsung teori teknik geomatika ke dalam realitas lapangan industri skala besar.</p>
+      
+      <!-- Container Slider untuk Magang -->
+      <div class="slideshow-container" onmouseenter="pauseSlider()" onmouseleave="resumeSlider()">
+        
+        <div class="mySlides magang-slides fade-anim">
+          <img src="/images/magang1.jpg" alt="Magang 1">
+          <div class="slide-caption">Praktik lapangan survei sarana prasarana desa</div>
+        </div>
+        
+        <div class="mySlides magang-slides fade-anim">
+          <img src="/images/magang2.jpg" alt="Magang 2">
+          <div class="slide-caption">Pengolahan data spasial dasar di kantor</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 'magang')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'magang')">&#10095;</a>
+      </div>
+      <div class="dot-container">
+        <span class="dot magang-dot" onclick="currentSlide(1, 'magang')"></span> 
+        <span class="dot magang-dot" onclick="currentSlide(2, 'magang')"></span> 
+      </div>
     </div>
 
-    <!-- KONTEN 2: PT KIPI -->
+    <!-- === TAB 2: PT KIPI === -->
     <div id="kipi" class="tab-content">
       <h2>Terjun ke Proyek Skala Besar</h2>
-      <span class="date-badge">15 November 2022 - November 2025</span>
-      <p>Berawal pada 15 November 2022, saya resmi bergabung sebagai staf penuh dengan peran Asisten Surveyor dan Staf GIS hingga Februari 2024[cite: 1]. Tanggung jawab saya meliputi pelaksanaan survei lahan, patroli batas areal menggunakan drone, dan digitasi peta berbasis GIS[cite: 1].</p>
-      <p>Melihat performa di lapangan, pada Maret 2024 saya dipercaya untuk mengambil peran lebih besar sebagai Surveyor[cite: 1]. Selama periode ini hingga kontrak berakhir di November 2025, fokus utama saya adalah eksekusi survei topografi menggunakan instrumen presisi tinggi (Total Station dan GNSS Geodetic), mengelola data spasial dengan ArcGIS Pro dan Civil 3D, serta mengawasi pekerjaan konstruksi dan penyiapan lahan kawasan industri secara langsung[cite: 1]. Tiga tahun di Kalimantan memberikan saya pemahaman komprehensif tentang kerasnya dinamika proyek lapangan.</p>
-      <!-- Ganti src dengan foto penerbangan drone atau di Kalimantan -->
-      <img src="/images/journey-kipi.jpg" alt="Dokumentasi PT KIPI">
+      <span class="date-badge">15 Nov 2022 - Nov 2025</span>
+      <p>Berawal pada 15 November 2022, saya resmi bergabung dengan peran Asisten Surveyor dan Staf GIS[cite: 1]. Pada Maret 2024 saya dipercaya mengambil peran lebih besar sebagai Surveyor[cite: 1]. Tiga tahun di Kalimantan memberikan saya pemahaman komprehensif tentang kerasnya dinamika proyek lapangan, eksekusi survei topografi menggunakan Total Station & GNSS Geodetic, serta pemetaan udara via Drone[cite: 1].</p>
+      
+      <!-- Container Slider untuk KIPI -->
+      <div class="slideshow-container" onmouseenter="pauseSlider()" onmouseleave="resumeSlider()">
+        
+        <div class="mySlides kipi-slides fade-anim">
+          <img src="/images/kipi1.jpg" alt="KIPI 1">
+          <div class="slide-caption">Pengukuran batas lahan areal perusahaan</div>
+        </div>
+        
+        <div class="mySlides kipi-slides fade-anim">
+          <img src="/images/kipi2.jpg" alt="KIPI 2">
+          <div class="slide-caption">Pemetaan udara menggunakan wahana Drone</div>
+        </div>
+
+        <div class="mySlides kipi-slides fade-anim">
+          <img src="/images/kipi3.jpg" alt="KIPI 3">
+          <div class="slide-caption">Stake-out area konstruksi alat berat</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 'kipi')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'kipi')">&#10095;</a>
+      </div>
+      <div class="dot-container">
+        <span class="dot kipi-dot" onclick="currentSlide(1, 'kipi')"></span> 
+        <span class="dot kipi-dot" onclick="currentSlide(2, 'kipi')"></span> 
+        <span class="dot kipi-dot" onclick="currentSlide(3, 'kipi')"></span> 
+      </div>
     </div>
 
-    <!-- KONTEN 3: PT INTI INNOVACO -->
+    <!-- === TAB 3: PT INTI INNOVACO === -->
     <div id="inti" class="tab-content">
       <h2>Menuju Perencanaan Wilayah Terintegrasi</h2>
       <span class="date-badge">Januari 2026 - Sekarang</span>
-      <p>Memasuki awal 2026, saya kembali ke Bogor dan memulai babak baru sebagai Land Surveyor di PT Inti Innovaco[cite: 1]. Di sini, saya bertugas mengawal akurasi pengukuran untuk pengembangan lahan *developer*, menganalisis data survei, dan menyusun laporan teknis yang komprehensif[cite: 1].</p>
-      <p>Bersamaan dengan posisi ini, saya juga mendalami ilmu Perencanaan Wilayah dan Kota secara akademis. Kombinasi antara data lapangan sebagai surveyor dan analisis makro sebagai seorang mahasiswa perencanaan membuat saya semakin berfokus pada integrasi *Spatial Analysis* menggunakan ArcGIS Pro dan skrip berbasis *cloud*. Transisi dari sekadar pengumpul data lapangan menjadi pengambil keputusan berbasis geospasial sedang dibentuk di fase ini.</p>
-      <!-- Ganti src dengan foto terbaru saat di Inti Innovaco -->
-      <img src="/images/journey-inti.jpg" alt="Dokumentasi PT Inti Innovaco">
+      <p>Awal 2026, saya kembali ke Bogor sebagai Land Surveyor di PT Inti Innovaco[cite: 1]. Bersamaan dengan posisi ini, studi S1 Perencanaan Wilayah dan Kota (PWK) saya semakin mendorong saya berfokus pada integrasi Spatial Analysis menggunakan ArcGIS Pro. Transisi dari sekadar pengumpul data lapangan menjadi pengambil keputusan berbasis geospasial sedang dibentuk di sini.</p>
+      
+      <!-- Container Slider untuk Inti Innovaco -->
+      <div class="slideshow-container" onmouseenter="pauseSlider()" onmouseleave="resumeSlider()">
+        
+        <div class="mySlides inti-slides fade-anim">
+          <img src="/images/inti1.jpg" alt="Inti Innovaco 1">
+          <div class="slide-caption">Survei topografi area pengembangan lahan baru</div>
+        </div>
+        
+        <div class="mySlides inti-slides fade-anim">
+          <img src="/images/inti2.jpg" alt="Inti Innovaco 2">
+          <div class="slide-caption">Analisis kontur & pengolahan data geospasial di ArcGIS Pro</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 'inti')">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 'inti')">&#10095;</a>
+      </div>
+      <div class="dot-container">
+        <span class="dot inti-dot" onclick="currentSlide(1, 'inti')"></span> 
+        <span class="dot inti-dot" onclick="currentSlide(2, 'inti')"></span> 
+      </div>
     </div>
 
   </div>
 </div>
 
-<!-- JavaScript untuk mengatur perpindahan antar menu (Tab) -->
+<!-- JavaScript untuk Navigasi Tab & Slideshow Interaktif -->
 <script>
-function bukaTab(evt, namaFase) {
-  // 1. Sembunyikan semua elemen yang punya class="tab-content"
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tab-content");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-    tabcontent[i].classList.remove("active");
+  let activeTabId = 'magang'; 
+  let slideIndices = { 'magang': 1, 'kipi': 1, 'inti': 1 };
+  let autoSlideTimer;
+
+  // --- Fungsi Pindah Tab Navigasi ---
+  function bukaTab(evt, namaFase) {
+    // Stop slider sementara saat pindah tab
+    clearInterval(autoSlideTimer);
+    
+    // Sembunyikan semua tab
+    let tabcontent = document.getElementsByClassName("tab-content");
+    for (let i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      tabcontent[i].classList.remove("active");
+    }
+
+    // Reset tombol active
+    let tablinks = document.getElementsByClassName("tab-button");
+    for (let i = 0; i < tablinks.length; i++) {
+      tablinks[i].classList.remove("active");
+    }
+
+    // Tampilkan tab yg diklik
+    document.getElementById(namaFase).style.display = "block";
+    document.getElementById(namaFase).classList.add("active");
+    evt.currentTarget.classList.add("active");
+
+    // Update tab yang aktif dan mulai slidernya
+    activeTabId = namaFase;
+    showSlides(slideIndices[activeTabId], activeTabId);
+    resumeSlider();
   }
 
-  // 2. Hilangkan class "active" dari semua tombol menu di sidebar
-  tablinks = document.getElementsByClassName("tab-button");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("active");
+  // --- Fungsi Utama Slideshow ---
+  function showSlides(n, tabId) {
+    let slides = document.getElementsByClassName(tabId + "-slides");
+    let dots = document.getElementsByClassName(tabId + "-dot");
+    
+    if (slides.length === 0) return; // Jaga-jaga kalau kosong
+
+    if (n > slides.length) { slideIndices[tabId] = 1 }    
+    if (n < 1) { slideIndices[tabId] = slides.length }
+
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (let i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active-dot", "");
+    }
+
+    slides[slideIndices[tabId]-1].style.display = "block";  
+    dots[slideIndices[tabId]-1].className += " active-dot";
   }
 
-  // 3. Tampilkan konten yang dipilih dan tambahkan class "active" ke tombol yang diklik
-  document.getElementById(namaFase).style.display = "block";
-  document.getElementById(namaFase).classList.add("active");
-  evt.currentTarget.classList.add("active");
-}
+  // Kontrol panah Prev/Next
+  function plusSlides(n, tabId) {
+    clearInterval(autoSlideTimer); // Reset timer pas di-klik manual
+    showSlides(slideIndices[tabId] += n, tabId);
+    resumeSlider(); // Lanjut putar otomatis
+  }
+
+  // Kontrol klik titik bulat (Dots)
+  function currentSlide(n, tabId) {
+    clearInterval(autoSlideTimer);
+    showSlides(slideIndices[tabId] = n, tabId);
+    resumeSlider();
+  }
+
+  // Fitur Autoplay & Pause
+  function autoPlaySlides() {
+    slideIndices[activeTabId]++;
+    showSlides(slideIndices[activeTabId], activeTabId);
+  }
+
+  function pauseSlider() {
+    clearInterval(autoSlideTimer);
+  }
+
+  function resumeSlider() {
+    clearInterval(autoSlideTimer);
+    // Foto berganti otomatis setiap 4 detik (4000 ms)
+    autoSlideTimer = setInterval(autoPlaySlides, 4000); 
+  }
+
+  // Jalankan slider tab pertama (Magang) saat web selesai dimuat
+  window.onload = function() {
+    showSlides(1, 'magang');
+    resumeSlider();
+  };
 </script>
