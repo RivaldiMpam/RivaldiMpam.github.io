@@ -55,7 +55,7 @@ layout: default
   <a href="#">blog</a>
   <a href="#">publications</a>
   <a href="#">projects</a>
-  <a href="#">CV</a>
+  <a href="/cv/">CV</a>
   <button class="nav-btn" onclick="toggleLang()" title="Ganti Bahasa">🌐 ID/EN</button>
   <button class="nav-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌓</button>
 </div>
