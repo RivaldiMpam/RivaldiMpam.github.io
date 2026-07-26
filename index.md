@@ -82,8 +82,8 @@ layout: default
     <div style="font-size: 0.85em; margin-top: 15px; line-height: 1.6;">
       <strong>Kontak & Info:</strong><br>
       📍 Dramaga, Bogor, Jawa Barat<br>
-      📧 email.lo@gmail.com<br>
-      🔗 <a href="#" style="color: var(--link-color);">LinkedIn</a> | <a href="#" style="color: var(--link-color);">Instagram</a>
+      📧 rivaldifiqriyansah@gmail.com<br>
+      🔗 <a href="https://www.linkedin.com/in/rivaldi-fiqriyansah-b6b1b3282/" target="_blank" style="color: var(--link-color);">LinkedIn</a>
     </div>
   </div>
 
