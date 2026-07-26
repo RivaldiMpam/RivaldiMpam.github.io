@@ -1,103 +1,105 @@
 ---
 layout: default
+title: "Home - Rivaldi Fiqriyansah"
+permalink: /
 ---
 
-<!-- CSS untuk Menu Navigasi & Dark Mode -->
-<style>
-  :root {
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --link-color: #e83e8c; /* Warna pink/ungu ala al-folio */
-  }
-  body.dark-mode {
-    --bg-color: #1a1a1a;
-    --text-color: #f0f0f0;
-    --link-color: #ff80bf;
-  }
-  body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    transition: background-color 0.3s, color 0.3s;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
-  .navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 50px;
-    border-bottom: 1px solid #eaeaea;
-    padding-bottom: 15px;
-  }
-  .navbar a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 16px;
-  }
-  .navbar a:hover, .navbar a.active {
-    color: var(--link-color);
-  }
-  .nav-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--text-color);
-    font-size: 18px;
-  }
-</style>
+<div style="max-width: 800px; margin: 0 auto; line-height: 1.7; font-family: sans-serif;">
 
-<!-- Bagian Navigasi Atas -->
-<div class="navbar">
-  <a href="#" class="active">about</a>
-  <a href="#">blog</a>
-  <a href="#">publications</a>
-  <a href="#">projects</a>
-  <a href="/cv/">CV</a>
-  <button class="nav-btn" onclick="toggleLang()" title="Ganti Bahasa">🌐 ID/EN</button>
-  <button class="nav-btn" onclick="toggleTheme()" title="Dark/Light Mode">🌓</button>
+<!-- Navigasi Utama -->
+<div style="margin-bottom: 40px; font-weight: bold;">
+  <a href="/" style="text-decoration: none;">Home</a> | 
+  <a href="/projects/" style="text-decoration: none;">Projects</a> | 
+  <a href="/blog/" style="text-decoration: none;">Blog</a> | 
+  <a href="/publications/" style="text-decoration: none;">Publications</a> | 
+  <a href="/about/" style="text-decoration: none;">About Me</a> |
+  <a href="/cv/" style="text-decoration: none;">CV</a>
 </div>
 
-<!-- Bagian Konten Utama -->
-<h1>Rivaldi Fiqriyansah - Land Surveyor, Spatial Analysis & Urban Planning</h1>
-<p><em>Dramaga, Bogor | ArcGIS Pro | Google Earth Engine</em></p>
-
-<div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px;">
+<!-- ================= HERO SECTION (Ala LinkedIn) ================= -->
+<div style="margin-bottom: 30px;">
   
-  <!-- KOLOM KIRI: Teks Biografi -->
-  <div style="flex: 1; min-width: 300px; line-height: 1.6;">
-    <p>Selamat datang di portofolio digital saya.</p>
-    
-    <p>Saat ini saya bekerja sebagai <strong>Land Surveyor</strong> untuk pengembang di kawasan Bogor, sekaligus menempuh studi S1 <strong>Perencanaan Wilayah dan Kota (PWK)</strong>. Saya memiliki ketertarikan yang sangat kuat terhadap analisis geospasial makro dan bagaimana data spasial dapat diolah menjadi landasan pengambilan keputusan tata ruang yang komprehensif.</p>
-    
-    <p>Tujuan profesional saya adalah bertransisi secara utuh menjadi seorang <em>Urban Planner</em> dan <em>Geospatial Analyst</em>, berfokus pada <em>Spatial Analysis</em>, <em>Remote Sensing</em>, dan Pemetaan Tematik menggunakan ArcGIS Pro dan skrip cloud.</p>
+  <!-- Gambar Sampul (Banner) -->
+  <div style="width: 100%; height: 200px; background-color: #e0e0e0; border-radius: 10px 10px 0 0; overflow: hidden;">
+    <!-- Ganti /images/sampul.jpg dengan path gambar sampulmu -->
+    <img src="/images/sampul.jpg" alt="Cover Banner" style="width: 100%; height: 100%; object-fit: cover;">
   </div>
-
-  <!-- KOLOM KANAN: Foto Profil & Kontak -->
-  <div style="flex: 0 0 250px;">
-    <img src="https://via.placeholder.com/250x300?text=Foto+Profil" alt="Rivaldi Fiqriyansah" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  
+  <!-- Foto Profil & Intro Singkat -->
+  <div style="padding: 0 20px;">
+    <!-- Ganti /images/profil.jpg dengan path foto profilmu -->
+    <img src="/images/profil.jpg" alt="Rivaldi Fiqriyansah" style="width: 130px; height: 130px; border-radius: 50%; border: 4px solid #fff; margin-top: -65px; position: relative; background-color: #fff; object-fit: cover;">
     
-    <div style="font-size: 0.85em; margin-top: 15px; line-height: 1.6;">
-      <strong>Kontak & Info:</strong><br>
-      📍 Dramaga, Bogor, Jawa Barat<br>
-      📧 email.lo@gmail.com<br>
-      🔗 <a href="#" style="color: var(--link-color);">LinkedIn</a> | <a href="#" style="color: var(--link-color);">Instagram</a>
-    </div>
+    <h1 style="margin: 10px 0 5px 0;">Rivaldi Fiqriyansah</h1>
+    <h3 style="margin: 0; color: #555; font-weight: normal;">Surveyor | Geomatics & Geospatial Enthusiast</h3>
+    <p style="color: #666; font-size: 0.95em; margin-top: 5px;">📍 Bogor, Indonesia</p>
   </div>
 
 </div>
 
-<!-- Script JavaScript untuk interaksi tombol -->
-<script>
-  // Fungsi Dark Mode
-  function toggleTheme() {
-    document.body.classList.toggle('dark-mode');
-  }
-  
-  // Fungsi Ganti Bahasa (Sementara)
-  function toggleLang() {
-    alert("Fitur ganti bahasa sedang disiapkan! Nanti kita aktifkan setelah konten halaman utama rapi.");
-  }
-</script>
+<p style="text-align: justify; margin-top: 20px;">
+  Halo! Saya adalah lulusan Teknik Geomatika yang berpengalaman sebagai surveyor dan pengawas lapangan di berbagai proyek konstruksi. Saya terbiasa mengumpulkan, mengolah, dan menganalisis data spasial untuk menjembatani kebutuhan teknis dan strategi proyek, sehingga data yang dihasilkan akurat dan siap diterapkan di lapangan.
+</p>
+
+<hr>
+
+<!-- ================= PROJECTS (UTAMA) ================= -->
+<h2 style="margin-top: 30px;">Projects (Utama)</h2>
+<ul>
+  <li><strong>Penelitian Lapangan Karakteristik Bawah Permukaan (Desember 2025):</strong> Berkolaborasi dengan tim gabungan UGM, ESDM, dan UNHAS di Maros, Sulawesi Selatan. Melakukan pengukuran titik menggunakan GNSS metode Static PPK dan memverifikasi keakuratan koordinat spasial.</li>
+  <li><strong>Pemetaan & Land Development Kawasan Industri (2022 - 2025):</strong> Melaksanakan survei topografi, pemetaan udara menggunakan drone, hingga pengawasan kegiatan alat berat dan <em>cut & fill</em> di PT Kalimantan Industrial Park Indonesia.</li>
+  <li><strong>Pengukuran Stake-Out Kavling Perumahan (November 2025):</strong> Menentukan batas dan posisi bangunan menggunakan Total Station dan mengecek ulang akurasi sesuai <em>site plan</em> di Bogor.</li>
+</ul>
+<p><a href="/projects/" style="font-size: 0.9em; font-weight: bold; text-decoration: none;">Lihat semua proyek ➔</a></p>
+
+<hr>
+
+<!-- ================= SKILLS ================= -->
+<h2 style="margin-top: 30px;">Skills</h2>
+<ul>
+  <li><strong>Software & Pengolahan Data:</strong> ArcGIS, Autodesk Civil 3D, Agisoft Metashape, pengembangan basis data GIS, analisis spasial.</li>
+  <li><strong>Instrumen Survei:</strong> Total Station (GM 50 Series), GNSS Geodetic (EFIX & FOIF), GPS Handheld, Auto Level / Waterpass.</li>
+  <li><strong>Keterampilan Lapangan:</strong> Pengoperasian drone pemetaan, kegiatan <em>stake-out</em>, uji kepadatan tanah (DCP), pengawasan pengembangan lahan.</li>
+</ul>
+
+<hr>
+
+<!-- ================= BLOG / INSIGHTS ================= -->
+<h2 style="margin-top: 30px;">Blog / Insights</h2>
+<p><em>(Daftar artikel atau insight akan muncul di sini. Berikut adalah contoh strukturnya:)</em></p>
+<ul>
+  <li><a href="#" style="text-decoration: none;">Pentingnya Akurasi GNSS Geodetic dalam Pemetaan Bawah Permukaan</a> - <em>Jan 2026</em></li>
+  <li><a href="#" style="text-decoration: none;">Pengalaman Mengawasi Land Development di Kawasan Industri</a> - <em>Nov 2025</em></li>
+</ul>
+<p><a href="/blog/" style="font-size: 0.9em; font-weight: bold; text-decoration: none;">Baca artikel lainnya ➔</a></p>
+
+<hr>
+
+<!-- ================= PUBLICATIONS ================= -->
+<h2 style="margin-top: 30px;">Publications</h2>
+<p><em>(Daftar jurnal, hasil penelitian, atau publikasi akan muncul di sini:)</em></p>
+<ul>
+  <li><em>Laporan Pemetaan Tanah dan Karakteristik Bawah Permukaan (Tim Geodesi UGM, Maros)</em> - 2025</li>
+</ul>
+
+<hr>
+
+<!-- ================= ABOUT ME ================= -->
+<h2 style="margin-top: 30px;">About Me</h2>
+<p style="text-align: justify;">
+Saya memiliki minat yang mendalam pada sistem informasi geografis, teknologi perkotaan, dan perencanaan berkelanjutan. Dalam bekerja, saya sangat mengutamakan kerja sama tim, komunikasi yang efektif, serta mudah beradaptasi baik saat menghadapi kondisi lapangan yang menantang maupun ketika bekerja di lingkungan kantor. Saat ini, saya berkomitmen untuk terus mengembangkan keahlian di bidang geospasial hingga ke tingkat internasional.
+</p>
+
+<hr>
+
+<!-- ================= CONTACT & CV ================= -->
+<h2 style="margin-top: 30px;">Contact</h2>
+<p>Mari terhubung dan berkolaborasi!</p>
+<ul>
+  <li><strong>Email:</strong> <a href="mailto:rivaldifiqriyansah@gmail.com" style="text-decoration: none;">rivaldifiqriyansah@gmail.com</a></li>
+  <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/rivaldifiqriyansah" style="text-decoration: none;">Rivaldi Fiqriyansah</a></li>
+  <li><strong>Telepon/WA:</strong> +62 851-5670-6065</li>
+  <li><strong>CV Lengkap:</strong> <a href="/cv/" style="text-decoration: none; font-weight: bold;">Lihat Rekam Jejak (CV) ➔</a></li>
+</ul>
+
+</div>
