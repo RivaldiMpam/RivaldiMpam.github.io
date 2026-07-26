@@ -8,7 +8,7 @@ permalink: /cv/
 <div style="max-width: 800px; margin: 0 auto; line-height: 1.7; font-family: sans-serif;">
 
 <!-- Navigasi Utama -->
-<div style="text-align: center; margin-bottom: 40px; font-weight: bold;">
+<div style="margin-bottom: 40px; font-weight: bold;">
   <a href="#" style="text-decoration: none;">about</a> | 
   <a href="#" style="text-decoration: none;">blog</a> | 
   <a href="#" style="text-decoration: none;">publications</a> | 
@@ -18,14 +18,14 @@ permalink: /cv/
 
 <hr>
 
-<h2 style="text-align: center; margin-top: 30px;">Profil</h2>
+<h2 style="margin-top: 30px;">Profil</h2>
 <p style="text-align: justify;">
 Lulusan Teknik Geomatika dengan pengalaman sebagai surveyor dan pengawas lapangan di berbagai proyek konstruksi. Terbiasa mengumpulkan, mengolah, dan menganalisis data spasial menggunakan berbagai software GIS, perangkat GPS, dan teknologi pemetaan modern lainnya untuk mendukung perencanaan dan implementasi di lapangan. Memiliki minat mendalam pada sistem informasi geografis, teknologi perkotaan, dan perencanaan berkelanjutan, serta berkomitmen untuk terus mengembangkan keahlian di tingkat internasional.
 </p>
 
 <hr>
 
-<h2 style="text-align: center; margin-top: 30px;">Pendidikan</h2>
+<h2 style="margin-top: 30px;">Pendidikan</h2>
 <p><strong>SMK Geo Informatika – Teknik Geomatika & Geospasial</strong> <em>(2019 – 2022)</em></p>
 <ul>
   <li>Melaksanakan praktik kerja lapangan dalam survei dan pemetaan sarana prasarana desa.</li>
@@ -34,7 +34,7 @@ Lulusan Teknik Geomatika dengan pengalaman sebagai surveyor dan pengawas lapanga
 
 <hr>
 
-<h2 style="text-align: center; margin-top: 30px;">Pengalaman Profesional</h2>
+<h2 style="margin-top: 30px;">Pengalaman Kerja</h2>
 
 <h3>Land Surveyor — PT Inti Innovaco (Bogor)</h3>
 <p><em>Januari 2026 – Sekarang</em></p>
@@ -76,7 +76,7 @@ Lulusan Teknik Geomatika dengan pengalaman sebagai surveyor dan pengawas lapanga
 
 <hr>
 
-<h2 style="text-align: center; margin-top: 30px;">Proyek Kolaborasi & Freelance</h2>
+<h2 style="margin-top: 30px;">Proyek Kolaborasi & Freelance</h2>
 
 <h3>Penelitian Lapangan – Tim Gabungan UGM, ESDM, dan UNHAS (Maros, Sulawesi Selatan)</h3>
 <p><em>Desember 2025</em></p>
@@ -96,7 +96,7 @@ Lulusan Teknik Geomatika dengan pengalaman sebagai surveyor dan pengawas lapanga
 
 <hr>
 
-<h2 style="text-align: center; margin-top: 30px;">Keahlian</h2>
+<h2 style="margin-top: 30px;">Keahlian</h2>
 <ul>
   <li><strong>Pengembangan basis data GIS dan analisis spasial.</strong></li>
   <li><strong>Instrumen Survei:</strong> Total Station GM 50 Series, GPS Handheld, GNSS Geodetic (EFIX dan FOIF), Auto Level / Waterpass.</li>
