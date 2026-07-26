@@ -10,7 +10,7 @@ layout: default
     --text-color: #f0f0f0;
     --link-color: #ff80bf;
     /* Latar belakang dengan efek overlay gelap agar teks tetap terbaca */
-    --bg-image: linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.9)), url('https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop'); 
+    --bg-image: linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.9)), url('/images/background-utama.jpg'); 
   }
   
   body.light-mode {
@@ -39,7 +39,7 @@ layout: default
   .cover-photo {
     width: 100%;
     height: 250px;
-    background-image: url('https://via.placeholder.com/900x250/2c3e50/ecf0f1?text=Ganti+URL+Ini+Dengan+Foto+Sampul+Kamu');
+    background-image: background-image: url('/images/sampul-banner.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 12px 12px 0 0;
@@ -109,7 +109,7 @@ layout: default
 
   <!-- KOLOM KANAN: Foto Profil & Kontak -->
   <div style="flex: 0 0 250px;">
-    <img src="https://via.placeholder.com/250x300/34495e/ecf0f1?text=Ganti+Foto+Profil" alt="Rivaldi Fiqriyansah" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
+    <img <img src="/images/foto-profil.jpg" alt="Rivaldi Fiqriyansah" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
     
     <div style="font-size: 0.85em; margin-top: 15px; line-height: 1.6;">
       <strong>Kontak & Info:</strong><br>
