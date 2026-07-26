@@ -39,7 +39,7 @@ layout: default
   .cover-photo {
     width: 100%;
     height: 250px;
-    background-image: background-image: url('/images/sampul-banner.jpg');
+    background-image: url('/images/sampul-banner.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 12px 12px 0 0;
