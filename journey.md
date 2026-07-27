@@ -1,3 +1,9 @@
+---
+layout: default
+title: Journey
+permalink: /journey/
+---
+
 # Perjalanan Karir
 
 *Merekam jejak dari titik koordinat pertama di lapangan hingga analisis geospasial.*
@@ -17,10 +23,10 @@ Di penghujung magang, akhirnya gue dikasih kesempatan turun lapangan juga. Rasan
 Yang paling gue bawa pulang dari masa ini bukan cuma skill teknisnya. Ini pertama kali gue merantau, pertama kali gue beneran kerja, pertama kali pikiran gue serius mikirin soal karir. Ngeliat para senior yang kompeten dan passionate di bidangnya, entah kenapa langsung bikin gue pengen terus tumbuh. Di sinilah rasa percaya diri itu mulai terbentuk pelan-pelan, tapi pasti.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 20px; margin-bottom: 40px;">
-  <img src="images/magang/pengukuran-areal-kebakaran.jpg" alt="Pengukuran Areal Kebakaran" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/magang/pengukuran-lahan-2.jpg" alt="Pengukuran Lahan 2" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/magang/pengukuran-lahan-3.jpg" alt="Pengukuran Lahan 3" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/magang/pengukuran-lahan.jpg" alt="Pengukuran Lahan" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/magang/pengukuran-areal-kebakaran.jpg" alt="Pengukuran Areal Kebakaran" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/magang/pengukuran-lahan-2.jpg" alt="Pengukuran Lahan 2" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/magang/pengukuran-lahan-3.jpg" alt="Pengukuran Lahan 3" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/magang/pengukuran-lahan.jpg" alt="Pengukuran Lahan" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
 </div>
 
 ---
@@ -48,14 +54,14 @@ Beberapa pekerjaan yang paling gue inget: pengawasan maintenance jalan kawasan s
 Yang paling gue sadarin di fase ini: gue bukan lagi sekadar orang yang bisa ngukur. Gue mulai nunjukin kapabilitas yang lebih luas - dari teknis lapangan sampai manajemen pekerjaan kecil-kecilan. Dan rasanya, itu yang bikin gue makin serius ngejar jalur karir yang lebih jauh dari sekadar surveyor.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 20px; margin-bottom: 40px;">
-  <img src="images/KIPI/DCP.jpg" alt="DCP" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/KIPI/Handling%20material.jpg" alt="Handling Material" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/KIPI/Land%20development%20area%20komersial.jpg" alt="Land Development Area Komersial" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/KIPI/Pengawas%20repair%20jalan%20kawasan.jpg" alt="Pengawas Repair Jalan Kawasan" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/KIPI/Survey%20with%20topcon%20gm%2050%20series.jpg" alt="Survey Total Station" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/KIPI/Topografi%20142%20hektare.jpg" alt="Topografi 142 Hektare" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/KIPI/Topografi%20jalan%20kawasan.jpg" alt="Topografi Jalan Kawasan" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/KIPI/joint-survey.jpg" alt="Joint Survey" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/KIPI/DCP.jpg" alt="DCP" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/KIPI/Handling%20material.jpg" alt="Handling Material" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/KIPI/Land%20development%20area%20komersial.jpg" alt="Land Development Area Komersial" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/KIPI/Pengawas%20repair%20jalan%20kawasan.jpg" alt="Pengawas Repair Jalan Kawasan" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/KIPI/Survey%20with%20topcon%20gm%2050%20series.jpg" alt="Survey Total Station" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/KIPI/Topografi%20142%20hektare.jpg" alt="Topografi 142 Hektare" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/KIPI/Topografi%20jalan%20kawasan.jpg" alt="Topografi Jalan Kawasan" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/KIPI/joint-survey.jpg" alt="Joint Survey" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
 </div>
 
 ---
@@ -77,10 +83,10 @@ Kalau mau jujur, ini bukan cuma soal pindah kerja. Ini awal dari transisi yang l
 Perjalanan ini masih berlanjut.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 20px; margin-bottom: 40px;">
-  <img src="images/ININ/cut-n-fill-kavling.jpg" alt="Cut and Fill Kavling" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/ININ/orthophoto-processing-data.jpg" alt="Orthophoto Processing" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/ININ/pengukuran-batas.jpg" alt="Pengukuran Batas" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/ININ/pengukuran-lahan.jpg" alt="Pengukuran Lahan" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/ININ/tim-teknis.jpg" alt="Tim Teknis" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
-  <img src="images/ININ/topografi.jpg" alt="Topografi" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/ININ/cut-n-fill-kavling.jpg" alt="Cut and Fill Kavling" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/ININ/orthophoto-processing-data.jpg" alt="Orthophoto Processing" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/ININ/pengukuran-batas.jpg" alt="Pengukuran Batas" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/ININ/pengukuran-lahan.jpg" alt="Pengukuran Lahan" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/ININ/tim-teknis.jpg" alt="Tim Teknis" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+  <img src="/images/ININ/topografi.jpg" alt="Topografi" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
 </div>
