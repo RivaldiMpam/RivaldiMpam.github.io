@@ -200,19 +200,19 @@ permalink: /journey/
       <h2>Masa Formatif & Langkah Pertama</h2>
       <span class="date-badge">Mei 2022 - Agustus 2022</span>
       
-      <p>Ini titik nol gue. Bulan Mei 2022, gue baru mau lulus SMK kelas 3, dan sekolah nawarin program magang ke Kalimantan Utara. Tanpa pikir panjang, gue ambil.</p>
+      <p>Ini titik nol saya. Pada bulan Mei 2022, saya baru akan lulus SMK kelas 3, dan sekolah menawarkan program magang ke Kalimantan Utara. Tanpa pikir panjang, kesempatan itu saya ambil.</p>
       
-      <p>Empat bulan di sana, gue berperan sebagai Asisten GIS Analis. Keseharian gue waktu itu masih dominan di kantor manage berita acara pengukuran, update spreadsheet rekap data lahan, upload ke database, bikin peta dan sketsa hasil ukur dari data yang dikasih tim lapangan. Semua dikerjain pakai ArcMap 10.8, dibantu Garmin 64s buat pengumpulan data, plus tools standar spt Word dan Excel.</p>
+      <p>Empat bulan di sana, saya berperan sebagai Asisten GIS Analis. Keseharian saya waktu itu masih dominan di kantor mengelola berita acara pengukuran, memperbarui spreadsheet rekap data lahan, mengunggah ke database, serta membuat peta dan sketsa hasil ukur dari data yang diberikan tim lapangan. Semua dikerjakan menggunakan ArcMap 10.8, dibantu Garmin 64s untuk pengumpulan data, ditambah perangkat standar seperti Word dan Excel.</p>
       
-      <p>Di penghujung magang, akhirnya gue dikasih kesempatan turun lapangan juga. Rasanya beda banget - dari yang selama ini cuma ngerti data di balik layar, sekarang bisa ngerasain langsung gimana data itu diambil. Dan bonus yang gak kalah berkesan: gue dikenalkan ke drone DJI Mavic 2 Pro untuk pertama kalinya, walaupun masih sebatas pembelajaran.</p>
+      <p>Di penghujung masa magang, akhirnya saya diberikan kesempatan untuk turun langsung ke lapangan. Rasanya sangat berbeda - dari yang selama ini hanya memahami data di balik layar, sekarang bisa merasakan langsung bagaimana data tersebut diambil. Dan bonus yang tidak kalah berkesan: saya dikenalkan pada drone DJI Mavic 2 Pro untuk pertama kalinya, walaupun masih sebatas pembelajaran.</p>
       
-      <p>Yang paling gue bawa pulang dari masa ini bukan cuma skill teknisnya. Ini pertama kali gue merantau, pertama kali gue beneran kerja, pertama kali pikiran gue serius mikirin soal karir. Ngeliat para senior yang kompeten dan passionate di bidangnya, entah kenapa langsung bikin gue pengen terus tumbuh. Di sinilah rasa percaya diri itu mulai terbentuk pelan-pelan, tapi pasti.</p>
+      <p>Yang paling saya bawa pulang dari masa ini bukan hanya kemampuan teknis. Ini pertama kalinya saya merantau, pertama kalinya saya benar-benar bekerja, dan pertama kalinya saya serius memikirkan soal karir. Melihat para senior yang kompeten dan <em>passionate</em> di bidangnya, memotivasi saya untuk terus tumbuh. Di sinilah rasa percaya diri itu mulai terbentuk perlahan, tapi pasti.</p>
       
       <!-- Container Slider untuk Magang -->
       <div class="slideshow-container" onmouseenter="pauseSlider()" onmouseleave="resumeSlider()">
         
         <div class="mySlides magang-slides fade-anim">
-          <img src="/images/magang/pengukuran-areal-kebakaran.jpg" alt="Pengukuran Areal Kebakaran">
+          <img src="/images/magang/Pengukuran-areal-kebakaran.jpg" alt="Pengukuran Areal Kebakaran">
           <div class="slide-caption">Pengukuran Areal Kebakaran</div>
         </div>
         
@@ -248,12 +248,14 @@ permalink: /journey/
       <span class="date-badge">15 Nov 2022 - Nov 2025</span>
       
       <h3>Asisten Surveyor</h3>
-      <p>Setelah magang selesai, gue lanjut bergabung sebagai karyawan. Kali ini posisinya Asisten Surveyor, dan porsi kerja gue mulai bergeser jauh ke lapangan. Kerjaan utama gue di fase ini adalah pengukuran lahan masyarakat dan stake out pemasangan patok batas kawasan. Gue juga mulai dilibatkan dalam pengukuran menggunakan Total Station Topcon GM 50 series - dipakai untuk pengukuran jalan dan sebaran Bench Mark (BM). Nah, yang jadi highlight di masa ini adalah gue mulai dikasih kepercayaan untuk mengoperasikan drone DJI Mavic 2 Pro secara mandiri - baik untuk aerial mapping maupun patroli udara, memantau aktivitas ilegal atau potensi kebakaran di lahan perusahaan.</p>
-      <p>Sesekali gue juga ikut joint survey bareng tenant, kontraktor, atau tim lain, yang ngajarin gue cara komunikasi dan koordinasi lintas pihak. Kalau di masa magang gue lebih banyak duduk di depan laptop, di sini gue beneran merasakan medannya. Dan yang paling berkesan: gue dilatih dulu, dikasih kepercayaan pelan-pelan, baru eksekusi di lapangan. Bukan langsung dilempar dan disuruh bisa sendiri. Proses itulah yang bikin gue tumbuh secara teknis sekaligus mental.</p>
+      <p>Setelah masa magang selesai, saya berlanjut bergabung sebagai karyawan. Kali ini posisinya Asisten Surveyor, dan porsi kerja saya mulai bergeser jauh ke lapangan. Pekerjaan utama saya di fase ini adalah pengukuran lahan masyarakat dan <em>stake out</em> pemasangan patok batas kawasan. Saya juga mulai dilibatkan dalam pengukuran menggunakan Total Station Topcon GM 50 series - dipakai untuk pengukuran jalan dan sebaran Bench Mark (BM). Hal yang menjadi <em>highlight</em> di masa ini adalah saya mulai diberikan kepercayaan untuk mengoperasikan drone DJI Mavic 2 Pro secara mandiri - baik untuk <em>aerial mapping</em> maupun patroli udara, memantau aktivitas ilegal atau potensi kebakaran di lahan perusahaan.</p>
+      
+      <p>Sesekali saya juga ikut <em>joint survey</em> bersama <em>tenant</em>, kontraktor, atau tim lain, yang mengajarkan saya cara berkomunikasi dan berkoordinasi lintas pihak. Kalau di masa magang saya lebih banyak duduk di depan laptop, di sini saya benar-benar merasakan kondisi medannya. Dan yang paling berkesan: saya dilatih terlebih dahulu, diberikan kepercayaan secara bertahap, baru melakukan eksekusi di lapangan. Bukan langsung dilepas dan diwajibkan bisa sendiri. Proses itulah yang membuat saya tumbuh secara teknis sekaligus mental.</p>
       
       <h3>Surveyor</h3>
-      <p>Perkembangan berikutnya: gue pindah tim. Dari tim lahan ke tim project konstruksi, dengan posisi resmi Surveyor dan senior langsung dari seorang Geodetic Engineer. Di sinilah tonggak terbesar dalam perjalanan lapangan gue. Gue mulai berperan sebagai pengawas pekerjaan land development - ngawasin alat berat, komunikasi langsung sama operator, helper, driver, sampai ikut kerja lembur di lapangan. Topografi area-area luas jadi makanan sehari-hari gue, sekarang dengan senjata baru: GNSS Geodetic Efix F8 Vision Camera dan drone DJI Mavic 3 Basic. Di sinilah juga gue migrasi penuh dari ArcMap ke ArcGIS Pro.</p>
-      <p>Beberapa pekerjaan yang paling gue inget: pengawasan maintenance jalan kawasan sepanjang 9,2 km, land development sekat bakar, sampai pengerjaan area komersial. Gue menyusun daily report dari data hasil ukur, update progress pekerjaan, dan mulai terbiasa koordinasi internal maupun eksternal perusahaan. Yang paling gue sadarin di fase ini: gue bukan lagi sekadar orang yang bisa ngukur. Gue mulai nunjukin kapabilitas yang lebih luas - dari teknis lapangan sampai manajemen pekerjaan kecil-kecilan. Dan rasanya, itu yang bikin gue makin serius ngejar jalur karir yang lebih jauh dari sekadar surveyor.</p>
+      <p>Perkembangan berikutnya: saya pindah tim. Dari tim lahan ke tim proyek konstruksi, dengan posisi resmi Surveyor dan dibimbing langsung oleh seorang <em>Geodetic Engineer</em>. Di sinilah tonggak terbesar dalam perjalanan lapangan saya. Saya mulai berperan sebagai pengawas pekerjaan <em>land development</em> - mengawasi alat berat, berkomunikasi langsung dengan operator, <em>helper</em>, <em>driver</em>, sampai ikut bekerja lembur di lapangan. Topografi area-area luas menjadi rutinitas harian saya, sekarang dengan perangkat baru: GNSS Geodetic Efix F8 Vision Camera dan drone DJI Mavic 3 Basic. Di sinilah juga saya bermigrasi penuh dari ArcMap ke ArcGIS Pro.</p>
+      
+      <p>Beberapa pekerjaan yang paling berkesan: pengawasan <em>maintenance</em> jalan kawasan sepanjang 9,2 km, <em>land development</em> sekat bakar, sampai pengerjaan area komersial. Saya menyusun laporan harian dari data hasil ukur, memperbarui progres pekerjaan, dan mulai terbiasa dengan koordinasi internal maupun eksternal perusahaan. Hal yang paling saya sadari di fase ini: saya bukan lagi sekadar orang yang bertugas mengukur. Saya mulai menunjukkan kapabilitas yang lebih luas - dari teknis lapangan sampai manajemen pekerjaan secara mandiri. Hal tersebut yang membuat saya semakin serius mengejar jalur karir yang lebih jauh dari sekadar surveyor.</p>
 
       <!-- Container Slider untuk KIPI -->
       <div class="slideshow-container" onmouseenter="pauseSlider()" onmouseleave="resumeSlider()">
@@ -318,15 +320,15 @@ permalink: /journey/
       <h2>PT Inti Innovaco - Land Surveyor</h2>
       <span class="date-badge">Januari 2026 - Sekarang</span>
       
-      <p>Titik baru. Kali ini gue balik ke kota asal - Bogor - dan mulai dari lembaran yang sama sekali berbeda.</p>
+      <p>Titik baru. Kali ini saya kembali ke kota asal - Bogor - dan memulai lembaran yang sama sekali berbeda.</p>
       
-      <p>Keputusan ini bukan tanpa pertimbangan. Gue mau kerja sambil serius ngejar S1 Perencanaan Wilayah dan Kota (PWK) di Universitas Terbuka. Dan PT Inti Innovaco, sebagai developer perumahan, jadi tempat yang pas buat gue meneruskan jalur itu.</p>
+      <p>Keputusan ini bukan tanpa pertimbangan. Saya ingin bekerja sambil serius menempuh pendidikan S1 Perencanaan Wilayah dan Kota (PWK) di Universitas Terbuka. Dan PT Inti Innovaco, sebagai developer perumahan, menjadi tempat yang tepat bagi saya untuk meneruskan jalur tersebut.</p>
       
-      <p>Beda dari pengalaman sebelumnya yang di skala industri besar, di sini gue ngerjain land development perumahan - skala lebih kecil, sekitar 4 hektare, tapi justru lebih detail dan lebih banyak hal baru yang harus gue pelajari ulang. Yang jadi tantangan utama: gue sendirian tanpa tim surveyor. Untuk pertama kalinya dalam karir gue, semua gue tangani sendiri - pengukuran lahan, pembebasan lahan, manage dan dokumentasi data, semuanya.</p>
+      <p>Berbeda dari pengalaman sebelumnya yang berada di skala industri besar, di sini saya mengerjakan <em>land development</em> perumahan - skalanya lebih kecil, sekitar 4 hektare, tapi justru lebih detail dan lebih banyak hal baru yang harus saya pelajari ulang. Yang menjadi tantangan utama: saya bekerja sendiri tanpa tim surveyor. Untuk pertama kalinya dalam karir saya, semuanya saya tangani secara mandiri - pengukuran lahan, pembebasan lahan, mengelola dan mendokumentasikan data, semuanya.</p>
       
-      <p>Semua ilmu dan pengalaman yang gue kumpulin dari Kalimantan - ngerti cara kerja land development, bisa nyiapin data sendiri, terbiasa laporan dan koordinasi - sekarang gue bawa dan terapin di sini, secara mandiri dan di lingkungan yang sama sekali baru.</p>
+      <p>Seluruh ilmu dan pengalaman yang saya kumpulkan dari Kalimantan - memahami cara kerja <em>land development</em>, mampu menyiapkan data secara mandiri, terbiasa dengan pelaporan dan koordinasi - sekarang saya bawa dan terapkan di sini, secara mandiri dan di lingkungan yang sama sekali baru.</p>
       
-      <p>Kalau mau jujur, ini bukan cuma soal pindah kerja. Ini awal dari transisi yang lebih besar dari seorang surveyor lapangan, menuju Urban Planner atau GIS Analyst. Gue mulai buktiin bahwa kemampuan gue bukan cuma soal ngukur di lapangan. Perjalanan ini masih berlanjut.</p>
+      <p>Jujur saja, ini bukan sekadar pindah tempat kerja. Ini adalah awal dari transisi yang lebih besar dari seorang surveyor lapangan, menuju <em>Urban Planner</em> atau <em>GIS Analyst</em>. Saya mulai membuktikan bahwa kemampuan saya tidak terbatas hanya pada pengukuran di lapangan. Perjalanan ini masih berlanjut.</p>
       
       <!-- Container Slider untuk Inti Innovaco -->
       <div class="slideshow-container" onmouseenter="pauseSlider()" onmouseleave="resumeSlider()">
