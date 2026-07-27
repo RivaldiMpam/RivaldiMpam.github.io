@@ -36,15 +36,15 @@ permalink: /journey/
   .bg-overlay {
     position: fixed;
     top: 0; left: 0; width: 100vw; height: 100vh;
-    /* Efek gelap transparan supaya teks tetap jelas */
-    background: radial-gradient(circle, rgba(26,26,26,0.85) 0%, rgba(15,15,15,0.95) 100%);
+    /* Efek gelap transparan dikurangi supaya background lebih terlihat */
+    background: radial-gradient(circle, rgba(26,26,26,0.65) 0%, rgba(15,15,15,0.85) 100%);
     z-index: -1;
   }
 
   .bg-track {
     display: flex;
     width: max-content;
-    opacity: 0.2; /* Dibuat samar agar tidak mendominasi konten */
+    opacity: 0.45; /* Diterangin dari 0.2 jadi 0.45 biar animasinya makin keliatan */
   }
 
   .bg-track img {
@@ -53,7 +53,7 @@ permalink: /journey/
     object-fit: cover;
     margin: 0 15px;
     border-radius: 12px;
-    filter: grayscale(70%) blur(1px); /* Kesan historis dan abstrak */
+    filter: grayscale(60%) blur(1px); /* Grayscale sedikit dikurangi biar ada hint warnanya */
   }
 
   /* Animasi bergerak tanpa henti */
@@ -87,10 +87,9 @@ permalink: /journey/
   .navbar a:hover, .navbar a.active { color: var(--active-blue); }
   .separator { color: var(--text-muted); font-size: 16px; }
 
-  /* --- STYLE KONTEN JOURNEY (TETAP SEPERTI SEBELUMNYA) --- */
+  /* --- STYLE KONTEN JOURNEY --- */
   .main-content { position: relative; z-index: 10; padding: 0 20px; text-align: center; }
-  .main-content h1 { margin-bottom: 5px; }
-  .main-content p.subtitle { color: var(--text-muted); font-size: 1.1em; margin-top: 0; margin-bottom: 30px;}
+  .main-content h1 { margin-bottom: 40px; } /* Margin bawah ditambah karena subtitle dihapus */
 
   .journey-wrapper {
     display: flex; flex-direction: row; gap: 30px;
@@ -99,7 +98,7 @@ permalink: /journey/
   }
 
   .journey-sidebar {
-    flex: 0 0 250px; background-color: rgba(45, 45, 45, 0.85); /* Agak transparan */
+    flex: 0 0 250px; background-color: rgba(45, 45, 45, 0.85); 
     backdrop-filter: blur(10px); border-radius: 12px; padding: 20px 0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.05);
     position: sticky; top: 20px;
@@ -115,7 +114,7 @@ permalink: /journey/
   .tab-button.active { color: var(--text-light); border-left: 4px solid var(--active-blue); background-color: rgba(13, 110, 253, 0.15); }
 
   .journey-content-area {
-    flex: 1; background-color: rgba(30, 30, 30, 0.75); /* Transparan blur */
+    flex: 1; background-color: rgba(30, 30, 30, 0.75); 
     backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);
     border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); min-width: 0;
   }
@@ -202,7 +201,6 @@ permalink: /journey/
   </div>
 
   <h1>Perjalanan Karir</h1>
-  <p class="subtitle"><em>Catatan perjalanan karir: dari survei pemetaan lapangan menuju perencanaan tata ruang.</em></p>
 
   <div class="journey-wrapper">
     <!-- KIRI: Sidebar Navigasi -->
