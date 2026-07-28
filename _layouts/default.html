@@ -113,9 +113,9 @@
     <button class="nav-btn" onclick="toggleTheme()" title="Ganti Terang/Gelap">🌓</button>
   </div>
 
-  <!-- Script Global untuk Memory (LocalStorage) Tema & Bahasa -->
+<!-- Script Global untuk Memory (LocalStorage) Tema & Redirect Bahasa -->
   <script>
-    // 1. Cek memori tema saat body mulai dimuat (biar layarnya gak kedap-kedip pas ganti halaman)
+    // 1. Cek memori tema saat body mulai dimuat
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'light') {
       document.body.classList.add('light-mode');
@@ -131,24 +131,35 @@
       }
     }
 
-    // 3. Fungsi Ganti Bahasa
+    // 3. Fungsi Ganti Bahasa (Sistem Dual Folder / Redirect URL)
     function changeLanguage() {
       const selectedLang = document.getElementById('lang-switcher').value;
-      localStorage.setItem('lang', selectedLang); // Simpan ke memori
-      
-      // Jika di halaman tersebut ada fungsi switchLanguage (dictionary), maka jalankan
-      if (typeof switchLanguage === "function") {
-        switchLanguage(selectedLang);
+      let currentPath = window.location.pathname;
+
+      if (selectedLang === 'en') {
+        // Jika pindah ke English dan belum ada /en/ di URL-nya
+        if (!currentPath.startsWith('/en/')) {
+          // Tambahkan /en di depan (contoh: /journey/ jadi /en/journey/)
+          window.location.href = '/en' + (currentPath === '/' ? '' : currentPath);
+        }
+      } else {
+        // Jika pindah ke Indonesia dan ada /en/ di URL-nya
+        if (currentPath.startsWith('/en/')) {
+          // Hapus /en/ dari URL
+          let newPath = currentPath.replace('/en/', '/');
+          // Pastikan tidak ada double slash jika di halaman utama
+          if (newPath === '//') newPath = '/';
+          window.location.href = newPath;
+        }
       }
     }
 
-    // 4. Set nilai dropdown & jalankan translasi pas halaman selesai dimuat (habis klik menu navigasi)
+    // 4. Set nilai dropdown otomatis menyesuaikan posisi URL saat ini
     window.onload = function() {
-      const savedLang = localStorage.getItem('lang') || 'id';
-      document.getElementById('lang-switcher').value = savedLang;
-      
-      if (typeof switchLanguage === "function") {
-        switchLanguage(savedLang);
+      if (window.location.pathname.startsWith('/en/')) {
+        document.getElementById('lang-switcher').value = 'en';
+      } else {
+        document.getElementById('lang-switcher').value = 'id';
       }
     };
   </script>
