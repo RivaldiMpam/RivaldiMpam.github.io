@@ -8,7 +8,7 @@
   <link rel="icon" href="/favicon_RF.png">
   <link rel="shortcut icon" href="/favicon_RF.png">
   
-</head>                           ← ✅ Tutup head di sini
+</head>
 <body>
   {{ content }}
 </body>
