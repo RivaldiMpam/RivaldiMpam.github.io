@@ -28,7 +28,7 @@ permalink: /
     background-image: var(--bg-image);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Bikin background diam saat di-scroll */
+    background-attachment: fixed;
     color: var(--text-color);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s, background-image 0.3s;
@@ -51,7 +51,7 @@ permalink: /
 
   .navbar {
     display: flex;
-    justify-content: center; /* Menu dibikin di tengah biar rapi */
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
@@ -71,7 +71,6 @@ permalink: /
     color: var(--link-color);
   }
   
-  /* Style untuk pemisah ( | ) */
   .separator {
     color: var(--text-color);
     font-size: 16px;
@@ -84,6 +83,23 @@ permalink: /
     color: var(--text-color);
     font-size: 18px;
     margin-left: 15px;
+  }
+
+  /* Style untuk Dropdown Bahasa */
+  .lang-select {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+
+  .lang-select option {
+    color: #333; /* Warna hitam agar teks dropdown tetap terlihat jelas di browser */
   }
 </style>
 
@@ -99,22 +115,29 @@ permalink: /
   <a href="/gallery/">Gallery</a> <span class="separator">|</span>
   <a href="/writing/">Writing</a> <span class="separator">|</span>
   <a href="/contact/">Contact</a>
+  
+  <!-- Dropdown Bahasa -->
+  <select class="lang-select" id="lang-switcher" onchange="switchLanguage()">
+    <option value="id">ID</option>
+    <option value="en">EN</option>
+  </select>
+
+  <!-- Tombol Tema -->
   <button class="nav-btn" onclick="toggleTheme()" title="Ganti Terang/Gelap">🌓</button>
 </div>
 
 <!-- Bagian Konten Utama -->
 <h1>Rivaldi Fiqriyansah - Land Surveyor, Spatial Analysis & Urban Planning</h1>
-<p><em>Dramaga, Bogor | ArcGIS Pro | Google Earth Engine</em></p>
 
 <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px;">
   
-  <!-- KOLOM KIRI: Teks Biografi -->
+  <!-- KOLOM KIRI: Teks Biografi (Ditambah ID untuk target JavaScript) -->
   <div style="flex: 1; min-width: 300px; line-height: 1.6;">
-    <p>Selamat datang di portofolio digital saya.</p>
+    <p id="text-welcome">Selamat datang di portofolio digital saya.</p>
     
-    <p>Saat ini saya bekerja sebagai <strong>Land Surveyor</strong> untuk pengembang di kawasan Bogor, sekaligus menempuh studi S1 <strong>Perencanaan Wilayah dan Kota (PWK)</strong>. Saya memiliki ketertarikan yang sangat kuat terhadap analisis geospasial makro dan bagaimana data spasial dapat diolah menjadi landasan pengambilan keputusan tata ruang yang komprehensif.</p>
+    <p id="text-p1">Saat ini saya bekerja sebagai <strong>Land Surveyor</strong> untuk pengembang di kawasan Bogor, sekaligus menempuh studi S1 <strong>Perencanaan Wilayah dan Kota (PWK)</strong>. Saya memiliki ketertarikan yang sangat kuat terhadap analisis geospasial makro dan bagaimana data spasial dapat diolah menjadi landasan pengambilan keputusan tata ruang yang komprehensif.</p>
     
-    <p>Tujuan profesional saya adalah bertransisi secara utuh menjadi seorang <em>Urban Planner</em> dan <em>Geospatial Analyst</em>, berfokus pada <em>Spatial Analysis</em>, <em>Remote Sensing</em>, dan Pemetaan Tematik menggunakan ArcGIS Pro dan skrip cloud.</p>
+    <p id="text-p2">Tujuan profesional saya adalah bertransisi secara utuh menjadi seorang <em>Urban Planner</em> dan <em>Geospatial Analyst</em>, berfokus pada <em>Spatial Analysis</em>, <em>Remote Sensing</em>, dan Pemetaan Tematik menggunakan ArcGIS Pro dan skrip cloud.</p>
   </div>
 
   <!-- KOLOM KANAN: Foto Profil & Kontak -->
@@ -122,7 +145,7 @@ permalink: /
     <img src="/images/foto-profil.jpg" alt="Rivaldi Fiqriyansah" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
     
     <div style="font-size: 0.85em; margin-top: 15px; line-height: 1.6;">
-      <strong>Kontak & Info:</strong><br>
+      <span id="text-contact"><strong>Kontak & Info:</strong></span><br>
       📍 Dramaga, Bogor, Jawa Barat<br>
       📧 rivaldifiqriyansah@gmail.com<br>
       🔗 <a href="https://www.linkedin.com/in/rivaldi-fiqriyansah-b6b1b3282/" target="_blank" style="color: var(--link-color);">LinkedIn</a>
@@ -131,10 +154,36 @@ permalink: /
 
 </div>
 
-<!-- Script JavaScript untuk interaksi tombol -->
+<!-- Script JavaScript untuk interaksi -->
 <script>
-  // Fungsi ubah tema sekarang dari Dark (default) ke Light
+  // Fungsi ubah tema
   function toggleTheme() {
     document.body.classList.toggle('light-mode');
+  }
+
+  // Kamus Bahasa
+  const translations = {
+    id: {
+      welcome: "Selamat datang di portofolio digital saya.",
+      p1: "Saat ini saya bekerja sebagai <strong>Land Surveyor</strong> untuk pengembang di kawasan Bogor, sekaligus menempuh studi S1 <strong>Perencanaan Wilayah dan Kota (PWK)</strong>. Saya memiliki ketertarikan yang sangat kuat terhadap analisis geospasial makro dan bagaimana data spasial dapat diolah menjadi landasan pengambilan keputusan tata ruang yang komprehensif.",
+      p2: "Tujuan profesional saya adalah bertransisi secara utuh menjadi seorang <em>Urban Planner</em> dan <em>Geospatial Analyst</em>, berfokus pada <em>Spatial Analysis</em>, <em>Remote Sensing</em>, dan Pemetaan Tematik menggunakan ArcGIS Pro dan skrip cloud.",
+      contact: "<strong>Kontak & Info:</strong>"
+    },
+    en: {
+      welcome: "Welcome to my digital portfolio.",
+      p1: "I am currently working as a <strong>Land Surveyor</strong> for a developer in the Bogor area, while also pursuing my undergraduate degree in <strong>Urban and Regional Planning</strong>. I have a strong interest in macro geospatial analysis and how spatial data can be processed into a foundation for comprehensive spatial planning decisions.",
+      p2: "My professional goal is to fully transition into an <em>Urban Planner</em> and <em>Geospatial Analyst</em>, focusing on <em>Spatial Analysis</em>, <em>Remote Sensing</em>, and Thematic Mapping using ArcGIS Pro and cloud scripts.",
+      contact: "<strong>Contact & Info:</strong>"
+    }
+  };
+
+  // Fungsi ubah bahasa
+  function switchLanguage() {
+    const lang = document.getElementById('lang-switcher').value;
+    
+    document.getElementById('text-welcome').innerHTML = translations[lang].welcome;
+    document.getElementById('text-p1').innerHTML = translations[lang].p1;
+    document.getElementById('text-p2').innerHTML = translations[lang].p2;
+    document.getElementById('text-contact').innerHTML = translations[lang].contact;
   }
 </script>
