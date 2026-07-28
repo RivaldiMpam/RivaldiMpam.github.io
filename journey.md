@@ -189,17 +189,7 @@ permalink: /journey/
 
 <!-- ================= KONTEN UTAMA ================= -->
 <div class="main-content">
-  <!-- Navigasi Menu Atas -->
-  <div class="navbar">
-    <a href="/">Home</a> <span class="separator">|</span>
-    <a href="/journey/" class="active">Journey</a> <span class="separator">|</span>
-    <a href="/cv/">Experience</a> <span class="separator">|</span>
-    <a href="/projects/">Projects</a> <span class="separator">|</span>
-    <a href="/gallery/">Gallery</a> <span class="separator">|</span>
-    <a href="/writing/">Writing</a> <span class="separator">|</span>
-    <a href="/contact/">Contact</a>
-  </div>
-
+ 
   <h1>Perjalanan Karir</h1>
 
   <div class="journey-wrapper">
