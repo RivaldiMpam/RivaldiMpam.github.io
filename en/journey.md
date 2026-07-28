@@ -14,12 +14,6 @@ permalink: /en/journey/
     --text-muted: #a0a0a0;
   }
 
-  body {
-    background-color: var(--bg-dark);
-    color: var(--text-light);
-    margin: 0;
-  }
-
   /* --- STYLE ANIMASI BACKGROUND ABSTRAK --- */
   .bg-animation-container {
     position: fixed;
@@ -407,8 +401,8 @@ permalink: /en/journey/
     autoSlideTimer = setInterval(autoPlaySlides, 4000); 
   }
 
-  window.onload = function() {
+  window.addEventListener('load', function() {
     showSlides(1, 'magang');
     resumeSlider();
-  };
+  });
 </script>
