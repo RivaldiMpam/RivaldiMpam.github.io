@@ -1,1 +1,15 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} - Rivaldi Fiqriyansah</title>
+  
+  <!-- FAVICON -->
+  <link rel="icon" href="/favicon.png">
+  <link rel="shortcut icon" href="/favicon.png">
+  
+</head>
+<body>
+  {{ content }}
+</body>
+</html>
