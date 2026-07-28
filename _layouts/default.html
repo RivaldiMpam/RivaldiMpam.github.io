@@ -5,8 +5,158 @@
   <title>{{ page.title }} - Rivaldi Fiqriyansah</title>
   <link rel="icon" href="/favicon_RF.png">
   <link rel="shortcut icon" href="/favicon_RF.png">
+  
+  <!-- CSS Global untuk Tampilan, Navigasi, dan Tema -->
+  <style>
+    :root {
+      /* DEFAULT DARK MODE */
+      --bg-color: #1a1a1a;
+      --text-color: #f0f0f0;
+      --link-color: #ff80bf;
+      --bg-image: linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.9)), url('/images/background-utama.jpg'); 
+    }
+    
+    body.light-mode {
+      /* MODE TERANG */
+      --bg-color: #ffffff;
+      --text-color: #333333;
+      --link-color: #e83e8c;
+      --bg-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95)), url('/images/background-utama.jpg');
+    }
+    
+    body {
+      background-color: var(--bg-color);
+      background-image: var(--bg-image);
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: var(--text-color);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      transition: background-color 0.3s, color 0.3s, background-image 0.3s;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 20px 40px 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid rgba(150, 150, 150, 0.2);
+      padding-bottom: 15px;
+    }
+    
+    .navbar a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-size: 16px;
+      font-weight: bold;
+    }
+    
+    .navbar a:hover, .navbar a.active {
+      color: var(--link-color);
+    }
+    
+    .separator {
+      color: var(--text-color);
+      font-size: 16px;
+    }
+
+    .nav-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--text-color);
+      font-size: 18px;
+      margin-left: 15px;
+    }
+
+    .lang-select {
+      background-color: transparent;
+      color: var(--text-color);
+      border: 1px solid var(--text-color);
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-left: 15px;
+    }
+
+    .lang-select option {
+      color: #333;
+    }
+  </style>
 </head>
 <body>
+  
+  <!-- Bagian Navigasi Global (Akan muncul di semua halaman) -->
+  <div class="navbar">
+    <a href="/">Home</a> <span class="separator">|</span>
+    <a href="/journey/">Journey</a> <span class="separator">|</span>
+    <a href="/cv/">Experience</a> <span class="separator">|</span>
+    <a href="/projects/">Projects</a> <span class="separator">|</span>
+    <a href="/gallery/">Gallery</a> <span class="separator">|</span>
+    <a href="/writing/">Writing</a> <span class="separator">|</span>
+    <a href="/contact/">Contact</a>
+    
+    <!-- Dropdown Bahasa -->
+    <select class="lang-select" id="lang-switcher" onchange="changeLanguage()">
+      <option value="id">ID</option>
+      <option value="en">EN</option>
+    </select>
+
+    <!-- Tombol Tema -->
+    <button class="nav-btn" onclick="toggleTheme()" title="Ganti Terang/Gelap">🌓</button>
+  </div>
+
+  <!-- Script Global untuk Memory (LocalStorage) Tema & Bahasa -->
+  <script>
+    // 1. Cek memori tema saat body mulai dimuat (biar layarnya gak kedap-kedip pas ganti halaman)
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      document.body.classList.add('light-mode');
+    }
+
+    // 2. Fungsi Toggle Tema
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+      if (document.body.classList.contains('light-mode')) {
+        localStorage.setItem('theme', 'light');
+      } else {
+        localStorage.setItem('theme', 'dark');
+      }
+    }
+
+    // 3. Fungsi Ganti Bahasa
+    function changeLanguage() {
+      const selectedLang = document.getElementById('lang-switcher').value;
+      localStorage.setItem('lang', selectedLang); // Simpan ke memori
+      
+      // Jika di halaman tersebut ada fungsi switchLanguage (dictionary), maka jalankan
+      if (typeof switchLanguage === "function") {
+        switchLanguage(selectedLang);
+      }
+    }
+
+    // 4. Set nilai dropdown & jalankan translasi pas halaman selesai dimuat (habis klik menu navigasi)
+    window.onload = function() {
+      const savedLang = localStorage.getItem('lang') || 'id';
+      document.getElementById('lang-switcher').value = savedLang;
+      
+      if (typeof switchLanguage === "function") {
+        switchLanguage(savedLang);
+      }
+    };
+  </script>
+
+  <!-- ========================================== -->
+  <!-- KONTEN HALAMAN (Misal: index.md) MASUK SINI  -->
+  <!-- ========================================== -->
   {{ content }}
+
 </body>
 </html>
