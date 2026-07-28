@@ -1,7 +1,6 @@
 ---
-layout: single
-title: "Profil & Rekam Jejak (CV)"
-author_profile: true
+layout: default
+title: CV
 permalink: /cv/
 ---
 
