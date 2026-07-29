@@ -91,6 +91,10 @@
     .nav-dropdown {
       position: relative;
       display: inline-block;
+      /* Jembatan tak terlihat biar kursor gak putus */
+      padding-bottom: 20px; 
+      /* Biar layout navbar gak kegeser karena padding di atas */
+      margin-bottom: -20px; 
     }
 
     .nav-dropbtn {
@@ -117,7 +121,8 @@
       box-shadow: 0px 8px 15px rgba(0,0,0,0.5);
       z-index: 100;
       border-radius: 8px;
-      top: 130%;
+      /* Diubah jadi 100% biar nempel ke jembatan */
+      top: 100%; 
       left: 50%;
       transform: translateX(-50%);
       overflow: hidden;
