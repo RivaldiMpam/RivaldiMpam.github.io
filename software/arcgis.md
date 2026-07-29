@@ -5,31 +5,32 @@ permalink: /software/arcgis/
 ---
 
 <style>
-  /* --- OVERRIDE BACKGROUND TEMA UTAMA --- */
-  /* Khusus halaman ini, matikan background foto daun dan perlebar halamannya */
+  /* --- OVERRIDE TEMA UTAMA UNTUK HALAMAN INI --- */
   body {
     background-image: none !important;
-    background-color: #121212 !important; /* Polos gelap */
-    max-width: 1300px !important; /* Diperlebar biar layout side-by-side lega banget */
+    background-color: #121212 !important;
+    max-width: 100% !important; /* Lepas batas maksimal lebar bawaan */
+    padding: 20px 0 !important; /* Hapus padding kiri-kanan bawaan */
   }
   
   body.light-mode {
-    background-color: #f5f5f5 !important; /* Polos terang untuk mode light */
+    background-color: #f5f5f5 !important;
   }
 
-  /* --- WARNA & VARIABEL --- */
-  :root {
-    --esri-blue: #005e95;
-    --card-bg: #1e1e1e;
-  }
-
-  body.light-mode {
-    --card-bg: #ffffff;
+  /* Rapikan Navbar agar tetap rapi saat max-width dilepas */
+  .navbar {
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* --- 1. TAMPILAN KATALOG --- */
   #catalog-view {
     display: block;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
     animation: fadeIn 0.5s ease;
   }
 
@@ -37,13 +38,8 @@ permalink: /software/arcgis/
     text-align: center;
     margin-bottom: 40px;
   }
-  .catalog-header h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
-  }
-  .catalog-header p {
-    color: #a0a0a0;
-  }
+  .catalog-header h1 { font-size: 28px; margin-bottom: 10px; }
+  .catalog-header p { color: #a0a0a0; }
 
   .catalog-grid {
     display: grid;
@@ -52,7 +48,7 @@ permalink: /software/arcgis/
   }
 
   .esri-card {
-    background-color: var(--card-bg);
+    background-color: #1e1e1e;
     border-top: 4px solid #f89927;
     border-radius: 4px;
     padding: 20px;
@@ -69,147 +65,110 @@ permalink: /software/arcgis/
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
   }
 
-  .card-tag {
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #a0a0a0;
-    margin-bottom: 10px;
-    display: block;
-    letter-spacing: 1px;
-  }
-
-  .esri-card h3 {
-    margin: 0 0 15px 0;
-    color: #0d6efd;
-  }
-
+  .esri-card h3 { margin: 10px 0 15px 0; color: #0d6efd; }
+  .card-tag { font-size: 12px; text-transform: uppercase; color: #a0a0a0; letter-spacing: 1px; }
   .card-footer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
-    color: #a0a0a0;
-    margin-top: 20px;
-    border-top: 1px solid rgba(150,150,150,0.1);
-    padding-top: 10px;
+    display: flex; justify-content: space-between; font-size: 13px;
+    color: #a0a0a0; margin-top: 20px; border-top: 1px solid rgba(150,150,150,0.1); padding-top: 10px;
   }
 
-  /* --- 2. TAMPILAN STORYMAPS (BERDAMPINGAN/SIDE-BY-SIDE) --- */
+  /* --- 2. TAMPILAN STORYMAPS (FULL SCREEN IMMERSIVE) --- */
   #storymap-view {
-    display: none; /* Nanti diubah jadi flex via JS */
-    width: 100%;
-    height: 85vh; 
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    animation: fadeIn 0.5s ease;
-    background-color: #1a1a1a;
+    display: none; /* Diubah via JS */
+    position: fixed; /* Bikin nempel di layar penuh */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #121212; /* Background gelap biar A4 portrait nge-blend */
+    z-index: 1000; /* Menutupi elemen lain termasuk navbar */
   }
 
   /* Panel Kiri: Tulisan Cerita */
   .story-panel {
-    width: 400px; /* Lebar fix panel cerita */
-    flex-shrink: 0; /* Supaya lebarnya gak menyusut */
-    height: 100%;
+    width: 450px; /* Lebar area baca diperlebar sedikit */
+    flex-shrink: 0;
+    height: 100vh;
     background-color: #004a75; /* Biru Esri */
     color: #ffffff;
-    padding: 40px 30px;
+    padding: 40px;
     overflow-y: auto;
-    box-shadow: 5px 0 25px rgba(0,0,0,0.4);
-    z-index: 2; /* Memastikan batas bayangannya ada di atas peta */
+    box-shadow: 10px 0 30px rgba(0,0,0,0.8);
+    z-index: 2;
   }
 
-  /* Panel Kanan: Gambar Peta Hasil */
+  /* Panel Kanan: Gambar Peta Hasil (SOLUSI A4 PORTRAIT) */
   .map-panel {
-    flex-grow: 1; /* Peta akan mengisi sisa ruang yang ada di layar */
-    height: 100%;
+    flex-grow: 1;
+    height: 100vh;
     background-image: url('/images/software/hasil-peta-topografi.jpg');
-    background-size: cover; /* Gambar akan memenuhi area kanan */
+    background-size: contain; /* INI KUNCINYA: Peta utuh 100%, gak akan dicrop! */
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
+    background-color: #1a1a1a;
   }
 
-  /* Kustomisasi Scrollbar Panel Kiri */
-  .story-panel::-webkit-scrollbar {
-    width: 6px;
-  }
-  .story-panel::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-  }
+  /* Scrollbar Panel Kiri */
+  .story-panel::-webkit-scrollbar { width: 8px; }
+  .story-panel::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.3); border-radius: 10px; }
 
   /* Tombol Kembali */
   .back-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    border: 1px solid rgba(255,255,255,0.2);
-    padding: 8px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    margin-bottom: 30px;
-    transition: background 0.3s;
+    display: inline-flex; align-items: center; gap: 8px;
+    background-color: rgba(0, 0, 0, 0.4); color: #fff;
+    border: 1px solid rgba(255,255,255,0.3); padding: 10px 18px;
+    border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: bold;
+    margin-bottom: 30px; transition: 0.3s;
   }
-  .back-btn:hover {
-    background-color: rgba(0, 0, 0, 0.6);
-  }
+  .back-btn:hover { background-color: rgba(0, 0, 0, 0.8); }
 
   /* Tipografi di dalam Story Panel */
-  .story-section {
-    margin-bottom: 40px;
-  }
-  
-  .story-section h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-    line-height: 1.3;
-  }
+  .story-section { margin-bottom: 45px; }
+  .story-section h1 { font-size: 32px; margin-bottom: 20px; line-height: 1.3; }
+  .story-section h2 { font-size: 22px; margin-bottom: 15px; border-bottom: 2px solid rgba(255,255,255,0.2); padding-bottom: 8px; color: #f89927; }
+  .story-section p, .story-section ul, .story-section ol { font-size: 16px; line-height: 1.7; color: rgba(255, 255, 255, 0.9); margin-bottom: 15px; }
+  .story-section li { margin-bottom: 10px; }
 
-  .story-section h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid rgba(255,255,255,0.2);
-    padding-bottom: 8px;
-    color: #f89927;
-  }
-
-  .story-section p, .story-section ul, .story-section ol {
-    font-size: 15px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 15px;
-  }
-
-  .story-section li {
-    margin-bottom: 10px;
-  }
-
+  /* Gambar Interaktif (ModelBuilder) */
   .inline-image {
     width: 100%;
     border-radius: 6px;
     margin: 15px 0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    cursor: zoom-in; /* Kursor berubah jadi kaca pembesar */
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+  }
+  .inline-image:hover {
+    transform: scale(1.03);
+    border: 2px solid #f89927; /* Highlight oranye saat dihover */
   }
 
-  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+  /* --- 3. MODAL / LIGHTBOX (UNTUK ZOOM GAMBAR) --- */
+  .modal-overlay {
+    display: none; position: fixed; z-index: 2000;
+    left: 0; top: 0; width: 100vw; height: 100vh;
+    background-color: rgba(0,0,0,0.9);
+    align-items: center; justify-content: center;
+  }
+  .modal-content {
+    max-width: 90vw; max-height: 90vh;
+    border-radius: 8px; box-shadow: 0 0 30px rgba(0,0,0,0.8);
+    object-fit: contain;
+  }
+  .close-modal {
+    position: absolute; top: 20px; right: 30px;
+    color: #fff; font-size: 40px; font-weight: bold;
+    cursor: pointer; transition: 0.3s;
+  }
+  .close-modal:hover { color: #f89927; }
 
-  /* Responsif untuk Layar HP */
+  /* Responsif Layar HP */
   @media (max-width: 768px) {
-    #storymap-view {
-      flex-direction: column;
-      height: auto;
-    }
-    .story-panel {
-      width: 100%;
-      height: 50vh;
-    }
-    .map-panel {
-      width: 100%;
-      height: 50vh;
-    }
+    #storymap-view { flex-direction: column; overflow-y: auto; }
+    .story-panel { width: 100%; height: auto; min-height: 50vh; }
+    .map-panel { width: 100%; height: 60vh; flex-grow: 0; }
   }
 </style>
 
@@ -233,11 +192,10 @@ permalink: /software/arcgis/
   </div>
 </div>
 
-<!-- ================= VIEW 2: STORYMAPS MODE ================= -->
-<!-- Perhatikan tidak ada lagi background image di container ini -->
+<!-- ================= VIEW 2: FULL SCREEN STORYMAPS ================= -->
 <div id="storymap-view">
   
-  <!-- Panel Narasi Kiri (Fix Width, Bisa di-scroll) -->
+  <!-- Panel Narasi Kiri -->
   <div class="story-panel">
     <button class="back-btn" onclick="closeStory()">
       <span>←</span> Kembali ke Katalog
@@ -267,7 +225,8 @@ permalink: /software/arcgis/
       <h2>Geoprocessing Workflow</h2>
       <p>Ekstraksi topografi ini tidak dilakukan secara manual, melainkan dirancang ke dalam sistem otomatisasi menggunakan fitur <strong>ModelBuilder</strong> di ArcGIS Pro.</p>
       
-      <img src="/images/software/modelbuilder-workflow.jpg" alt="ModelBuilder Workflow" class="inline-image">
+      <!-- GAMBAR INTERAKTIF: Ditambah fungsi onclick untuk zoom -->
+      <img src="/images/software/modelbuilder-workflow.jpg" alt="ModelBuilder Workflow" class="inline-image" onclick="openModal(this.src)" title="Klik untuk memperbesar">
       
       <ol>
         <li><strong>Extract by Mask:</strong> Memotong data DEMNAS menggunakan poligon batas kecamatan.</li>
@@ -282,24 +241,56 @@ permalink: /software/arcgis/
       <p>Pemanfaatan ModelBuilder memberikan efisiensi waktu yang sangat signifikan, memangkas proses repetitif dalam penyiapan data awal.</p>
       <p>Dengan bergesernya beban kerja dari ranah klerikal ke sistem otomatis, fokus pekerjaan dapat dialihkan sepenuhnya pada tahap <strong>analisis tata ruang dan perumusan kebijakan teknis</strong>. Hasil akhirnya adalah sistem kerja cerdas yang siap mendukung pengambilan keputusan berbasis data spasial.</p>
     </div>
+  </div>
 
-  </div> <!-- End Story Panel -->
-
-  <!-- Panel Peta Kanan (Flex Grow, Terpisah dari Tulisan) -->
+  <!-- Panel Peta Kanan (100% Utuh) -->
   <div class="map-panel"></div>
 
-</div> <!-- End StoryMap View -->
+</div>
 
-<!-- ================= JAVASCRIPT UNTUK INTERAKSI ================= -->
+<!-- ================= MODAL / LIGHTBOX (ZOOM GAMBAR) ================= -->
+<div id="image-modal" class="modal-overlay" onclick="closeModal()">
+  <span class="close-modal">&times;</span>
+  <img id="zoomed-img" class="modal-content" src="">
+</div>
+
+<!-- ================= JAVASCRIPT LOGIC ================= -->
 <script>
+  // Fungsi Buka Mode StoryMap Immersive
   function openStory() {
     document.getElementById('catalog-view').style.display = 'none';
-    // Diubah menjadi flex agar bisa side-by-side
     document.getElementById('storymap-view').style.display = 'flex';
+    
+    // Sembunyikan navbar bawaan default.html biar bener-bener Full Screen
+    let navbar = document.querySelector('.navbar');
+    if(navbar) navbar.style.display = 'none';
+    
+    // Matikan scroll pada body utama
+    document.body.style.overflow = 'hidden';
   }
 
+  // Fungsi Tutup Mode StoryMap
   function closeStory() {
     document.getElementById('storymap-view').style.display = 'none';
     document.getElementById('catalog-view').style.display = 'block';
+    
+    // Kembalikan navbar
+    let navbar = document.querySelector('.navbar');
+    if(navbar) navbar.style.display = 'flex';
+    
+    // Nyalakan scroll body
+    document.body.style.overflow = 'auto';
+  }
+
+  // Fungsi Buka Zoom Gambar (Lightbox)
+  function openModal(imageSrc) {
+    document.getElementById('zoomed-img').src = imageSrc;
+    document.getElementById('image-modal').style.display = 'flex';
+  }
+
+  // Fungsi Tutup Zoom Gambar
+  function closeModal() {
+    document.getElementById('image-modal').style.display = 'none';
+    document.getElementById('zoomed-img').src = '';
   }
 </script>
