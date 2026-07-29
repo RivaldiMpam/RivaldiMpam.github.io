@@ -5,11 +5,22 @@ permalink: /software/arcgis/
 ---
 
 <style>
+  /* --- OVERRIDE BACKGROUND TEMA UTAMA --- */
+  /* Khusus halaman ini, matikan background foto daun dan perlebar halamannya */
+  body {
+    background-image: none !important;
+    background-color: #121212 !important; /* Polos gelap */
+    max-width: 1300px !important; /* Diperlebar biar layout side-by-side lega banget */
+  }
+  
+  body.light-mode {
+    background-color: #f5f5f5 !important; /* Polos terang untuk mode light */
+  }
+
   /* --- WARNA & VARIABEL --- */
   :root {
     --esri-blue: #005e95;
-    --esri-dark-blue: #003a5c;
-    --card-bg: rgba(30, 30, 30, 0.8);
+    --card-bg: #1e1e1e;
   }
 
   body.light-mode {
@@ -31,7 +42,7 @@ permalink: /software/arcgis/
     margin-bottom: 10px;
   }
   .catalog-header p {
-    color: var(--text-muted, #a0a0a0);
+    color: #a0a0a0;
   }
 
   .catalog-grid {
@@ -48,8 +59,9 @@ permalink: /software/arcgis/
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid rgba(150,150,150,0.1);
-    border-top: 4px solid #f89927;
+    border-left: 1px solid rgba(150,150,150,0.1);
+    border-right: 1px solid rgba(150,150,150,0.1);
+    border-bottom: 1px solid rgba(150,150,150,0.1);
   }
 
   .esri-card:hover {
@@ -60,7 +72,7 @@ permalink: /software/arcgis/
   .card-tag {
     font-size: 12px;
     text-transform: uppercase;
-    color: var(--text-muted, #a0a0a0);
+    color: #a0a0a0;
     margin-bottom: 10px;
     display: block;
     letter-spacing: 1px;
@@ -68,51 +80,56 @@ permalink: /software/arcgis/
 
   .esri-card h3 {
     margin: 0 0 15px 0;
-    color: var(--active-blue, #0d6efd);
+    color: #0d6efd;
   }
 
   .card-footer {
     display: flex;
     justify-content: space-between;
     font-size: 13px;
-    color: var(--text-muted, #a0a0a0);
+    color: #a0a0a0;
     margin-top: 20px;
     border-top: 1px solid rgba(150,150,150,0.1);
     padding-top: 10px;
   }
 
-  /* --- 2. TAMPILAN STORYMAPS (REFERENSI BARU) --- */
+  /* --- 2. TAMPILAN STORYMAPS (BERDAMPINGAN/SIDE-BY-SIDE) --- */
   #storymap-view {
-    display: none; /* Disembunyikan awalnya */
-    position: relative;
+    display: none; /* Nanti diubah jadi flex via JS */
     width: 100%;
-    height: 85vh; /* Membuatnya nyaris full screen */
-    
-    /* Background peta ditaruh di sini biar immersive */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/software/hasil-peta-topografi.jpg');
-    background-size: cover;
-    background-position: center;
+    height: 85vh; 
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     animation: fadeIn 0.5s ease;
+    background-color: #1a1a1a;
   }
 
-  /* Panel Cerita Melayang di Kiri */
+  /* Panel Kiri: Tulisan Cerita */
   .story-panel {
-    position: absolute;
-    top: 0;
-    left: 0; /* Bisa diganti misal left: 5% kalau mau ngambang */
-    width: 450px;
+    width: 400px; /* Lebar fix panel cerita */
+    flex-shrink: 0; /* Supaya lebarnya gak menyusut */
     height: 100%;
-    background-color: rgba(0, 74, 117, 0.95); /* Warna Biru Khas Esri StoryMaps */
+    background-color: #004a75; /* Biru Esri */
     color: #ffffff;
-    padding: 40px;
+    padding: 40px 30px;
     overflow-y: auto;
-    box-shadow: 5px 0 25px rgba(0,0,0,0.6);
+    box-shadow: 5px 0 25px rgba(0,0,0,0.4);
+    z-index: 2; /* Memastikan batas bayangannya ada di atas peta */
   }
 
-  /* Kustomisasi Scrollbar agar estetis */
+  /* Panel Kanan: Gambar Peta Hasil */
+  .map-panel {
+    flex-grow: 1; /* Peta akan mengisi sisa ruang yang ada di layar */
+    height: 100%;
+    background-image: url('/images/software/hasil-peta-topografi.jpg');
+    background-size: cover; /* Gambar akan memenuhi area kanan */
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  /* Kustomisasi Scrollbar Panel Kiri */
   .story-panel::-webkit-scrollbar {
     width: 6px;
   }
@@ -142,25 +159,25 @@ permalink: /software/arcgis/
 
   /* Tipografi di dalam Story Panel */
   .story-section {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
   
   .story-section h1 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
-    line-height: 1.2;
+    line-height: 1.3;
   }
 
   .story-section h2 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 15px;
     border-bottom: 2px solid rgba(255,255,255,0.2);
     padding-bottom: 8px;
-    color: #f89927; /* Aksen Oranye Esri */
+    color: #f89927;
   }
 
   .story-section p, .story-section ul, .story-section ol {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 15px;
@@ -170,7 +187,6 @@ permalink: /software/arcgis/
     margin-bottom: 10px;
   }
 
-  /* Gambar di dalam teks cerita */
   .inline-image {
     width: 100%;
     border-radius: 6px;
@@ -180,15 +196,19 @@ permalink: /software/arcgis/
 
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-  /* Responsif untuk layar HP */
+  /* Responsif untuk Layar HP */
   @media (max-width: 768px) {
+    #storymap-view {
+      flex-direction: column;
+      height: auto;
+    }
     .story-panel {
       width: 100%;
-      position: relative;
-      background-color: rgba(0, 74, 117, 1);
+      height: 50vh;
     }
-    #storymap-view {
-      overflow-y: auto;
+    .map-panel {
+      width: 100%;
+      height: 50vh;
     }
   }
 </style>
@@ -201,7 +221,6 @@ permalink: /software/arcgis/
   </div>
 
   <div class="catalog-grid">
-    <!-- Kartu Materi 1 -->
     <div class="esri-card" onclick="openStory()">
       <span class="card-tag">Geoprocessing Workflow</span>
       <h3>Automasi Ekstraksi Topografi</h3>
@@ -215,28 +234,26 @@ permalink: /software/arcgis/
 </div>
 
 <!-- ================= VIEW 2: STORYMAPS MODE ================= -->
+<!-- Perhatikan tidak ada lagi background image di container ini -->
 <div id="storymap-view">
   
-  <!-- Panel Narasi Kiri (Bisa di-scroll) -->
+  <!-- Panel Narasi Kiri (Fix Width, Bisa di-scroll) -->
   <div class="story-panel">
     <button class="back-btn" onclick="closeStory()">
       <span>←</span> Kembali ke Katalog
     </button>
     
-    <!-- Bagian 1: Judul -->
     <div class="story-section">
       <h1>Automasi Ekstraksi Topografi Tingkat Kecamatan</h1>
       <p><em>Rivaldi Fiqriyansah — Planner's Workflow Series</em></p>
     </div>
 
-    <!-- Bagian 2: Tujuan -->
     <div class="story-section">
       <h2>Tujuan & Konteks Tata Ruang</h2>
       <p>Dalam perencanaan wilayah, peta topografi merupakan data dasar esensial. Tujuan pembuatan peta ini di tingkat kecamatan adalah untuk memetakan konfigurasi rupa bumi, sebaran elevasi, serta pola kelerengan secara komprehensif.</p>
       <p>Informasi ini sangat krusial dalam tahap awal perencanaan, seperti menentukan kesesuaian lahan, merencanakan sistem drainase, dan mengidentifikasi potensi kebencanaan. Interval kontur 5 meter dipilih untuk memberikan gambaran makro yang detail tanpa membuat peta menjadi terlalu padat.</p>
     </div>
 
-    <!-- Bagian 3: Sumber Data -->
     <div class="story-section">
       <h2>Akuisisi Sumber Data</h2>
       <p>Untuk memastikan akurasi spasial, seluruh data bersumber dari portal <strong>Badan Informasi Geospasial (BIG)</strong>:</p>
@@ -246,12 +263,10 @@ permalink: /software/arcgis/
       </ul>
     </div>
 
-    <!-- Bagian 4: Proses ModelBuilder -->
     <div class="story-section">
       <h2>Geoprocessing Workflow</h2>
       <p>Ekstraksi topografi ini tidak dilakukan secara manual, melainkan dirancang ke dalam sistem otomatisasi menggunakan fitur <strong>ModelBuilder</strong> di ArcGIS Pro.</p>
       
-      <!-- Gambar Workflow disisipkan di dalam cerita -->
       <img src="/images/software/modelbuilder-workflow.jpg" alt="ModelBuilder Workflow" class="inline-image">
       
       <ol>
@@ -262,7 +277,6 @@ permalink: /software/arcgis/
       <p>Seluruh <em>tools</em> ini dikunci sebagai parameter dinamis (template <em>reusable</em>).</p>
     </div>
 
-    <!-- Bagian 5: Insight -->
     <div class="story-section">
       <h2>The Planner's Insight</h2>
       <p>Pemanfaatan ModelBuilder memberikan efisiensi waktu yang sangat signifikan, memangkas proses repetitif dalam penyiapan data awal.</p>
@@ -271,13 +285,17 @@ permalink: /software/arcgis/
 
   </div> <!-- End Story Panel -->
 
+  <!-- Panel Peta Kanan (Flex Grow, Terpisah dari Tulisan) -->
+  <div class="map-panel"></div>
+
 </div> <!-- End StoryMap View -->
 
 <!-- ================= JAVASCRIPT UNTUK INTERAKSI ================= -->
 <script>
   function openStory() {
     document.getElementById('catalog-view').style.display = 'none';
-    document.getElementById('storymap-view').style.display = 'block';
+    // Diubah menjadi flex agar bisa side-by-side
+    document.getElementById('storymap-view').style.display = 'flex';
   }
 
   function closeStory() {
