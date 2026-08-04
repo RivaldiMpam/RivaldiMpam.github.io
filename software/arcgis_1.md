@@ -294,3 +294,14 @@ permalink: /software/arcgis/
     document.getElementById('zoomed-img').src = '';
   }
 </script>
+
+<!-- KARTU KEDUA: CIGOMBONG -->
+    <div class="esri-card" onclick="window.location.href='/software/arcgis/cigombong-recovery/'">
+      <span class="card-tag">Spatial Data Recovery</span>
+      <h3>Penyelamatan Aset Persil Cigombong</h3>
+      <p style="font-size: 14px;">Menggunakan teknik georeferencing dan on-screen digitizing untuk memulihkan 60 bidang data vektor dari PDF ke Geodatabase.</p>
+      <div class="card-footer">
+        <span>StoryMap Format</span>
+        <span>ArcGIS Pro 3.x</span>
+      </div>
+    </div>
