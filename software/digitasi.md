@@ -14,7 +14,7 @@ permalink: /software/arcgis/digitasi/
     flex-grow: 1; 
     height: 100vh; 
     background-image: url('/images/software/Hasil-digitasi-arcgispro.jpg'); 
-    background-size: contain; /* <-- UBAH DARI COVER JADI CONTAIN */
+    background-size: contain; 
     background-position: center; 
     background-repeat: no-repeat; 
     z-index: 1; 
