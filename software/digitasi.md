@@ -11,15 +11,15 @@ permalink: /software/arcgis/digitasi/
   #storymap-view { display: flex; width: 100vw; height: 100vh; background-color: #121212; }
   .story-panel { width: 500px; flex-shrink: 0; height: 100vh; background-color: #004a75; color: #ffffff; padding: 40px; overflow-y: auto; box-shadow: 10px 0 30px rgba(0,0,0,0.8); z-index: 2; }
   .map-panel { 
-  flex-grow: 1; 
-  height: 100vh; 
-  background-image: url('/images/software/Hasil-digitasi-arcgispro.jpg'); 
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  z-index: 1; 
-  background-color: #1a1a1a; 
-}
+    flex-grow: 1; 
+    height: 100vh; 
+    background-image: url('/images/software/Hasil-digitasi-arcgispro.jpg'); 
+    background-size: contain; /* <-- UBAH DARI COVER JADI CONTAIN */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    z-index: 1; 
+    background-color: #1a1a1a; 
+  }
   .story-panel::-webkit-scrollbar { width: 8px; }
   .story-panel::-webkit-scrollbar-thumb { background-color: rgba(255, 255, 255, 0.3); border-radius: 10px; }
   .back-btn { display: inline-flex; align-items: center; gap: 8px; background-color: rgba(0, 0, 0, 0.4); color: #fff; border: 1px solid rgba(255,255,255,0.3); padding: 10px 18px; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: bold; margin-bottom: 30px; text-decoration: none; transition: 0.3s; }
