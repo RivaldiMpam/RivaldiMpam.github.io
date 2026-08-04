@@ -74,7 +74,7 @@ permalink: /software/arcgis/model-builder/
 
   /* --- 2. TAMPILAN STORYMAPS (FULL SCREEN IMMERSIVE) --- */
   #storymap-view {
-    display: none; /* Diubah via JS */
+    display: flex; /* Diubah via JS */
     position: fixed; /* Bikin nempel di layar penuh */
     top: 0;
     left: 0;
@@ -172,34 +172,14 @@ permalink: /software/arcgis/model-builder/
   }
 </style>
 
-<!-- ================= VIEW 1: KATALOG ================= -->
-<div id="catalog-view">
-  <div class="catalog-header">
-    <h1>ArcGIS Pro Portfolio</h1>
-    <p>Kumpulan studi kasus, otomatisasi, dan analisis geospasial.</p>
-  </div>
-
-  <div class="catalog-grid">
-    <div class="esri-card" onclick="openStory()">
-      <span class="card-tag">Geoprocessing Workflow</span>
-      <h3>Automasi Ekstraksi Topografi</h3>
-      <p style="font-size: 14px;">Menggunakan ModelBuilder untuk ekstraksi kontur dan elevasi secara otomatis dari data DEMNAS skala kecamatan.</p>
-      <div class="card-footer">
-        <span>StoryMap Format</span>
-        <span>ArcGIS Pro 3.x</span>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- ================= VIEW 2: FULL SCREEN STORYMAPS ================= -->
 <div id="storymap-view">
   
   <!-- Panel Narasi Kiri -->
   <div class="story-panel">
-    <button class="back-btn" onclick="closeStory()">
-      <span>←</span> Kembali ke Katalog
-    </button>
+    <a href="/software/arcgis/" class="back-btn">
+  <span>←</span> Kembali ke Katalog
+</a>
     
     <div class="story-section">
       <h1>Automasi Ekstraksi Topografi Tingkat Kecamatan</h1>
@@ -256,32 +236,6 @@ permalink: /software/arcgis/model-builder/
 
 <!-- ================= JAVASCRIPT LOGIC ================= -->
 <script>
-  // Fungsi Buka Mode StoryMap Immersive
-  function openStory() {
-    document.getElementById('catalog-view').style.display = 'none';
-    document.getElementById('storymap-view').style.display = 'flex';
-    
-    // Sembunyikan navbar bawaan default.html biar bener-bener Full Screen
-    let navbar = document.querySelector('.navbar');
-    if(navbar) navbar.style.display = 'none';
-    
-    // Matikan scroll pada body utama
-    document.body.style.overflow = 'hidden';
-  }
-
-  // Fungsi Tutup Mode StoryMap
-  function closeStory() {
-    document.getElementById('storymap-view').style.display = 'none';
-    document.getElementById('catalog-view').style.display = 'block';
-    
-    // Kembalikan navbar
-    let navbar = document.querySelector('.navbar');
-    if(navbar) navbar.style.display = 'flex';
-    
-    // Nyalakan scroll body
-    document.body.style.overflow = 'auto';
-  }
-
   // Fungsi Buka Zoom Gambar (Lightbox)
   function openModal(imageSrc) {
     document.getElementById('zoomed-img').src = imageSrc;
