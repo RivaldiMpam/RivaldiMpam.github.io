@@ -45,7 +45,7 @@ permalink: /software/arcgis/digitasi/
     </div>
     <div class="story-section">
       <h2>Geoprocessing Workflow</h2>
-      <img src="georeference-pdf.jpg" alt="Proses Georeferencing di ArcGIS Pro" class="inline-image" onclick="openModal(this.src)" title="Klik untuk memperbesar">
+      <img src="/images/software/georeference-pdf.jpg" alt="Proses Georeferencing" class="inline-image" onclick="openModal(this.src)" title="Klik untuk memperbesar">
       <ol>
         <li><strong>Georeferencing:</strong> Mengikat dokumen PDF ke dalam sistem koordinat spasial menggunakan 4 titik kontrol (<em>control points</em>) yang dipetakan secara presisi agar sesuai dengan orientasi dan skala sebenarnya.</li>
         <li><strong>Geodatabase Structuring:</strong> Membuat <em>File Geodatabase</em> (.gdb) baru khusus untuk proyek ini melalui menu Catalog, dilanjutkan dengan pembuatan <em>Feature Class</em> khusus poligon persil.</li>
