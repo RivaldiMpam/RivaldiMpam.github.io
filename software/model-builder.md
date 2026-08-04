@@ -1,7 +1,7 @@
 ---
 layout: default
-title: ArcGIS Pro Projects
-permalink: /software/arcgis/
+title: Automasi Ekstraksi Topografi
+permalink: /software/arcgis/model-builder/
 ---
 
 <style>
