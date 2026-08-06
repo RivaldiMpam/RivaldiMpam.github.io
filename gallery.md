@@ -4,25 +4,104 @@ title: Gallery
 permalink: /gallery/
 ---
 
-<h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 8px; text-align: center;">Galeri Dokumentasi</h1>
-<p style="color: var(--text-muted); text-align: center; margin-bottom: 40px; font-size: 1.1rem;">Foto aktivitas pengukuran lapangan (survei) dan hasil visualisasi spasial.</p>
+<div class="section-inner page-header">
+  <p class="eyebrow i18n" data-id="Galeri" data-en="Gallery">Galeri</p>
+  <h1 class="i18n" data-id="Dokumentasi Lapangan" data-en="Field Documentation">Dokumentasi Lapangan</h1>
+  <p class="i18n" data-id="Kumpulan foto kegiatan dari tiap fase pekerjaan. Klik foto untuk memperbesar." data-en="A collection of activity photos from each work phase. Click a photo to enlarge it.">Kumpulan foto kegiatan dari tiap fase pekerjaan. Klik foto untuk memperbesar.</p>
+</div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
-  <!-- Foto 1 -->
-  <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.03); background: var(--card-bg-light);">
-    <img src="/images/gallery-survei1.jpg" alt="Aktivitas Survei" style="width: 100%; height: 220px; object-fit: cover;">
-    <div style="padding: 16px;">
-      <p style="font-weight: 600; font-size: 0.95rem; margin-bottom: 4px;">Survei Topografi Lapangan</p>
-      <span style="font-size: 0.8rem; color: var(--text-muted);">Bogor, Jawa Barat</span>
-    </div>
-  </div>
+<div class="section">
+  <div class="section-inner">
 
-  <!-- Foto 2 -->
-  <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.03); background: var(--card-bg-light);">
-    <img src="/images/gallery-peta1.jpg" alt="Hasil Peta" style="width: 100%; height: 220px; object-fit: cover;">
-    <div style="padding: 16px;">
-      <p style="font-weight: 600; font-size: 0.95rem; margin-bottom: 4px;">Visualisasi Kartografi 3D</p>
-      <span style="font-size: 0.8rem; color: var(--text-muted);">ArcGIS Pro Rendering</span>
+    <div class="gallery-group">
+      <h2 class="gallery-group-title i18n" data-id="Magang — PT Kalimantan Industrial Park Indonesia" data-en="Internship — PT Kalimantan Industrial Park Indonesia">Magang — PT Kalimantan Industrial Park Indonesia</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="/images/magang/Pengukuran-areal-kebakaran.jpg" alt="Pengukuran Areal Kebakaran">
+          <p class="gallery-caption">Pengukuran Areal Kebakaran</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/magang/pengukuran-lahan-2.jpg" alt="Pengukuran Lahan 2">
+          <p class="gallery-caption">Pengukuran Lahan 2</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/magang/pengukuran-lahan-3.jpg" alt="Pengukuran Lahan 3">
+          <p class="gallery-caption">Pengukuran Lahan 3</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/magang/pengukuran-lahan.jpg" alt="Pengukuran Lahan">
+          <p class="gallery-caption">Pengukuran Lahan</p>
+        </div>
+      </div>
     </div>
+
+    <div class="gallery-group">
+      <h2 class="gallery-group-title i18n" data-id="PT Kalimantan Industrial Park Indonesia" data-en="PT Kalimantan Industrial Park Indonesia">PT Kalimantan Industrial Park Indonesia</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="/images/KIPI/DCP.jpg" alt="DCP">
+          <p class="gallery-caption">DCP</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/KIPI/Handling%20material.jpg" alt="Handling Material">
+          <p class="gallery-caption">Handling Material</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/KIPI/Land%20development%20area%20komersial.jpg" alt="Land Development Area Komersial">
+          <p class="gallery-caption">Land Development Area Komersial</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/KIPI/Pengawas%20repair%20jalan%20kawasan.jpg" alt="Pengawas Repair Jalan Kawasan">
+          <p class="gallery-caption">Pengawas Repair Jalan Kawasan</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/KIPI/Survey%20with%20topcon%20gm%2050%20series.jpg" alt="Survey With Topcon GM 50 Series">
+          <p class="gallery-caption">Survey With Topcon GM 50 Series</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/KIPI/Topografi%20142%20hektare.jpg" alt="Topografi 142 Hektare">
+          <p class="gallery-caption">Topografi 142 Hektare</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/KIPI/Topografi%20jalan%20kawasan.jpg" alt="Topografi Jalan Kawasan">
+          <p class="gallery-caption">Topografi Jalan Kawasan</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/KIPI/joint-survey.jpg" alt="Joint Survey">
+          <p class="gallery-caption">Joint Survey</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-group">
+      <h2 class="gallery-group-title i18n" data-id="PT Inti Innovaco" data-en="PT Inti Innovaco">PT Inti Innovaco</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="/images/ININ/cut-n-fill-kavling.jpg" alt="Cut and Fill Kavling">
+          <p class="gallery-caption">Cut and Fill Kavling</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/ININ/orthophoto-processing-data.jpg" alt="Orthophoto Processing Data">
+          <p class="gallery-caption">Orthophoto Processing Data</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/ININ/pengukuran-batas.jpg" alt="Pengukuran Batas">
+          <p class="gallery-caption">Pengukuran Batas</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/ININ/pengukuran-lahan.jpg" alt="Pengukuran Lahan">
+          <p class="gallery-caption">Pengukuran Lahan</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/ININ/tim-teknis.jpg" alt="Tim Teknis">
+          <p class="gallery-caption">Tim Teknis</p>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/ININ/topografi.jpg" alt="Topografi">
+          <p class="gallery-caption">Topografi</p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
