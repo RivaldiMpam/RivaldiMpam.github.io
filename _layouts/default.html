@@ -9,7 +9,7 @@
   <!-- Set theme & language before first paint to avoid flash-of-wrong-theme -->
   <script>
     (function () {
-      var theme = localStorage.getItem('site-theme') || 'dark';
+      var theme = localStorage.getItem('site-theme') || 'light';
       var lang = localStorage.getItem('site-lang') || 'id';
       document.documentElement.setAttribute('data-theme', theme);
       document.documentElement.setAttribute('lang', lang);
@@ -35,18 +35,18 @@
     }
 
     :root[data-theme="dark"] {
-      --bg: #10131a;
-      --surface: #171b23;
-      --surface-2: #1e232d;
+      --bg: #17181a;
+      --surface: #1e1f22;
+      --surface-2: #26272b;
       --border: rgba(255, 255, 255, 0.08);
-      --text: #eef1f5;
-      --text-muted: #9aa4b2;
-      --text-dim: #626d7a;
+      --text: #eeeeef;
+      --text-muted: #a3a4a8;
+      --text-dim: #717278;
       --accent: #5b84e0;
       --accent-strong: #82a3ec;
       --shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
       --pattern-opacity: 0.045;
-      --overlay: rgba(10, 12, 16, 0.6);
+      --overlay: rgba(10, 10, 11, 0.6);
     }
 
     :root[data-theme="light"] {
@@ -654,6 +654,66 @@
     .gallery-group { margin-bottom: 56px; }
     .gallery-group-title { font-size: 1.1rem; margin-bottom: 18px; }
 
+    /* ============ EDITORIAL STORY BLOCK (Journey page) ============ */
+    .story-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+      padding: 72px 0;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .story-block:first-child { padding-top: 24px; }
+    .story-block:last-child { border-bottom: none; }
+    .story-block.reverse .story-media { order: 2; }
+    .story-number {
+      position: absolute;
+      top: 42px;
+      font-size: 6rem;
+      font-weight: 800;
+      color: var(--surface-2);
+      line-height: 1;
+      z-index: 0;
+      font-family: var(--font-display);
+      user-select: none;
+    }
+    .story-text { position: relative; z-index: 1; }
+    .story-text .timeline-date { display: inline-block; margin-bottom: 10px; }
+    .story-text h2 { font-size: 1.5rem; margin-bottom: 16px; }
+    .story-text p { color: var(--text-muted); font-size: 1rem; line-height: 1.85; margin-bottom: 14px; }
+    .story-text strong { color: var(--text); }
+    .story-media { position: relative; z-index: 1; }
+    .story-media-main {
+      width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
+      border-radius: var(--radius-lg); border: 1px solid var(--border);
+      box-shadow: var(--shadow); cursor: zoom-in; display: block;
+    }
+    .story-gallery { display: flex; gap: 10px; margin-top: 12px; }
+    .story-gallery img {
+      flex: 1; aspect-ratio: 1; object-fit: cover;
+      border-radius: var(--radius-sm); border: 1px solid var(--border);
+      cursor: zoom-in; transition: opacity var(--transition);
+    }
+    .story-gallery img:hover { opacity: 0.85; }
+    .pull-quote {
+      border-left: 3px solid var(--accent);
+      padding-left: 18px;
+      margin: 20px 0;
+      font-size: 1.08rem;
+      font-style: italic;
+      color: var(--text);
+    }
+    .story-role-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin: 22px 0 8px;
+    }
+
     /* ============ RESPONSIVE ============ */
     @media (max-width: 768px) {
       main.container { margin: 32px auto; }
@@ -687,6 +747,9 @@
       .about-grid .about-media { order: -1; }
       .section { padding: 56px 0; }
       .hero { min-height: 68vh; }
+      .story-block, .story-block.reverse { grid-template-columns: 1fr; padding: 48px 0; }
+      .story-block .story-media { order: -1; }
+      .story-number { display: none; }
     }
   </style>
 </head>
@@ -850,7 +913,7 @@
       var modalImg = document.getElementById('modalImg');
       var closeModal = document.getElementById('closeModal');
 
-      document.querySelectorAll('.inline-image, .timeline-gallery img, .gallery-grid img, img.zoomable').forEach((img) => {
+      document.querySelectorAll('.inline-image, .timeline-gallery img, .gallery-grid img, .story-media-main, .story-gallery img, img.zoomable').forEach((img) => {
         img.addEventListener('click', () => {
           modalImg.src = img.getAttribute('src');
           modalImg.alt = img.getAttribute('alt') || '';
