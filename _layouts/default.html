@@ -5,26 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | Rivaldi Fiqriyansyah</title>
 
-  <!-- IMPORT FONT PROFESIONAL KORPORAT (Google Fonts) -->
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* RESET & VARIABEL UTAMA */
+    /* VARIABEL WARNA DAN STYLE UTAMA */
     :root {
-      --font-primary: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      --bg-color: #f8fafc; /* Latar belakang abu terang yang premium */
-      --text-main: #1e293b; /* Slate dark untuk kenyamanan membaca */
+      --font-main: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --bg-color: #f8fafc; /* Latar belakang premium abu-slate sangat terang */
+      --text-main: #1e293b; /* Slate gelap untuk kenyamanan membaca */
       --text-muted: #64748b; /* Slate medium */
-      --accent-color: #10b981; /* Hijau Emerald khas Geomatika/Alam */
+      --accent-color: #10b981; /* Hijau Emerald khas Geomatika & Tata Wilayah */
       --accent-hover: #059669;
       --card-bg: #ffffff;
       --border-color: #e2e8f0;
-      --max-width: 1100px;
+      --max-width: 1000px;
     }
 
-    /* GLOBAL STYLING */
+    body.dark-theme {
+      --bg-color: #0f172a; /* Gelap premium */
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --card-bg: #1e293b;
+      --border-color: #334155;
+    }
+
+    /* GLOBAL RESET */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -32,56 +40,110 @@
     }
 
     body {
-      font-family: var(--font-primary);
+      font-family: var(--font-main);
       background-color: var(--bg-color);
       color: var(--text-main);
-      line-height: 1.6;
+      line-height: 1.75;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      transition: background-color 0.3s, color 0.3s;
       -webkit-font-smoothing: antialiased;
     }
 
-    /* TYPOGRAPHY */
-    h1, h2, h3, h4, h5, h6 {
+    /* DESAIN OTOMATIS UNTUK TEKS MARKDOWN KAMU */
+    .main-content {
+      flex: 1;
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+
+    /* Styling Judul Utama Halaman */
+    .main-content h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #0f172a;
+      margin-bottom: 24px;
+      line-height: 1.25;
+    }
+    body.dark-theme .main-content h1 {
+      color: #ffffff;
+    }
+
+    /* Styling Sub-judul / Heading 2 */
+    .main-content h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #1e293b;
+      margin-top: 40px;
+      margin-bottom: 16px;
+      border-left: 4px solid var(--accent-color);
+      padding-left: 12px;
+    }
+    body.dark-theme .main-content h2 {
+      color: #f1f5f9;
+    }
+
+    /* Styling Paragraph */
+    .main-content p {
+      font-size: 1.05rem;
+      color: var(--text-main);
+      margin-bottom: 20px;
+      opacity: 0.95;
+    }
+
+    /* Styling List (ul & ol) */
+    .main-content ul, .main-content ol {
+      margin-bottom: 24px;
+      padding-left: 24px;
+    }
+    .main-content li {
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+
+    /* Styling Gambar Otomatis */
+    .main-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      margin: 24px 0;
+      display: block;
+    }
+
+    /* Styling Teks Tebal (Bold) */
+    .main-content strong {
       font-weight: 700;
       color: #0f172a;
-      line-height: 1.3;
-      margin-bottom: 1rem;
+    }
+    body.dark-theme .main-content strong {
+      color: #ffffff;
     }
 
-    p {
-      margin-bottom: 1.25rem;
-      font-size: 1rem;
-      color: #334155;
-    }
-
-    a {
-      color: var(--accent-color);
-      text-decoration: none;
-      transition: color 0.2s ease;
-    }
-
-    a:hover {
-      color: var(--accent-hover);
-    }
-
-    /* HEADER & NAVBAR */
+    /* NAVBAR STYLING */
     .custom-navbar {
       position: sticky;
       top: 0;
       z-index: 1000;
       width: 100%;
-      background-color: rgba(255, 255, 255, 0.9);
+      background-color: rgba(255, 255, 255, 0.85);
       border-bottom: 1px solid var(--border-color);
       backdrop-filter: blur(12px);
       transition: all 0.3s ease;
+    }
+    body.dark-theme .custom-navbar {
+      background-color: rgba(15, 23, 42, 0.85);
     }
 
     .nav-container {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 14px 24px;
+      padding: 16px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -95,17 +157,20 @@
     }
 
     .brand-name {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 800;
       letter-spacing: -0.5px;
       color: #0f172a;
+    }
+    body.dark-theme .brand-name {
+      color: #ffffff;
     }
 
     .brand-sub {
       font-size: 0.75rem;
       color: var(--text-muted);
       font-weight: 500;
-      margin-top: 1px;
+      margin-top: 2px;
     }
 
     .nav-menu-wrapper {
@@ -118,7 +183,7 @@
       list-style: none;
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 24px;
     }
 
     .nav-link {
@@ -152,19 +217,47 @@
     }
 
     .lang-btn {
+      text-decoration: none;
       color: #94a3b8;
       font-weight: 700;
     }
 
     .lang-btn.active, .lang-btn:hover {
-      color: #0f172a;
+      color: var(--text-main);
     }
 
     .lang-divider {
-      color: #cbd5e1;
+      color: var(--border-color);
     }
 
-    /* HAMBURGER TOGGLE (MOBILE) */
+    /* Theme Toggle Button (Dark Mode) */
+    .theme-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 50%;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    .theme-toggle:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+      color: var(--accent-color);
+    }
+    body.dark-theme .theme-toggle:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .sun-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* Hamburger Toggle Button (Mobile) */
     .nav-toggle {
       display: none;
       flex-direction: column;
@@ -179,25 +272,16 @@
     .nav-toggle .bar {
       width: 100%;
       height: 2px;
-      background-color: #0f172a;
+      background-color: var(--text-main);
       transition: all 0.3s ease;
     }
 
-    /* MAIN CONTENT CONTAINER */
-    .main-content {
-      flex: 1;
-      width: 100%;
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 40px 24px;
-    }
-
-    /* FOOTER (GAYA PERUSAHAAN/KORPORAT) */
+    /* FOOTER (Inspirasi Pertamina & Astra) */
     .custom-footer {
-      background-color: #0f172a; /* Warna gelap eksklusif */
-      color: #f1f5f9;
-      border-top: 1px solid #1e293b;
+      background-color: #0f172a;
+      color: #94a3b8;
       padding: 48px 24px 24px;
+      border-top: 1px solid #1e293b;
       margin-top: auto;
     }
 
@@ -210,17 +294,17 @@
       margin-bottom: 40px;
     }
 
-    .footer-about .footer-logo {
-      font-size: 1.25rem;
+    .footer-about h4 {
+      color: #ffffff;
+      font-size: 1.2rem;
       font-weight: 800;
       margin-bottom: 12px;
-      color: #ffffff;
     }
 
     .footer-about p {
-      color: #94a3b8;
       font-size: 0.9rem;
       max-width: 450px;
+      line-height: 1.6;
     }
 
     .footer-contact h4 {
@@ -230,7 +314,6 @@
     }
 
     .footer-contact p {
-      color: #94a3b8;
       font-size: 0.9rem;
       margin-bottom: 8px;
     }
@@ -245,6 +328,7 @@
       color: #94a3b8;
       font-size: 0.9rem;
       font-weight: 600;
+      text-decoration: none;
     }
 
     .social-link:hover {
@@ -260,10 +344,9 @@
       justify-content: space-between;
       align-items: center;
       font-size: 0.8rem;
-      color: #64748b;
     }
 
-    /* RESPONSIVE DESIGN */
+    /* RESPONSIVE DESIGN (MOBILE & TABLET) */
     @media (max-width: 768px) {
       .nav-toggle {
         display: flex;
@@ -274,7 +357,7 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #ffffff;
+        background-color: var(--card-bg);
         border-bottom: 1px solid var(--border-color);
         flex-direction: column;
         align-items: flex-start;
@@ -322,7 +405,6 @@
         text-align: center;
       }
 
-      /* Animasi Hamburger */
       .nav-toggle.open .bar:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
       }
@@ -337,7 +419,7 @@
 </head>
 <body>
 
-  <!-- HEADER & NAVBAR -->
+  <!-- NAVIGATION BAR -->
   <header class="custom-navbar">
     <div class="nav-container">
       <a href="/" class="nav-brand">
@@ -354,65 +436,99 @@
       <div class="nav-menu-wrapper" id="navMenuWrapper">
         <ul class="nav-menu">
           <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a></li>
-          <li><a href="/cv/" class="nav-link {% if page.url contains '/cv/' or page.url contains '/journey/' %}active{% endif %}">About</a></li>
+          <li><a href="/journey/" class="nav-link {% if page.url contains '/journey/' %}active{% endif %}">Journey</a></li>
+          <li><a href="/cv/" class="nav-link {% if page.url contains '/cv/' %}active{% endif %}">CV</a></li>
           <li><a href="/projects/" class="nav-link {% if page.url contains '/projects/' or page.url contains '/software/' %}active{% endif %}">Projects</a></li>
           <li><a href="/gallery/" class="nav-link {% if page.url contains '/gallery/' %}active{% endif %}">Gallery</a></li>
-          <li><a href="/writing/" class="nav-link {% if page.url contains '/writing/' or page.url contains '/blog/' %}active{% endif %}">Writing</a></li>
         </ul>
 
         <div class="nav-actions">
           <div class="lang-selector">
             <a href="#" class="lang-btn active">ID</a>
-            <span class="lang-divider\">|</span>
+            <span class="lang-divider">|</span>
             <a href="/en/" class="lang-btn">EN</a>
           </div>
+
+          <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- WADAH UTAMA UNTUK KONTEN GENERASI MARKDOWN -->
+  <!-- KONTEN MARKDOWN MAKSIMAL Grounded -->
   <main class="main-content">
     {{ content }}
   </main>
 
-  <!-- FOOTER PROFESIONAL (MENAMPILKAN KONTAK) -->
+  <!-- FOOTER KONTAK (Astra / Pertamina Style) -->
   <footer class="custom-footer">
     <div class="footer-container">
       <div class="footer-about">
-        <div class="footer-logo">Rivaldi Fiqriyansyah</div>
-        <p>Lulusan Teknik Geomatika dan Geospasial, saat ini sedang menempuh S1 Perencanaan Wilayah dan Kota. Memiliki pengalaman kerja sejak 2022 dengan fokus pada pengolahan data spasial, pemetaan modern, serta pengembangan perencanaan wilayah yang berkelanjutan.</p>
+        <h4>Rivaldi Fiqriyansyah</h4>
+        <p>Insinyur Geomatika dan Perencana Kota Berkelanjutan. Berfokus pada pengolahan data spasial, pemetaan digital modern, dan tata ruang komprehensif.</p>
       </div>
       <div class="footer-contact">
-        <h4>Hubungi Saya</h4>
-        <p><strong>Email:</strong> rivaldifiqriyansah@gmail.com</p>
+        <h4>Kontak Hubung</h4>
+        <p><strong>Lokasi:</strong> Bogor, Jawa Barat, Indonesia</p>
+        <p><strong>Email:</strong> rivaldimpam@gmail.com</p>
         <div class="footer-socials">
-          <a href="https://linkedin.com/in/" target="_blank" class="social-link">LinkedIn</a>
+          <a href="https://linkedin.com/in/rivaldifiqriyansyah" target="_blank" class="social-link">LinkedIn</a>
           <a href="https://github.com/RivaldiMpam" target="_blank" class="social-link">GitHub</a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Rivaldi Fiqriyansyah. All Rights Reserved.</p>
+      <p>&copy; 2026 Rivaldi Fiqriyansyah. Hak Cipta Dilindungi.</p>
       <p>Dibuat dengan Jekyll & GitHub Pages</p>
     </div>
   </footer>
 
-  <!-- SCRIPT UNTUK HAMBURGER MENU MOBILE -->
+  <!-- JAVASCRIPT NAV TOGGLE & DARK MODE -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const navToggle = document.getElementById('navToggle');
       const navMenuWrapper = document.getElementById('navMenuWrapper');
+      const themeToggleBtn = document.getElementById('themeToggleBtn');
+      const body = document.body;
 
+      // Toggle Menu Mobile
       navToggle.addEventListener('click', () => {
         navToggle.classList.toggle('open');
         navMenuWrapper.classList.toggle('show');
       });
 
+      // Tutup menu saat klik luar navbar
       document.addEventListener('click', (e) => {
         if (!navToggle.contains(e.target) && !navMenuWrapper.contains(e.target)) {
           navToggle.classList.remove('open');
           navMenuWrapper.classList.remove('show');
+        }
+      });
+
+      // Simple Dark Mode
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'dark') {
+        body.classList.add('dark-theme');
+      }
+
+      themeToggleBtn.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+        if (body.classList.contains('dark-theme')) {
+          localStorage.setItem('theme', 'dark');
+        } else {
+          localStorage.setItem('theme', 'light');
         }
       });
     });
