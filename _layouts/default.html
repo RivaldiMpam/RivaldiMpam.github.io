@@ -426,7 +426,7 @@
     .focus-card p { color: var(--text-muted); font-size: 0.94rem; line-height: 1.7; }
 
     /* ============ FEATURED WORK ============ */
-    .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .work-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
     .work-card { border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); background: var(--surface); text-decoration: none; display: block; transition: transform var(--transition), box-shadow var(--transition); }
     .work-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
     .work-card-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
@@ -466,6 +466,173 @@
     .cta-actions .btn-primary { background: var(--accent); color: #fff; }
     .cta-actions .btn-outline { background: transparent; color: var(--text); border-color: var(--border); }
     .cta-actions .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ============ PROJECT / CASE STUDY PAGES ============ */
+    .project-header {
+      position: relative;
+      min-height: 46vh;
+      display: flex;
+      align-items: flex-end;
+      background-color: var(--surface-2);
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+    .project-header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(10,12,16,0.2) 0%, rgba(10,12,16,0.4) 55%, rgba(10,12,16,0.9) 100%);
+    }
+    :root[data-theme="light"] .project-header::after {
+      background: linear-gradient(180deg, rgba(20,24,31,0.15) 0%, rgba(20,24,31,0.3) 55%, rgba(20,24,31,0.85) 100%);
+    }
+    .project-header-inner {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-width);
+      width: 92%;
+      margin: 0 auto;
+      padding: 48px 24px 40px;
+      color: #ffffff;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 22px;
+      transition: color var(--transition);
+    }
+    .back-link:hover { color: #ffffff; }
+    .project-header-inner .eyebrow { color: #ffffff; opacity: 0.85; }
+    .project-header-inner h1 { color: #ffffff; font-size: clamp(1.8rem, 3.4vw, 2.6rem); margin: 12px 0 12px; max-width: 22ch; }
+    .project-meta { color: rgba(255,255,255,0.85); font-size: 1rem; max-width: 60ch; }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+
+    .project-body { max-width: 760px; }
+    .project-body h2 { font-size: 1.4rem; margin: 44px 0 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
+    .project-body h2:first-child { margin-top: 0; }
+    .project-body p, .project-body li { font-size: 1rem; line-height: 1.85; color: var(--text-muted); margin-bottom: 14px; }
+    .project-body h3 { font-size: 1.08rem; margin: 26px 0 10px; color: var(--text); }
+    .project-body ul, .project-body ol { padding-left: 20px; margin-bottom: 14px; }
+    .project-body strong { color: var(--text); }
+
+    .inline-image {
+      width: 100%;
+      border-radius: var(--radius-md);
+      margin: 20px 0;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      cursor: zoom-in;
+      transition: transform var(--transition), border-color var(--transition);
+    }
+    .inline-image:hover { transform: scale(1.015); border-color: var(--accent); }
+    .image-caption { font-size: 0.85rem; color: var(--text-dim); margin-top: -10px; margin-bottom: 24px; }
+
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      z-index: 3000;
+      inset: 0;
+      background-color: rgba(8, 10, 14, 0.92);
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+    .modal-overlay.show { display: flex; }
+    .modal-content { max-width: 90vw; max-height: 90vh; border-radius: 8px; box-shadow: 0 0 40px rgba(0,0,0,0.6); object-fit: contain; }
+    .close-modal {
+      position: absolute; top: 20px; right: 28px;
+      color: #fff; font-size: 2.2rem; font-weight: 300; line-height: 1;
+      cursor: pointer; transition: color var(--transition); background: none; border: none;
+    }
+    .close-modal:hover { color: var(--accent); }
+
+    /* ============ PAGE HEADER (non-home pages) ============ */
+    .page-header { padding: 56px 0 8px; }
+    .page-header .eyebrow { display: block; margin-bottom: 10px; }
+    .page-header h1 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
+    .page-header p { color: var(--text-muted); max-width: 60ch; margin-top: 14px; font-size: 1.02rem; }
+
+    /* ============ TIMELINE GALLERY (photo grid inside a timeline item) ============ */
+    .timeline-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .timeline-gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      cursor: zoom-in;
+      transition: opacity var(--transition), transform var(--transition);
+    }
+    .timeline-gallery img:hover { opacity: 0.85; transform: scale(1.01); }
+
+    /* ============ LIGHTBOX / IMAGE MODAL (shared) ============ */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background-color: rgba(0,0,0,0.9);
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .modal-overlay.show { display: flex; }
+    .modal-content { max-width: 90vw; max-height: 90vh; border-radius: 8px; box-shadow: 0 0 30px rgba(0,0,0,0.6); object-fit: contain; }
+    .close-modal {
+      position: absolute; top: 20px; right: 28px;
+      color: #fff; font-size: 34px; font-weight: 700;
+      cursor: pointer; line-height: 1;
+    }
+    .close-modal:hover { color: var(--accent-strong); }
+
+    /* ============ ARTICLE / PROJECT PAGE ============ */
+    .article-hero {
+      position: relative;
+      min-height: 46vh;
+      display: flex;
+      align-items: flex-end;
+      background-size: cover;
+      background-position: center;
+      background-color: var(--surface-2);
+    }
+    .article-hero::after {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(10,12,16,0.1) 0%, rgba(10,12,16,0.85) 100%);
+    }
+    .article-hero-content { position: relative; z-index: 1; max-width: var(--max-width); width: 92%; margin: 0 auto; padding: 40px 24px; color: #fff; }
+    .article-hero-content .eyebrow { color: #fff; opacity: 0.85; }
+    .article-hero-content h1 { color: #fff; font-size: clamp(1.7rem, 3.4vw, 2.4rem); margin: 10px 0 6px; max-width: 26ch; }
+    .article-hero-content .article-meta { color: rgba(255,255,255,0.8); font-size: 0.92rem; }
+
+    .article-body { max-width: 760px; margin: 0 auto; }
+    .article-body h2 { font-size: 1.35rem; margin: 40px 0 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    .article-body p, .article-body li { color: var(--text-muted); font-size: 1rem; line-height: 1.85; }
+    .article-body ol, .article-body ul { padding-left: 22px; margin-bottom: 16px; }
+    .article-body li { margin-bottom: 8px; }
+    .article-body strong { color: var(--text); }
+    .article-body img.inline-image {
+      width: 100%;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      margin: 18px 0;
+      cursor: zoom-in;
+      transition: opacity var(--transition);
+    }
+    .article-body img.inline-image:hover { opacity: 0.9; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-decoration: none; margin-bottom: 12px; }
+    .back-link:hover { color: var(--accent); }
 
     /* ============ RESPONSIVE ============ */
     @media (max-width: 768px) {
@@ -556,6 +723,11 @@
   <main class="container" id="main-content">
     {{ content }}
   </main>
+
+  <div class="modal-overlay" id="imageModal">
+    <span class="close-modal" id="closeModal">&times;</span>
+    <img class="modal-content" id="modalImg" src="" alt="">
+  </div>
 
   <footer>
     <div class="footer-container">
@@ -652,7 +824,45 @@
         localStorage.setItem('site-lang', next);
         applyLang(next);
       });
+
+      /* ---- shared lightbox ---- */
+      var modal = document.getElementById('imageModal');
+      var modalImg = document.getElementById('modalImg');
+      var closeModal = document.getElementById('closeModal');
+
+      document.querySelectorAll('.inline-image, .timeline-gallery img, img.zoomable').forEach((img) => {
+        img.addEventListener('click', () => {
+          modalImg.src = img.getAttribute('src');
+          modalImg.alt = img.getAttribute('alt') || '';
+          modal.classList.add('show');
+        });
+      });
+
+      function hideModal() {
+        modal.classList.remove('show');
+        modalImg.src = '';
+      }
+      closeModal.addEventListener('click', hideModal);
+      modal.addEventListener('click', (e) => { if (e.target === modal) hideModal(); });
+      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideModal(); });
     });
+  </script>
+  <!-- Global image lightbox (used by .inline-image across project pages) -->
+  <div id="image-modal" class="modal-overlay" onclick="closeModal()">
+    <button class="close-modal" aria-label="Close">&times;</button>
+    <img id="zoomed-img" class="modal-content" src="" alt="">
+  </div>
+
+  <script>
+    function openModal(src) {
+      document.getElementById('zoomed-img').src = src;
+      document.getElementById('image-modal').classList.add('show');
+    }
+    function closeModal() {
+      document.getElementById('image-modal').classList.remove('show');
+      document.getElementById('zoomed-img').src = '';
+    }
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
   </script>
 </body>
 </html>
