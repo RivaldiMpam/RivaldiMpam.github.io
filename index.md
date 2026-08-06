@@ -34,7 +34,7 @@ permalink: /
   <!-- KOLOM KANAN: FOTO PROFIL & KONTAK SEBELAH KANAN -->
   <div style="text-align: center;">
     <div style="margin-bottom: 24px;">
-      <img src="/images/rivaldi-kerja.jpg" alt="Rivaldi Kerja" class="cool-photo" style="max-width: 320px;">
+      <img src="/images/foto-profil.jpg" alt="Rivaldi Kerja" class="cool-photo" style="max-width: 320px;">
     </div>
 
   <div style="background: rgba(255, 255, 255, 0.04); padding: 20px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.06); text-align: left; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
