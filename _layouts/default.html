@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | Rivaldi Fiqriyansyah</title>
 
-  <!-- Google Fonts: Plus Jakarta Sans (Premium Korporat) -->
+  <!-- Google Fonts: Plus Jakarta Sans (Premium & Modern) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,6 +19,7 @@
       --text-muted: #cbd5e1;
       --glass-bg: rgba(15, 23, 42, 0.85); /* Box transparan gelap */
       --glass-border: rgba(255, 255, 255, 0.08);
+      --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
 
     * {
@@ -28,49 +29,50 @@
     }
 
     body {
-      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      /* Background foto hutan pakis estetik (menggunakan gambar lokal atau fallback hutan hijau gelap berkualitas tinggi) */
-      background: linear-gradient(rgba(10, 15, 30, 0.6), rgba(10, 15, 30, 0.6)),
+      font-family: var(--font-family);
+      /* Background foto hutan pakis estetik milikmu */
+      background: linear-gradient(rgba(10, 15, 30, 0.65), rgba(10, 15, 30, 0.65)),
                   url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
       background-size: cover;
       color: var(--text-light);
-      line-height: 1.6;
+      line-height: 1.7;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
+      -webkit-font-smoothing: antialiased;
     }
 
-    /* GLASSMORPHISM CONTAINER */
+    /* GLASSMORPHISM CONTAINER - DILEBARKAN KE 1300PX UNTUK KESAN FULL-SCREEN */
     .container {
-      max-width: 1000px;
-      width: 90%;
+      max-width: 1300px; /* Diubah dari 1000px agar lapang di desktop */
+      width: 92%;
       margin: 40px auto;
       background: var(--glass-bg);
       border: 1px solid var(--glass-border);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      border-radius: 16px;
-      padding: 32px;
-      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 20px;
+      padding: 48px; /* Padding ditambah agar tata letak bernapas lega */
+      box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
       flex: 1;
     }
 
-    /* NAVBAR ELEGAN */
+    /* NAVBAR ELEGAN LEBAR */
     .custom-navbar {
       position: sticky;
       top: 0;
       z-index: 1000;
       width: 100%;
-      background: rgba(15, 23, 42, 0.8);
+      background: rgba(15, 23, 42, 0.85);
       border-bottom: 1px solid var(--glass-border);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
     }
 
     .nav-container {
-      max-width: 1000px;
+      max-width: 1300px; /* Selaras dengan lebar kontainer utama */
       margin: 0 auto;
-      padding: 16px 24px;
+      padding: 18px 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -83,7 +85,7 @@
     }
 
     .brand-name {
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       font-weight: 800;
       letter-spacing: -0.5px;
       color: #ffffff;
@@ -109,13 +111,13 @@
     }
 
     .nav-link {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       font-weight: 600;
       color: #94a3b8;
       text-decoration: none;
-      padding: 6px 12px;
-      border-radius: 6px;
-      transition: all 0.2s ease;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: all 0.25s ease;
     }
 
     .nav-link:hover, .nav-link.active {
@@ -142,17 +144,38 @@
       transition: all 0.3s ease;
     }
 
-    /* FOOTER */
+    /* KELAS KHUSUS FOTO PREMIUM (COOL PHOTO EFFECT) */
+    .cool-photo {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+      transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+    }
+
+    .cool-photo:hover {
+      transform: scale(1.025); /* Efek zoom tipis premium */
+      box-shadow: 0 20px 40px rgba(46, 204, 113, 0.25); /* Glow hijau tipis */
+      border-color: var(--primary-color);
+    }
+
+    /* TIPOGRAFI SECARA GLOBAL DI DALAM CONTAINER */
+    h1, h2, h3 {
+      font-family: var(--font-family);
+      color: #ffffff;
+    }
+
+    /* FOOTER LEBAR */
     footer {
-      background-color: rgba(15, 23, 42, 0.9);
+      background-color: rgba(10, 15, 30, 0.95);
       color: #94a3b8;
-      padding: 40px 24px;
+      padding: 48px 24px;
       border-top: 1px solid var(--glass-border);
       margin-top: auto;
     }
 
     .footer-container {
-      max-width: 1000px;
+      max-width: 1300px;
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
@@ -161,31 +184,33 @@
     }
 
     .footer-brand {
-      flex: 1;
+      flex: 1.5;
       min-width: 280px;
     }
 
     .footer-brand h4 {
       color: #ffffff;
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 12px;
     }
 
     .footer-brand p {
-      font-size: 0.85rem;
-      max-width: 320px;
+      font-size: 0.9rem;
+      max-width: 380px;
+      line-height: 1.6;
     }
 
     .footer-links {
       display: flex;
-      gap: 48px;
+      gap: 64px;
     }
 
     .footer-col h5 {
       color: #ffffff;
-      font-size: 0.9rem;
-      margin-bottom: 12px;
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+      font-weight: 700;
     }
 
     .footer-col ul {
@@ -193,13 +218,14 @@
     }
 
     .footer-col ul li {
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
 
     .footer-col ul li a {
       color: #94a3b8;
-      font-size: 0.85rem;
+      font-size: 0.9rem;
       text-decoration: none;
+      transition: color 0.2s;
     }
 
     .footer-col ul li a:hover {
@@ -207,18 +233,23 @@
     }
 
     .footer-bottom {
-      max-width: 1000px;
+      max-width: 1300px;
       margin: 32px auto 0 auto;
       padding-top: 24px;
       border-top: 1px solid rgba(255, 255, 255, 0.05);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 0.8rem;
+      font-size: 0.85rem;
     }
 
     /* RESPONSIVE DESIGN */
     @media (max-width: 768px) {
+      .container {
+        padding: 24px;
+        margin: 20px auto;
+      }
+
       .nav-toggle {
         display: flex;
       }
@@ -228,7 +259,7 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: rgba(15, 23, 42, 0.95);
+        background-color: rgba(15, 23, 42, 0.98);
         border-bottom: 1px solid var(--glass-border);
         flex-direction: column;
         align-items: flex-start;
@@ -278,17 +309,17 @@
 
       <div class="nav-menu-wrapper" id="navMenuWrapper">
         <ul class="nav-menu">
-          <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a></li>
-          <li><a href="/journey/" class="nav-link {% if page.url contains '/journey/' %}active{% endif %}">Journey</a></li>
-          <li><a href="/cv/" class="nav-link {% if page.url contains '/cv/' %}active{% endif %}">About</a></li>
-          <li><a href="/projects/" class="nav-link {% if page.url contains '/projects/' %}active{% endif %}">Projects</a></li>
-          <li><a href="/gallery/" class="nav-link {% if page.url contains '/gallery/' %}active{% endif %}">Gallery</a></li>
+          <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}\">Home</a></li>
+          <li><a href="/journey/" class="nav-link {% if page.url contains '/journey/' %}active{% endif %}\">Journey</a></li>
+          <li><a href="/cv/" class="nav-link {% if page.url contains '/cv/' %}active{% endif %}\">About</a></li>
+          <li><a href="/projects/" class="nav-link {% if page.url contains '/projects/' %}active{% endif %}\">Projects</a></li>
+          <li><a href="/gallery/" class="nav-link {% if page.url contains '/gallery/' %}active{% endif %}\">Gallery</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN CONTAINER (1300PX) -->
   <main class="container">
     {{ content }}
   </main>
@@ -298,8 +329,7 @@
     <div class="footer-container">
       <div class="footer-brand">
         <h4>Rivaldi Fiqriyansyah</h4>
-        <p>Lulusan Teknik Geomatika dan Geospasial, saat ini sedang menempuh S1 Perencanaan Wilayah dan Kota. Memiliki pengalaman kerja sejak 2022 dengan fokus pada pengolahan data spasial, pemetaan modern, serta pengembangan perencanaan wilayah yang berkelanjutan.
-</p>
+        <p>Lulusan Teknik Geomatika yang berfokus pada analisis spasial, pemetaan digital, dan perencanaan wilayah berkelanjutan.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
@@ -326,7 +356,7 @@
     </div>
   </footer>
 
-  <!-- SCRIPT FOR MOBILE MENU -->
+  <!-- SCRIPT -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const navToggle = document.getElementById('navToggle');
