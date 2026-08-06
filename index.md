@@ -1,136 +1,43 @@
 ---
 layout: default
+title: Home
+permalink: /
 ---
 
-<!-- CSS untuk Tampilan -->
-<style>
-  :root {
-    /* DEFAULT SEKARANG DARK MODE */
-    --bg-color: #1a1a1a;
-    --text-color: #f0f0f0;
-    --link-color: #ff80bf;
-    /* Latar belakang dengan efek overlay gelap agar teks tetap terbaca */
-    --bg-image: linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.9)), url('/images/background-utama.jpg'); 
-  }
-  
-  body.light-mode {
-    /* MODE TERANG KETIKA TOMBOL DIKLIK */
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --link-color: #e83e8c;
-    --bg-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95)), url('/images/background-utama.jpg');
-  }
-  
-  body {
-    background-color: var(--bg-color);
-    background-image: var(--bg-image);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Bikin background diam saat di-scroll */
-    color: var(--text-color);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    transition: background-color 0.3s, color 0.3s, background-image 0.3s;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px 20px 40px 20px;
-  }
-
-  /* Style untuk Foto Sampul / Banner */
-  .cover-photo {
-    width: 100%;
-    height: 250px;
-    background-image: url('/images/sampul-banner.jpg');
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px 12px 0 0;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  }
-
-  .navbar {
-    display: flex;
-    justify-content: center; /* Menu dibikin di tengah biar rapi */
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 40px;
-    border-bottom: 1px solid rgba(150, 150, 150, 0.2);
-    padding-bottom: 15px;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .navbar a:hover, .navbar a.active {
-    color: var(--link-color);
-  }
-  
-  /* Style untuk pemisah ( | ) */
-  .separator {
-    color: var(--text-color);
-    font-size: 16px;
-  }
-
-  .nav-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    color: var(--text-color);
-    font-size: 18px;
-    margin-left: 15px;
-  }
-</style>
-
-<!-- Foto Sampul (Banner) -->
-<div class="cover-photo"></div>
-
-<!-- Bagian Navigasi Atas -->
-<div class="navbar">
-  <a href="/">Home</a> <span>|</span>
-  <a href="/journey/">Journey</a> <span>|</span>
-  <a href="/cv/">About</a> <span>|</span>
-  <a href="/projects/">Projects</a> <span>|</span>
-  <a href="/gallery/">Gallery</a>
-  <button class="nav-btn" onclick="toggleTheme()" title="Ganti Terang/Gelap">🌓</button>
+<!-- BANNER LAPANGAN UTAMA -->
+<div style="margin-bottom: 32px;">
+  <img src="/images/sampul-banner.jpg" alt="Rivaldi Lapangan" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
 </div>
 
-<!-- Bagian Konten Utama -->
-<h1>Rivaldi Fiqriyansah - Land Surveyor, Spatial Analysis & Urban Planning</h1>
-<p><em>Dramaga, Bogor | ArcGIS Pro | Google Earth Engine</em></p>
+<!-- NAMA & JABATAN UTAMA -->
+<h1 style="font-size: 2.2rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 24px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+  Rivaldi Fiqriyansyah - Land Surveyor | GIS & Spatial Data Analyst | Urban Planning Student
+</h1>
 
-<div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px;">
-  
-  <!-- KOLOM KIRI: Teks Biografi -->
-  <div style="flex: 1; min-width: 300px; line-height: 1.6;">
-    <p>Selamat datang di portofolio digital saya.</p>
-    
-    <p>Saat ini saya bekerja sebagai <strong>Land Surveyor</strong> untuk pengembang di kawasan Bogor, sekaligus menempuh studi S1 <strong>Perencanaan Wilayah dan Kota (PWK)</strong>. Saya memiliki ketertarikan yang sangat kuat terhadap analisis geospasial makro dan bagaimana data spasial dapat diolah menjadi landasan pengambilan keputusan tata ruang yang komprehensif.</p>
-    
-    <p>Tujuan profesional saya adalah bertransisi secara utuh menjadi seorang <em>Urban Planner</em> dan <em>Geospatial Analyst</em>, berfokus pada <em>Spatial Analysis</em>, <em>Remote Sensing</em>, dan Pemetaan Tematik menggunakan ArcGIS Pro dan skrip cloud.</p>
+<!-- STRUKTUR DUA KOLOM ESTETIK -->
+<div style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 32px; align-items: start;">
+
+  <!-- KOLOM KIRI: TEKS PERKENALAN UTUH TANPA DIUBAH -->
+  <div>
+    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 16px; color: #f1f5f9;">
+      Selamat datang di portofolio digital saya.
+    </p>
+    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px; color: #e2e8f0;">
+      Saat ini saya bekerja sebagai <strong>Land Surveyor</strong> untuk pengembang di kawasan Bogor, sekaligus menempuh studi S1 <strong>Perencanaan Wilayah dan Kota (PWK)</strong>. Saya memiliki ketertarikan yang sangat kuat terhadap analisis geospasial makro dan bagaimana data spasial dapat diolah menjadi landasan pengambilan keputusan tata ruang yang komprehensif.
+    </p>
+    <p style="font-size: 1.05rem; line-height: 1.8; color: #cbd5e1;">
+      Tujuan profesional saya adalah bertransisi secara utuh menjadi seorang <em>Urban Planner</em> dan <em>Geospatial Analyst</em>, berfokus pada <em>Spatial Analysis, Remote Sensing</em>, dan Pemetaan Tematik menggunakan ArcGIS Pro dan skrip cloud.
+    </p>
   </div>
 
-  <!-- KOLOM KANAN: Foto Profil & Kontak -->
-  <div style="flex: 0 0 250px;">
-    <img src="/images/foto-profil.jpg" alt="Rivaldi Fiqriyansah" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3);">
-    
-    <div style="font-size: 0.85em; margin-top: 15px; line-height: 1.6;">
-      <strong>Kontak & Info:</strong><br>
-      📍 Dramaga, Bogor, Jawa Barat<br>
-      📧 rivaldifiqriyansah@gmail.com<br>
-      🔗 <a href="https://www.linkedin.com/in/rivaldi-fiqriyansah-b6b1b3282/" target="_blank" style="color: var(--link-color);">LinkedIn</a>
+  <!-- KOLOM KANAN: FOTO PROFIL & KONTAK SEBELAH KANAN -->
+  <div style="text-align: center;">
+    <img src="/images/foto-profil.jpg" alt="Rivaldi Kerja" style="width: 100%; max-width: 280px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.3); margin-bottom: 16px;">
+
+    <div style="background: rgba(255, 255, 255, 0.05); padding: 16px; border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05); text-align: left;">
+      <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 8px; color: var(--primary-color);">Kontak & Info:</h3>
+      <p style="font-size: 0.9rem; color: #cbd5e1; margin-bottom: 4px;">📍 Dramaga, Bogor, Jawa Barat</p>
     </div>
   </div>
 
 </div>
-
-<!-- Script JavaScript untuk interaksi tombol -->
-<script>
-  // Fungsi ubah tema sekarang dari Dark (default) ke Light
-  function toggleTheme() {
-    document.body.classList.toggle('light-mode');
-  }
-</script>
