@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div style="display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 40px;">
-  <img src="/images/banner-lapangan.jpg" alt="Rivaldi Lapangan" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 16px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+  <img src="/images/sampul-banner.jpg" alt="Rivaldi Lapangan" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 16px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
   <h1 style="font-size: 2.5rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 12px;">Rivaldi Fiqriyansyah</h1>
   <p style="font-size: 1.25rem; color: var(--text-muted); font-weight: 500; max-width: 600px;">Land Surveyor, Spatial Analyst & Urban Planner</p>
 </div>
@@ -25,6 +25,6 @@ permalink: /
   </div>
 
   <div style="text-align: center;">
-    <img src="/images/rivaldi-kerja.jpg" alt="Rivaldi Kerja" style="width: 100%; max-width: 350px; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.08);">
+    <img src="/images/foto-profil.jpg" alt="Rivaldi Kerja" style="width: 100%; max-width: 350px; border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,0.08);">
   </div>
 </div>
