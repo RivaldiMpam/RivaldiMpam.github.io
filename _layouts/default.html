@@ -1,257 +1,322 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }} - Rivaldi Fiqriyansah</title>
-  <link rel="icon" href="/favicon_RF.png">
-  <link rel="shortcut icon" href="/favicon_RF.png">
-  
-  <style>
-    :root {
-      --bg-color: #1a1a1a;
-      --text-color: #f0f0f0;
-      --link-color: #ff80bf;
-      --bg-image: linear-gradient(rgba(26, 26, 26, 0.85), rgba(26, 26, 26, 0.9)), url('/images/background-utama.jpg'); 
-    }
-    
-    body.light-mode {
-      --bg-color: #ffffff;
-      --text-color: #333333;
-      --link-color: #e83e8c;
-      --bg-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.95)), url('/images/background-utama.jpg');
-    }
-    
-    body {
-      background-color: var(--bg-color);
-      background-image: var(--bg-image);
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-      color: var(--text-color);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      transition: background-color 0.3s, color 0.3s, background-image 0.3s;
-      max-width: 1100px; /* Diperlebar agar layout lebih lega untuk konten journey/projects */
-      margin: 0 auto;
-      padding: 20px 20px 40px 20px;
-    }
+<!-- NAV BAR BARU (RESPONSIF & MODERN) -->
+<nav class="custom-navbar">
+  <div class="nav-container">
+    <!-- Brand Logo / Nama -->
+    <a href="/" class="nav-brand">
+      <span class="brand-name">Rivaldi Fiqriyansyah</span>
+      <span class="brand-sub">Geomatics & Urban Planner</span>
+    </a>
 
-    .navbar {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 40px;
-      border-bottom: 1px solid rgba(150, 150, 150, 0.2);
-      padding-bottom: 15px;
-    }
-    
-    .navbar a {
-      text-decoration: none;
-      color: var(--text-color);
-      font-size: 16px;
-      font-weight: bold;
-    }
-    
-    .navbar a:hover, .navbar a.active {
-      color: var(--link-color);
-    }
-    
-    .separator {
-      color: var(--text-color);
-      font-size: 16px;
-    }
+    <!-- Hamburger Menu Button untuk Mobile -->
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
 
-    .nav-btn {
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: var(--text-color);
-      font-size: 18px;
-      margin-left: 15px;
-    }
+    <!-- Menu Links & Toggles -->
+    <div class="nav-menu-wrapper" id="navMenuWrapper">
+      <ul class="nav-menu">
+        <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a></li>
+        <li><a href="/cv/" class="nav-link {% if page.url contains '/cv/' or page.url contains '/journey/' %}active{% endif %}">About</a></li>
+        <li><a href="/projects/" class="nav-link {% if page.url contains '/projects/' or page.url contains '/software/' %}active{% endif %}">Projects</a></li>
+        <li><a href="/gallery/" class="nav-link {% if page.url contains '/gallery/' %}active{% endif %}">Gallery</a></li>
+        <li><a href="/writing/" class="nav-link {% if page.url contains '/writing/' or page.url contains '/blog/' %}active{% endif %}">Writing</a></li>
+      </ul>
 
-    .lang-select {
-      background-color: transparent;
-      color: var(--text-color);
-      border: 1px solid var(--text-color);
-      border-radius: 4px;
-      padding: 2px 6px;
-      font-size: 14px;
-      font-weight: bold;
-      cursor: pointer;
-      margin-left: 15px;
-    }
+      <!-- Grup Tombol Tambahan (Bahasa & Tema) -->
+      <div class="nav-actions">
+        <!-- Selector Bahasa Mini -->
+        <div class="lang-selector">
+          <a href="#" class="lang-btn active">ID</a>
+          <span class="lang-divider">|</span>
+          <a href="/en/" class="lang-btn">EN</a>
+        </div>
 
-    .lang-select option {
-      color: #333;
-    }
-
-    /* --- STYLE DROPDOWN SOFTWARE MENU --- */
-    .nav-dropdown {
-      position: relative;
-      display: inline-block;
-      /* Jembatan tak terlihat biar kursor gak putus */
-      padding-bottom: 20px; 
-      /* Biar layout navbar gak kegeser karena padding di atas */
-      margin-bottom: -20px; 
-    }
-
-    .nav-dropbtn {
-      background: none;
-      color: var(--text-color);
-      font-size: 16px;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-      padding: 0;
-      font-family: inherit;
-      transition: color 0.3s;
-    }
-
-    .nav-dropbtn:hover, .nav-dropdown:hover .nav-dropbtn {
-      color: var(--link-color);
-    }
-
-    .nav-dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: var(--bg-color);
-      min-width: 170px;
-      box-shadow: 0px 8px 15px rgba(0,0,0,0.5);
-      z-index: 100;
-      border-radius: 8px;
-      /* Diubah jadi 100% biar nempel ke jembatan */
-      top: 100%; 
-      left: 50%;
-      transform: translateX(-50%);
-      overflow: hidden;
-      border: 1px solid rgba(150, 150, 150, 0.2);
-    }
-
-    .nav-dropdown-content a {
-      color: var(--text-color);
-      padding: 12px 16px;
-      text-decoration: none;
-      display: flex;
-      align-items: center; /* Memastikan logo dan teks sejajar */
-      font-size: 14px;
-      border-bottom: 1px solid rgba(150, 150, 150, 0.1);
-    }
-
-    .nav-dropdown-content a:last-child {
-      border-bottom: none;
-    }
-
-    .nav-dropdown-content a:hover {
-      background-color: rgba(150, 150, 150, 0.1);
-      color: var(--link-color);
-    }
-
-    /* Style untuk icon/logo aplikasi */
-    .nav-icon {
-      width: 18px;
-      height: 18px;
-      margin-right: 10px;
-      object-fit: contain;
-    }
-
-    /* Tampilkan dropdown saat kursor berada di atas tulisan software */
-    .nav-dropdown:hover .nav-dropdown-content {
-      display: block;
-      animation: fadeInDrop 0.3s ease;
-    }
-
-    @keyframes fadeInDrop {
-      from { opacity: 0; transform: translate(-50%, -10px); }
-      to { opacity: 1; transform: translate(-50%, 0); }
-    }
-  </style>
-</head>
-<body>
-  
-  <div class="navbar">
-    <a href="/">Home</a> <span class="separator">|</span>
-    <a href="/journey/">Journey</a> <span class="separator">|</span>
-    <a href="/cv/">Experience</a> <span class="separator">|</span>
-    <a href="/projects/">Projects</a> <span class="separator">|</span>
-    <a href="/gallery/">Gallery</a> <span class="separator">|</span>
-    <a href="/writing/">Writing</a> <span class="separator">|</span>
-    
-    <!-- DROPDOWN SOFTWARE -->
-    <div class="nav-dropdown">
-      <button class="nav-dropbtn">Software ▾</button>
-      <div class="nav-dropdown-content">
-        <!-- Nanti siapkan file gambar icon di dalam folder /images/icons/ -->
-        <a href="/software/arcgis/"><img src="/images/icons/arcgis-pro-logo.png" class="nav-icon" alt="ArcGIS">ArcGIS Pro</a>
-        <a href="/software/qgis/"><img src="/images/icons/qgis.png" class="nav-icon" alt="QGIS">QGIS</a>
-        <a href="/software/gee/"><img src="/images/icons/gee.png" class="nav-icon" alt="GEE">Google Earth Engine</a>
-        <a href="/software/rstudio/"><img src="/images/icons/rstudio.png" class="nav-icon" alt="RStudio">RStudio</a>
+        <!-- Tombol Dark Mode (Ikon Sun/Moon) -->
+        <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
       </div>
     </div>
-    
-    <span class="separator">|</span>
-    <a href="/contact/">Contact</a>
-    
-    <select class="lang-select" id="lang-switcher" onchange="changeLanguage()">
-      <option value="id">ID</option>
-      <option value="en">EN</option>
-    </select>
-
-    <button class="nav-btn" onclick="toggleTheme()" title="Ganti Terang/Gelap">🌓</button>
   </div>
+</nav>
 
-  <script>
-    // 1. Cek Tema
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-      document.body.classList.add('light-mode');
+<!-- CSS UNTUK NAVBAR MODERN -->
+<style>
+  :root {
+    --nav-bg-light: rgba(255, 255, 255, 0.95);
+    --nav-bg-dark: rgba(24, 28, 36, 0.95);
+    --nav-text-light: #2c3e50;
+    --nav-text-dark: #f5f6fa;
+    --nav-accent: #2ecc71; /* Warna hijau alam/geomatika */
+    --nav-border-light: rgba(0, 0, 0, 0.08);
+    --nav-border-dark: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Reset navbar container */
+  .custom-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: var(--nav-bg-light);
+    border-bottom: 1px solid var(--nav-border-light);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+  }
+
+  /* Jika beralih ke dark mode (bisa disesuaikan dengan class body di jekyll kamu, misal .dark-theme) */
+  body.dark-theme .custom-navbar {
+    background-color: var(--nav-bg-dark);
+    border-bottom: 1px solid var(--nav-border-dark);
+  }
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Brand Styling */
+  .nav-brand {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: inherit;
+  }
+  .brand-name {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--nav-text-light);
+  }
+  body.dark-theme .brand-name {
+    color: var(--nav-text-dark);
+  }
+  .brand-sub {
+    font-size: 0.75rem;
+    color: #7f8c8d;
+    margin-top: 1px;
+  }
+
+  /* Menu & Link Styling */
+  .nav-menu-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #64748b;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+
+  .nav-link:hover, .nav-link.active {
+    color: var(--nav-accent);
+    background-color: rgba(46, 204, 113, 0.08);
+  }
+
+  /* Actions (Language & Theme) */
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-left: 1px solid var(--nav-border-light);
+    padding-left: 16px;
+  }
+  body.dark-theme .nav-actions {
+    border-left: 1px solid var(--nav-border-dark);
+  }
+
+  .lang-selector {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+  }
+
+  .lang-btn {
+    text-decoration: none;
+    color: #94a3b8;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+
+  .lang-btn.active, .lang-btn:hover {
+    color: var(--nav-text-light);
+  }
+  body.dark-theme .lang-btn.active, body.dark-theme .lang-btn:hover {
+    color: var(--nav-text-dark);
+  }
+
+  .lang-divider {
+    color: #cbd5e1;
+    font-size: 0.75rem;
+  }
+
+  /* Theme Toggle Button */
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50%;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  .theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    color: var(--nav-accent);
+  }
+  body.dark-theme .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .sun-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Hamburger Button */
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .nav-toggle .bar {
+    width: 100%;
+    height: 2px;
+    background-color: var(--nav-text-light);
+    transition: all 0.3s ease;
+  }
+  body.dark-theme .nav-toggle .bar {
+    background-color: var(--nav-text-dark);
+  }
+
+  /* RESPONSIVE DESIGN (MOBILE & TABLET) */
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: flex;
     }
 
-    function toggleTheme() {
-      document.body.classList.toggle('light-mode');
-      localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+    .nav-menu-wrapper {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--nav-bg-light);
+      border-bottom: 1px solid var(--nav-border-light);
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 24px;
+      box-sizing: border-box;
+      display: none; /* disembunyikan secara default */
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+    }
+    body.dark-theme .nav-menu-wrapper {
+      background-color: var(--nav-bg-dark);
+      border-bottom: 1px solid var(--nav-border-dark);
     }
 
-    // 2. Fungsi Eksekusi Ganti Bahasa dari Dropdown
-    function changeLanguage() {
-      const selectedLang = document.getElementById('lang-switcher').value;
-      localStorage.setItem('lang', selectedLang);
-      
-      let currentPath = window.location.pathname;
-      if (selectedLang === 'en' && !currentPath.startsWith('/en/')) {
-        window.location.href = '/en' + (currentPath === '/' ? '' : currentPath);
-      } else if (selectedLang === 'id' && currentPath.startsWith('/en/')) {
-        let newPath = currentPath.replace('/en/', '/');
-        window.location.href = newPath === '//' ? '/' : newPath;
+    .nav-menu-wrapper.show {
+      display: flex;
+    }
+
+    .nav-menu {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      gap: 16px;
+    }
+
+    .nav-link {
+      display: block;
+      width: 100%;
+      padding: 8px 12px;
+    }
+
+    .nav-actions {
+      border-left: none;
+      border-top: 1px solid var(--nav-border-light);
+      padding-left: 0;
+      padding-top: 16px;
+      width: 100%;
+      justify-content: space-between;
+    }
+    body.dark-theme .nav-actions {
+      border-top: 1px solid var(--nav-border-dark);
+    }
+
+    /* Animasi hamburger jadi silang (X) */
+    .nav-toggle.open .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .nav-toggle.open .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .nav-toggle.open .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+</style>
+
+<!-- JAVASCRIPT UNTUK HAMBURGER MENU -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.getElementById('navToggle');
+    const navMenuWrapper = document.getElementById('navMenuWrapper');
+
+    // Toggle menu mobile
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('open');
+      navMenuWrapper.classList.toggle('show');
+    });
+
+    // Menutup menu jika mengklik di luar area navbar
+    document.addEventListener('click', (e) => {
+      if (!navToggle.contains(e.target) && !navMenuWrapper.contains(e.target)) {
+        navToggle.classList.remove('open');
+        navMenuWrapper.classList.remove('show');
       }
-    }
-
-    // 3. Pintar Membaca URL dan Update Navigasi
-    // Diubah menjadi event listener agar tidak bentrok dengan script di halaman lain
-    window.addEventListener('load', function() {
-      let currentPath = window.location.pathname;
-      let isEnglishUrl = currentPath.startsWith('/en/');
-
-      // Sesuaikan teks dropdown dengan URL
-      document.getElementById('lang-switcher').value = isEnglishUrl ? 'en' : 'id';
-
-      // Dinamis mengarahkan link navigasi (termasuk yang di dalam dropdown) 
-      // biar tetap stay di bahasa yang sama
-      const navLinks = document.querySelectorAll('.navbar a');
-      navLinks.forEach(link => {
-        let href = link.getAttribute('href');
-        
-        if (isEnglishUrl && href.startsWith('/') && !href.startsWith('/en/')) {
-           // Tambah /en kalau lagi di mode Inggris
-           let newHref = '/en' + (href === '/' ? '' : href);
-           link.setAttribute('href', newHref);
-        }
-      });
     });
   </script>
-
-  {{ content }}
-
-</body>
-</html>
