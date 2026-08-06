@@ -4,16 +4,11 @@ title: Home
 permalink: /
 ---
 
-<!-- =======================================================
-     1) HERO — full-bleed foto action (misalnya lagi survei
-     di lapangan pakai GNSS/total station). Ganti background-image
-     di bawah. Overlay gelap otomatis biar teks tetap kebaca.
-     ======================================================= -->
-<section class="hero full-bleed" style="background-image: url('/images/hero-lapangan.jpg');">
+<section class="hero full-bleed" style="background-image: url('/images/sampul-banner.jpg');">
   <div class="hero-content">
     <p class="eyebrow hero-eyebrow i18n" data-id="Land Surveyor · GIS Analyst · Urban Planning" data-en="Land Surveyor · GIS Analyst · Urban Planning">Land Surveyor · GIS Analyst · Urban Planning</p>
-    <h1 class="i18n" data-id="[Headline utama — 1 kalimat kuat soal siapa lo]" data-en="[Main headline — one strong line about who you are]">[Headline utama — 1 kalimat kuat soal siapa lo]</h1>
-    <p class="i18n" data-id="[Subheadline 1-2 kalimat: apa yang lo kerjakan sehari-hari dan ke mana arah karier lo]" data-en="[Subheadline, 1-2 sentences: what you do day-to-day and where you're headed]">[Subheadline 1-2 kalimat: apa yang lo kerjakan sehari-hari dan ke mana arah karier lo]</p>
+    <h1 class="i18n" data-id="Surveyor yang Menjembatani Data Lapangan dan Perencanaan Kota" data-en="A Surveyor Bridging Field Data and City Planning">Surveyor yang Menjembatani Data Lapangan dan Perencanaan Kota</h1>
+    <p class="i18n" data-id="Saya mengukur, mengolah, dan menganalisis data spasial untuk mendukung proyek konstruksi dan perencanaan wilayah — mulai dari pengukuran lapangan sampai jadi peta digital yang siap dipakai." data-en="I measure, process, and analyze spatial data to support construction projects and regional planning — from field surveys to ready-to-use digital maps.">Saya mengukur, mengolah, dan menganalisis data spasial untuk mendukung proyek konstruksi dan perencanaan wilayah — mulai dari pengukuran lapangan sampai jadi peta digital yang siap dipakai.</p>
     <div class="hero-actions">
       <a href="/projects/" class="btn btn-primary i18n" data-id="Lihat Proyek" data-en="View Projects">Lihat Proyek</a>
       <a href="/cv/" class="btn btn-outline i18n" data-id="Unduh CV" data-en="Download CV">Unduh CV</a>
@@ -21,47 +16,43 @@ permalink: /
   </div>
 </section>
 
-<!-- =======================================================
-     2) STATS BAR — 4 angka singkat yang nunjukin kredibilitas.
-     Contoh: lama pengalaman, jumlah proyek/titik survei yang
-     udah dikerjain, semester PWK, jumlah tools yang dikuasai.
-     Ganti angka & label sesuai data asli lo.
-     ======================================================= -->
 <section class="stats-bar full-bleed">
   <div class="stats-bar-inner">
     <div class="stat-item">
-      <div class="stat-number">[X+]</div>
-      <div class="stat-label i18n" data-id="Tahun Pengalaman Survei" data-en="Years of Surveying Experience">Tahun Pengalaman Survei</div>
+      <div class="stat-number">3+</div>
+      <div class="stat-label i18n" data-id="Tahun Pengalaman Lapangan" data-en="Years of Field Experience">Tahun Pengalaman Lapangan</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">[X]</div>
-      <div class="stat-label i18n" data-id="Proyek Dikerjakan" data-en="Projects Completed">Proyek Dikerjakan</div>
+      <div class="stat-number">142 Ha</div>
+      <div class="stat-label i18n" data-id="Area Topografi Tersurvei" data-en="Topographic Area Surveyed">Area Topografi Tersurvei</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">[Sem. X]</div>
+      <div class="stat-number">Sem. 4</div>
       <div class="stat-label i18n" data-id="S1 Perencanaan Wilayah &amp; Kota" data-en="Urban &amp; Regional Planning, BSc">S1 Perencanaan Wilayah &amp; Kota</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">[X]</div>
-      <div class="stat-label i18n" data-id="Tools GIS Dikuasai" data-en="GIS Tools Mastered">Tools GIS Dikuasai</div>
+      <div class="stat-number">5+</div>
+      <div class="stat-label i18n" data-id="Instrumen &amp; Software Survei" data-en="Survey Instruments &amp; Software">Instrumen &amp; Software Survei</div>
     </div>
   </div>
 </section>
 
-<!-- =======================================================
-     3) ABOUT / INTRO — dua kolom: teks profil kiri, foto kanan
-     (foto portrait/half-body, bukan foto lapangan action lagi
-     biar ada variasi). Urutan otomatis kebalik di mobile
-     (foto duluan) lewat class .about-media.
-     ======================================================= -->
 <section class="section">
   <div class="section-inner about-grid">
     <div class="about-copy">
       <p class="eyebrow i18n" data-id="Tentang Saya" data-en="About Me">Tentang Saya</p>
-      <h2 class="i18n" data-id="[Judul singkat, mis: Menghubungkan Data Lapangan dengan Perencanaan Kota]" data-en="[Short heading, e.g. Connecting Field Data with City Planning]">[Judul singkat, mis: Menghubungkan Data Lapangan dengan Perencanaan Kota]</h2>
-      <p class="i18n" data-id="[Paragraf 1 — latar belakang: pendidikan Geodesi/Geomatika, peran sekarang sebagai Land Surveyor]" data-en="[Paragraph 1 — background: Geomatics education, current role as a Land Surveyor]">[Paragraf 1 — latar belakang: pendidikan Geodesi/Geomatika, peran sekarang sebagai Land Surveyor]</p>
-      <p class="i18n" data-id="[Paragraf 2 — kenapa lanjut S1 PWK, dan gimana itu nyambung ke kerjaan]" data-en="[Paragraph 2 — why you're pursuing the PWK degree and how it connects to your work]">[Paragraf 2 — kenapa lanjut S1 PWK, dan gimana itu nyambung ke kerjaan]</p>
-      <a href="/cv/" class="btn btn-outline i18n" data-id="Baca Perjalanan Lengkap" data-en="Read Full Journey">Baca Perjalanan Lengkap</a>
+      <h2 class="i18n" data-id="Dari Lapangan ke Perencanaan Wilayah" data-en="From the Field to Regional Planning">Dari Lapangan ke Perencanaan Wilayah</h2>
+      <p class="i18n"
+         data-id="Saya lulusan Teknik Geomatika &amp; Geospasial, dengan pengalaman sebagai surveyor dan pengawas lapangan di berbagai proyek konstruksi. Saya terbiasa mengumpulkan, mengolah, dan menganalisis data spasial pakai berbagai software GIS, perangkat GPS, dan teknologi pemetaan modern lainnya."
+         data-en="I'm a Geomatics &amp; Geospatial Engineering graduate with experience as a surveyor and field supervisor on various construction projects. I'm used to collecting, processing, and analyzing spatial data using GIS software, GPS devices, and other modern mapping technology.">
+        Saya lulusan Teknik Geomatika &amp; Geospasial, dengan pengalaman sebagai surveyor dan pengawas lapangan di berbagai proyek konstruksi. Saya terbiasa mengumpulkan, mengolah, dan menganalisis data spasial pakai berbagai software GIS, perangkat GPS, dan teknologi pemetaan modern lainnya.
+      </p>
+      <p class="i18n"
+         data-id="Sekarang saya bekerja sebagai Land Surveyor di PT Inti Innovaco, sambil menempuh studi S1 Perencanaan Wilayah dan Kota (PWK) di Universitas Terbuka. Minat saya ada di sistem informasi geografis, teknologi perkotaan, dan perencanaan berkelanjutan — dan saya berkomitmen terus mengembangkan keahlian ini ke level yang lebih jauh."
+         data-en="I currently work as a Land Surveyor at PT Inti Innovaco, while pursuing a bachelor's degree in Urban and Regional Planning (PWK) at Universitas Terbuka. My interests lie in geographic information systems, urban technology, and sustainable planning — and I'm committed to keep growing these skills further.">
+        Sekarang saya bekerja sebagai Land Surveyor di PT Inti Innovaco, sambil menempuh studi S1 Perencanaan Wilayah dan Kota (PWK) di Universitas Terbuka. Minat saya ada di sistem informasi geografis, teknologi perkotaan, dan perencanaan berkelanjutan — dan saya berkomitmen terus mengembangkan keahlian ini ke level yang lebih jauh.
+      </p>
+      <a href="/journey/" class="btn btn-outline i18n" data-id="Baca Perjalanan Lengkap" data-en="Read Full Journey">Baca Perjalanan Lengkap</a>
     </div>
     <div class="about-media">
       <img src="/images/foto-profil.jpg" alt="Rivaldi Fiqriyansyah" class="cool-photo">
@@ -69,17 +60,12 @@ permalink: /
   </div>
 </section>
 
-<!-- =======================================================
-     4) FOCUS AREAS — 3 kartu (bukan foto, pakai ikon simpel biar
-     konsisten kayak halaman "Solutions" Esri / lini bisnis Astra).
-     Ganti judul & deskripsi tiap kartu.
-     ======================================================= -->
 <section class="section section-alt full-bleed">
   <div class="section-inner">
     <div class="section-header">
       <p class="eyebrow i18n" data-id="Fokus Keahlian" data-en="Areas of Focus">Fokus Keahlian</p>
-      <h2 class="i18n" data-id="[Judul singkat, mis: Tiga Bidang yang Saya Dalami]" data-en="[Short heading, e.g. Three Areas I Work In]">[Judul singkat, mis: Tiga Bidang yang Saya Dalami]</h2>
-      <p class="i18n" data-id="[1 kalimat pengantar singkat sebelum grid kartu]" data-en="[One short intro sentence before the card grid]">[1 kalimat pengantar singkat sebelum grid kartu]</p>
+      <h2 class="i18n" data-id="Tiga Bidang yang Saya Dalami" data-en="Three Areas I Work In">Tiga Bidang yang Saya Dalami</h2>
+      <p class="i18n" data-id="Dari pengukuran di lapangan sampai perencanaan di atas kertas — ini lingkup kerja saya sehari-hari." data-en="From measuring in the field to planning on paper — this is my day-to-day scope of work.">Dari pengukuran di lapangan sampai perencanaan di atas kertas — ini lingkup kerja saya sehari-hari.</p>
     </div>
     <div class="focus-grid">
       <div class="focus-card">
@@ -87,105 +73,91 @@ permalink: /
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v4M12 21v-4M5 12H3M21 12h-2"/><circle cx="12" cy="12" r="5"/></svg>
         </div>
         <h3 class="i18n" data-id="Land Surveying" data-en="Land Surveying">Land Surveying</h3>
-        <p class="i18n" data-id="[Deskripsi singkat: GNSS RTK, total station, pengukuran topografi, dsb]" data-en="[Short description: GNSS RTK, total station, topographic surveying, etc]">[Deskripsi singkat: GNSS RTK, total station, pengukuran topografi, dsb]</p>
+        <p class="i18n" data-id="Pengukuran lapangan pakai Total Station, GNSS Geodetic, dan drone — mulai dari topografi, pemasangan patok batas, sampai stake-out konstruksi." data-en="Field surveying with Total Station, Geodetic GNSS, and drones — from topographic surveys and boundary staking to construction stake-out.">Pengukuran lapangan pakai Total Station, GNSS Geodetic, dan drone — mulai dari topografi, pemasangan patok batas, sampai stake-out konstruksi.</p>
       </div>
       <div class="focus-card">
         <div class="focus-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 4v13M15 7v13M4 6l5-2 6 3 5-2v13l-5 2-6-3-5 2Z"/></svg>
         </div>
         <h3 class="i18n" data-id="GIS &amp; Spatial Analysis" data-en="GIS &amp; Spatial Analysis">GIS &amp; Spatial Analysis</h3>
-        <p class="i18n" data-id="[Deskripsi singkat: pengolahan data spasial, QGIS/ArcGIS, pemetaan tematik]" data-en="[Short description: spatial data processing, QGIS/ArcGIS, thematic mapping]">[Deskripsi singkat: pengolahan data spasial, QGIS/ArcGIS, pemetaan tematik]</p>
+        <p class="i18n" data-id="Mengolah data hasil ukur jadi peta dan basis data yang rapi, pakai ArcGIS Pro, Civil 3D, dan Agisoft Metashape untuk hasil mapping drone." data-en="Turning raw survey data into clean maps and databases, using ArcGIS Pro, Civil 3D, and Agisoft Metashape for drone mapping output.">Mengolah data hasil ukur jadi peta dan basis data yang rapi, pakai ArcGIS Pro, Civil 3D, dan Agisoft Metashape untuk hasil mapping drone.</p>
       </div>
       <div class="focus-card">
         <div class="focus-icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V9l6-4 6 4v12M9 21v-6h6v6M15 21V9l6 4v8"/></svg>
         </div>
         <h3 class="i18n" data-id="Urban Planning" data-en="Urban Planning">Urban Planning</h3>
-        <p class="i18n" data-id="[Deskripsi singkat: studi PWK, RTRW, analisis wilayah]" data-en="[Short description: PWK coursework, spatial plans, regional analysis]">[Deskripsi singkat: studi PWK, RTRW, analisis wilayah]</p>
+        <p class="i18n" data-id="Sedang menempuh S1 Perencanaan Wilayah dan Kota, buat ngedalemin sisi perencanaan dari data yang selama ini saya kumpulin langsung di lapangan." data-en="Currently pursuing a degree in Urban and Regional Planning, to go deeper into the planning side of the data I've been collecting in the field.">Sedang menempuh S1 Perencanaan Wilayah dan Kota, buat ngedalemin sisi perencanaan dari data yang selama ini saya kumpulin langsung di lapangan.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- =======================================================
-     5) FEATURED WORK — 3 proyek unggulan, tiap kartu 1 foto/
-     screenshot peta (rasio 4:3, otomatis di-crop). Tambah lebih
-     dari 3 kartu kalau perlu, gridnya bakal wrap otomatis.
-     Link tiap kartu ke halaman /projects/ detail masing-masing.
-     ======================================================= -->
 <section class="section">
   <div class="section-inner">
     <div class="section-header">
       <p class="eyebrow i18n" data-id="Proyek Terpilih" data-en="Featured Work">Proyek Terpilih</p>
-      <h2 class="i18n" data-id="[Judul singkat, mis: Beberapa Proyek yang Pernah Saya Kerjakan]" data-en="[Short heading, e.g. A Few Projects I've Worked On]">[Judul singkat, mis: Beberapa Proyek yang Pernah Saya Kerjakan]</h2>
+      <h2 class="i18n" data-id="Beberapa Proyek yang Pernah Saya Kerjakan" data-en="A Few Projects I've Worked On">Beberapa Proyek yang Pernah Saya Kerjakan</h2>
     </div>
     <div class="work-grid">
-      <a href="/projects/proyek-1/" class="work-card">
-        <img src="/images/proyek-1.jpg" alt="[Nama proyek 1]" class="work-card-img">
-        <div class="work-card-body">
-          <div class="work-card-tag i18n" data-id="Land Surveying" data-en="Land Surveying">Land Surveying</div>
-          <h3 class="i18n" data-id="[Nama Proyek 1]" data-en="[Project 1 Name]">[Nama Proyek 1]</h3>
-          <p class="i18n" data-id="[1 kalimat ringkas hasil/scope proyek]" data-en="[One short sentence on scope/result]">[1 kalimat ringkas hasil/scope proyek]</p>
-        </div>
-      </a>
-      <a href="/projects/proyek-2/" class="work-card">
-        <img src="/images/proyek-2.jpg" alt="[Nama proyek 2]" class="work-card-img">
+      <a href="/software/arcgis/digitasi/" class="work-card">
+        <img src="/images/software/georeference-pdf.jpg" alt="Spatial Data Recovery" class="work-card-img">
         <div class="work-card-body">
           <div class="work-card-tag i18n" data-id="GIS &amp; Spatial Analysis" data-en="GIS &amp; Spatial Analysis">GIS &amp; Spatial Analysis</div>
-          <h3 class="i18n" data-id="[Nama Proyek 2]" data-en="[Project 2 Name]">[Nama Proyek 2]</h3>
-          <p class="i18n" data-id="[1 kalimat ringkas hasil/scope proyek]" data-en="[One short sentence on scope/result]">[1 kalimat ringkas hasil/scope proyek]</p>
+          <h3 class="i18n" data-id="Spatial Data Recovery" data-en="Spatial Data Recovery">Spatial Data Recovery</h3>
+          <p class="i18n" data-id="Menyelamatkan data 60 bidang lahan (10,7 ha) yang hilang, lewat digitasi dan georeferencing peta lama." data-en="Recovering 60 land parcels (10.7 ha) of missing data through digitizing and georeferencing an old map.">Menyelamatkan data 60 bidang lahan (10,7 ha) yang hilang, lewat digitasi dan georeferencing peta lama.</p>
         </div>
       </a>
-      <a href="/projects/proyek-3/" class="work-card">
-        <img src="/images/proyek-3.jpg" alt="[Nama proyek 3]" class="work-card-img">
+      <a href="/software/arcgis/model-builder/" class="work-card">
+        <img src="/images/software/hasil-peta-topografi.jpg" alt="Peta Topografi Kecamatan" class="work-card-img">
         <div class="work-card-body">
           <div class="work-card-tag i18n" data-id="Urban Planning" data-en="Urban Planning">Urban Planning</div>
-          <h3 class="i18n" data-id="[Nama Proyek 3]" data-en="[Project 3 Name]">[Nama Proyek 3]</h3>
-          <p class="i18n" data-id="[1 kalimat ringkas hasil/scope proyek]" data-en="[One short sentence on scope/result]">[1 kalimat ringkas hasil/scope proyek]</p>
+          <h3 class="i18n" data-id="Peta Topografi Kecamatan" data-en="Sub-District Topographic Map">Peta Topografi Kecamatan</h3>
+          <p class="i18n" data-id="Membuat peta topografi tingkat kecamatan pakai data DEMNAS BIG, buat mendukung tahap awal perencanaan tata ruang." data-en="Producing a sub-district-level topographic map using BIG's DEMNAS data, to support early-stage spatial planning.">Membuat peta topografi tingkat kecamatan pakai data DEMNAS BIG, buat mendukung tahap awal perencanaan tata ruang.</p>
+        </div>
+      </a>
+      <a href="/software/arcgis/model-builder/" class="work-card">
+        <img src="/images/software/modelbuilder-workflow.jpg" alt="Otomatisasi ModelBuilder" class="work-card-img">
+        <div class="work-card-body">
+          <div class="work-card-tag i18n" data-id="GIS &amp; Spatial Analysis" data-en="GIS &amp; Spatial Analysis">GIS &amp; Spatial Analysis</div>
+          <h3 class="i18n" data-id="Otomatisasi ModelBuilder" data-en="ModelBuilder Automation">Otomatisasi ModelBuilder</h3>
+          <p class="i18n" data-id="Merancang alur kerja otomatis di ArcGIS Pro biar proses ekstraksi topografi lebih cepat dan bisa dipakai ulang." data-en="Designing an automated ArcGIS Pro workflow to make topographic extraction faster and reusable.">Merancang alur kerja otomatis di ArcGIS Pro biar proses ekstraksi topografi lebih cepat dan bisa dipakai ulang.</p>
         </div>
       </a>
     </div>
   </div>
 </section>
 
-<!-- =======================================================
-     6) JOURNEY / TIMELINE — milestone singkat (bukan foto),
-     3-5 titik cukup: mulai kuliah Geodesi, kerja pertama,
-     mulai PWK, dst. Sesuaikan tanggal & isinya.
-     ======================================================= -->
 <section class="section section-alt full-bleed">
   <div class="section-inner" style="max-width: 760px;">
     <div class="section-header">
       <p class="eyebrow i18n" data-id="Perjalanan" data-en="Journey">Perjalanan</p>
-      <h2 class="i18n" data-id="[Judul singkat, mis: Titik-Titik Penting]" data-en="[Short heading, e.g. Key Milestones]">[Judul singkat, mis: Titik-Titik Penting]</h2>
+      <h2 class="i18n" data-id="Titik-Titik Penting" data-en="Key Milestones">Titik-Titik Penting</h2>
     </div>
     <div class="timeline">
       <div class="timeline-item">
-        <div class="timeline-date">[Tahun]</div>
-        <h3 class="i18n" data-id="[Milestone 1]" data-en="[Milestone 1]">[Milestone 1]</h3>
-        <p class="i18n" data-id="[Deskripsi singkat 1-2 kalimat]" data-en="[Short 1-2 sentence description]">[Deskripsi singkat 1-2 kalimat]</p>
+        <div class="timeline-date">2022</div>
+        <h3 class="i18n" data-id="Magang di PT Kalimantan Industrial Park Indonesia" data-en="Internship at PT Kalimantan Industrial Park Indonesia">Magang di PT Kalimantan Industrial Park Indonesia</h3>
+        <p class="i18n" data-id="Langkah pertama sebagai Asisten GIS Analis, mengolah data lahan dan belajar dasar-dasar pemetaan lapangan." data-en="First step as a GIS Analyst Assistant, processing land data and learning the basics of field mapping.">Langkah pertama sebagai Asisten GIS Analis, mengolah data lahan dan belajar dasar-dasar pemetaan lapangan.</p>
       </div>
       <div class="timeline-item">
-        <div class="timeline-date">[Tahun]</div>
-        <h3 class="i18n" data-id="[Milestone 2]" data-en="[Milestone 2]">[Milestone 2]</h3>
-        <p class="i18n" data-id="[Deskripsi singkat 1-2 kalimat]" data-en="[Short 1-2 sentence description]">[Deskripsi singkat 1-2 kalimat]</p>
+        <div class="timeline-date">2022 – 2025</div>
+        <h3 class="i18n" data-id="Asisten Surveyor, lalu Surveyor di PT KIPI" data-en="Surveyor Assistant, then Surveyor at PT KIPI">Asisten Surveyor, lalu Surveyor di PT KIPI</h3>
+        <p class="i18n" data-id="Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare." data-en="Grew from community land surveys to supervising land development across hundreds of hectares of industrial area.">Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare.</p>
       </div>
       <div class="timeline-item">
-        <div class="timeline-date">[Tahun]</div>
-        <h3 class="i18n" data-id="[Milestone 3]" data-en="[Milestone 3]">[Milestone 3]</h3>
-        <p class="i18n" data-id="[Deskripsi singkat 1-2 kalimat]" data-en="[Short 1-2 sentence description]">[Deskripsi singkat 1-2 kalimat]</p>
+        <div class="timeline-date">2026 – Sekarang</div>
+        <h3 class="i18n" data-id="Land Surveyor di PT Inti Innovaco, sambil kuliah PWK" data-en="Land Surveyor at PT Inti Innovaco, while studying PWK">Land Surveyor di PT Inti Innovaco, sambil kuliah PWK</h3>
+        <p class="i18n" data-id="Kembali ke Bogor, kerja mandiri tanpa tim, sambil mulai serius menekuni jalur perencanaan wilayah dan kota." data-en="Back in Bogor, working independently without a team, while starting to seriously pursue the urban and regional planning path.">Kembali ke Bogor, kerja mandiri tanpa tim, sambil mulai serius menekuni jalur perencanaan wilayah dan kota.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- =======================================================
-     7) CTA BAND — penutup sebelum footer, ajakan kontak.
-     ======================================================= -->
 <section class="cta-band full-bleed">
   <div class="section-inner">
-    <h2 class="i18n" data-id="[Ajakan singkat, mis: Tertarik Kolaborasi?]" data-en="[Short call to action, e.g. Interested in Working Together?]">[Ajakan singkat, mis: Tertarik Kolaborasi?]</h2>
-    <p class="i18n" data-id="[1 kalimat pendukung sebelum tombol kontak]" data-en="[One supporting sentence before the contact buttons]">[1 kalimat pendukung sebelum tombol kontak]</p>
+    <h2 class="i18n" data-id="Tertarik Kolaborasi?" data-en="Interested in Working Together?">Tertarik Kolaborasi?</h2>
+    <p class="i18n" data-id="Terbuka buat ngobrolin proyek survei, pemetaan, atau riset spasial. Hubungi saya lewat email atau LinkedIn." data-en="Open to talk about survey, mapping, or spatial research projects. Reach out via email or LinkedIn.">Terbuka buat ngobrolin proyek survei, pemetaan, atau riset spasial. Hubungi saya lewat email atau LinkedIn.</p>
     <div class="cta-actions">
       <a href="mailto:rivaldifiqriyansah@gmail.com" class="btn btn-primary i18n" data-id="Hubungi Saya" data-en="Get in Touch">Hubungi Saya</a>
       <a href="https://linkedin.com/in/rivaldifiqriyansyah" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
