@@ -11,7 +11,7 @@ permalink: /
 
 <!-- NAMA & JABATAN UTAMA -->
 <h1 style="font-size: 2.2rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 24px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
-  Rivaldi Fiqriyansyah - Land Surveyor | GIS & Spatial Data Analyst | Urban Planning Student
+  Rivaldi Fiqriyansyah - Land Surveyor, GIS & Spatial Data Analyst, Urban Planning Student
 </h1>
 
 <!-- STRUKTUR DUA KOLOM ESTETIK -->
@@ -19,16 +19,17 @@ permalink: /
 
   <!-- KOLOM KIRI: TEKS PERKENALAN UTUH TANPA DIUBAH -->
   <div>
-    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 16px; color: #f1f5f9;">
-      Selamat datang di portofolio digital saya.
-    </p>
-    <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px; color: #e2e8f0;">
-      Saat ini saya bekerja sebagai <strong>Land Surveyor</strong> untuk pengembang di kawasan Bogor, sekaligus menempuh studi S1 <strong>Perencanaan Wilayah dan Kota (PWK)</strong>. Saya memiliki ketertarikan yang sangat kuat terhadap analisis geospasial makro dan bagaimana data spasial dapat diolah menjadi landasan pengambilan keputusan tata ruang yang komprehensif.
-    </p>
-    <p style="font-size: 1.05rem; line-height: 1.8; color: #cbd5e1;">
-      Tujuan profesional saya adalah bertransisi secara utuh menjadi seorang <em>Urban Planner</em> dan <em>Geospatial Analyst</em>, berfokus pada <em>Spatial Analysis, Remote Sensing</em>, dan Pemetaan Tematik menggunakan ArcGIS Pro dan skrip cloud.
-    </p>
-  </div>
+  <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 16px; color: #f1f5f9;">
+    Selamat datang di portofolio digital saya.
+  </p>
+  <p style="font-size: 1.05rem; line-height: 1.8; margin-bottom: 16px; color: #e2e8f0;">
+    Saat ini saya bekerja sebagai <strong>Land Surveyor</strong> di salah satu pengembang perumahan di Bogor, sekaligus sedang menempuh studi S1 <strong>Perencanaan Wilayah dan Kota (PWK)</strong>. Saya terbiasa mengolah dan menganalisis data spasial, serta tertarik bagaimana data tersebut bisa digunakan untuk mendukung perencanaan wilayah yang lebih baik.
+  </p>
+  <p style="font-size: 1.05rem; line-height: 1.8; color: #cbd5e1;">
+    Ke depannya, saya ingin berkembang menjadi Urban Planner dan Geospatial Analyst, dengan fokus pada analisis spasial, pengolahan data citra, serta pembuatan peta tematik menggunakan tools seperti ArcGIS Pro dan teknologi berbasis cloud.
+  </p>
+</div>
+
 
   <!-- KOLOM KANAN: FOTO PROFIL & KONTAK SEBELAH KANAN -->
   <div style="text-align: center;">
