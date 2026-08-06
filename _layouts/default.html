@@ -1,322 +1,421 @@
-<!-- NAV BAR BARU (RESPONSIF & MODERN) -->
-<nav class="custom-navbar">
-  <div class="nav-container">
-    <!-- Brand Logo / Nama -->
-    <a href="/" class="nav-brand">
-      <span class="brand-name">Rivaldi Fiqriyansyah</span>
-      <span class="brand-sub">Geomatics & Urban Planner</span>
-    </a>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | Rivaldi Fiqriyansyah</title>
 
-    <!-- Hamburger Menu Button untuk Mobile -->
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
+  <!-- IMPORT FONT PROFESIONAL KORPORAT (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Menu Links & Toggles -->
-    <div class="nav-menu-wrapper" id="navMenuWrapper">
-      <ul class="nav-menu">
-        <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a></li>
-        <li><a href="/cv/" class="nav-link {% if page.url contains '/cv/' or page.url contains '/journey/' %}active{% endif %}">About</a></li>
-        <li><a href="/projects/" class="nav-link {% if page.url contains '/projects/' or page.url contains '/software/' %}active{% endif %}">Projects</a></li>
-        <li><a href="/gallery/" class="nav-link {% if page.url contains '/gallery/' %}active{% endif %}">Gallery</a></li>
-        <li><a href="/writing/" class="nav-link {% if page.url contains '/writing/' or page.url contains '/blog/' %}active{% endif %}">Writing</a></li>
-      </ul>
+  <style>
+    /* RESET & VARIABEL UTAMA */
+    :root {
+      --font-primary: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --bg-color: #f8fafc; /* Latar belakang abu terang yang premium */
+      --text-main: #1e293b; /* Slate dark untuk kenyamanan membaca */
+      --text-muted: #64748b; /* Slate medium */
+      --accent-color: #10b981; /* Hijau Emerald khas Geomatika/Alam */
+      --accent-hover: #059669;
+      --card-bg: #ffffff;
+      --border-color: #e2e8f0;
+      --max-width: 1100px;
+    }
 
-      <!-- Grup Tombol Tambahan (Bahasa & Tema) -->
-      <div class="nav-actions">
-        <!-- Selector Bahasa Mini -->
-        <div class="lang-selector">
-          <a href="#" class="lang-btn active">ID</a>
-          <span class="lang-divider">|</span>
-          <a href="/en/" class="lang-btn">EN</a>
-        </div>
+    /* GLOBAL STYLING */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        <!-- Tombol Dark Mode (Ikon Sun/Moon) -->
-        <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle theme">
-          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-</nav>
-
-<!-- CSS UNTUK NAVBAR MODERN -->
-<style>
-  :root {
-    --nav-bg-light: rgba(255, 255, 255, 0.95);
-    --nav-bg-dark: rgba(24, 28, 36, 0.95);
-    --nav-text-light: #2c3e50;
-    --nav-text-dark: #f5f6fa;
-    --nav-accent: #2ecc71; /* Warna hijau alam/geomatika */
-    --nav-border-light: rgba(0, 0, 0, 0.08);
-    --nav-border-dark: rgba(255, 255, 255, 0.08);
-  }
-
-  /* Reset navbar container */
-  .custom-navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    background-color: var(--nav-bg-light);
-    border-bottom: 1px solid var(--nav-border-light);
-    backdrop-filter: blur(8px);
-    transition: all 0.3s ease;
-  }
-
-  /* Jika beralih ke dark mode (bisa disesuaikan dengan class body di jekyll kamu, misal .dark-theme) */
-  body.dark-theme .custom-navbar {
-    background-color: var(--nav-bg-dark);
-    border-bottom: 1px solid var(--nav-border-dark);
-  }
-
-  .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 12px 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  /* Brand Styling */
-  .nav-brand {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    color: inherit;
-  }
-  .brand-name {
-    font-size: 1.15rem;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    color: var(--nav-text-light);
-  }
-  body.dark-theme .brand-name {
-    color: var(--nav-text-dark);
-  }
-  .brand-sub {
-    font-size: 0.75rem;
-    color: #7f8c8d;
-    margin-top: 1px;
-  }
-
-  /* Menu & Link Styling */
-  .nav-menu-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 32px;
-  }
-
-  .nav-menu {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-link {
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: #64748b;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-  }
-
-  .nav-link:hover, .nav-link.active {
-    color: var(--nav-accent);
-    background-color: rgba(46, 204, 113, 0.08);
-  }
-
-  /* Actions (Language & Theme) */
-  .nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    border-left: 1px solid var(--nav-border-light);
-    padding-left: 16px;
-  }
-  body.dark-theme .nav-actions {
-    border-left: 1px solid var(--nav-border-dark);
-  }
-
-  .lang-selector {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.85rem;
-  }
-
-  .lang-btn {
-    text-decoration: none;
-    color: #94a3b8;
-    font-weight: 600;
-    transition: color 0.2s ease;
-  }
-
-  .lang-btn.active, .lang-btn:hover {
-    color: var(--nav-text-light);
-  }
-  body.dark-theme .lang-btn.active, body.dark-theme .lang-btn:hover {
-    color: var(--nav-text-dark);
-  }
-
-  .lang-divider {
-    color: #cbd5e1;
-    font-size: 0.75rem;
-  }
-
-  /* Theme Toggle Button */
-  .theme-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 6px;
-    border-radius: 50%;
-    color: #64748b;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.2s, color 0.2s;
-  }
-
-  .theme-toggle:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-    color: var(--nav-accent);
-  }
-  body.dark-theme .theme-toggle:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-  }
-
-  .sun-icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  /* Hamburger Button */
-  .nav-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 22px;
-    height: 18px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-  }
-
-  .nav-toggle .bar {
-    width: 100%;
-    height: 2px;
-    background-color: var(--nav-text-light);
-    transition: all 0.3s ease;
-  }
-  body.dark-theme .nav-toggle .bar {
-    background-color: var(--nav-text-dark);
-  }
-
-  /* RESPONSIVE DESIGN (MOBILE & TABLET) */
-  @media (max-width: 768px) {
-    .nav-toggle {
+    body {
+      font-family: var(--font-primary);
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
       display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* TYPOGRAPHY */
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      font-size: 1rem;
+      color: #334155;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+    }
+
+    /* HEADER & NAVBAR */
+    .custom-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-bottom: 1px solid var(--border-color);
+      backdrop-filter: blur(12px);
+      transition: all 0.3s ease;
+    }
+
+    .nav-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-brand {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-name {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      color: #0f172a;
+    }
+
+    .brand-sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      margin-top: 1px;
     }
 
     .nav-menu-wrapper {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: var(--nav-bg-light);
-      border-bottom: 1px solid var(--nav-border-light);
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 20px;
-      padding: 24px;
-      box-sizing: border-box;
-      display: none; /* disembunyikan secara default */
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
-    }
-    body.dark-theme .nav-menu-wrapper {
-      background-color: var(--nav-bg-dark);
-      border-bottom: 1px solid var(--nav-border-dark);
-    }
-
-    .nav-menu-wrapper.show {
       display: flex;
+      align-items: center;
+      gap: 32px;
     }
 
     .nav-menu {
-      flex-direction: column;
-      align-items: flex-start;
-      width: 100%;
-      gap: 16px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 28px;
     }
 
     .nav-link {
-      display: block;
-      width: 100%;
-      padding: 8px 12px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--accent-color);
+      background-color: rgba(16, 185, 129, 0.08);
     }
 
     .nav-actions {
-      border-left: none;
-      border-top: 1px solid var(--nav-border-light);
-      padding-left: 0;
-      padding-top: 16px;
-      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-left: 1px solid var(--border-color);
+      padding-left: 16px;
+    }
+
+    .lang-selector {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.85rem;
+    }
+
+    .lang-btn {
+      color: #94a3b8;
+      font-weight: 700;
+    }
+
+    .lang-btn.active, .lang-btn:hover {
+      color: #0f172a;
+    }
+
+    .lang-divider {
+      color: #cbd5e1;
+    }
+
+    /* HAMBURGER TOGGLE (MOBILE) */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
       justify-content: space-between;
-    }
-    body.dark-theme .nav-actions {
-      border-top: 1px solid var(--nav-border-dark);
+      width: 20px;
+      height: 16px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
     }
 
-    /* Animasi hamburger jadi silang (X) */
-    .nav-toggle.open .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
+    .nav-toggle .bar {
+      width: 100%;
+      height: 2px;
+      background-color: #0f172a;
+      transition: all 0.3s ease;
     }
-    .nav-toggle.open .bar:nth-child(2) {
-      opacity: 0;
+
+    /* MAIN CONTENT CONTAINER */
+    .main-content {
+      flex: 1;
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 40px 24px;
     }
-    .nav-toggle.open .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
+
+    /* FOOTER (GAYA PERUSAHAAN/KORPORAT) */
+    .custom-footer {
+      background-color: #0f172a; /* Warna gelap eksklusif */
+      color: #f1f5f9;
+      border-top: 1px solid #1e293b;
+      padding: 48px 24px 24px;
+      margin-top: auto;
     }
-  }
-</style>
 
-<!-- JAVASCRIPT UNTUK HAMBURGER MENU -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const navToggle = document.getElementById('navToggle');
-    const navMenuWrapper = document.getElementById('navMenuWrapper');
+    .footer-container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
 
-    // Toggle menu mobile
-    navToggle.addEventListener('click', () => {
-      navToggle.classList.toggle('open');
-      navMenuWrapper.classList.toggle('show');
-    });
+    .footer-about .footer-logo {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
 
-    // Menutup menu jika mengklik di luar area navbar
-    document.addEventListener('click', (e) => {
-      if (!navToggle.contains(e.target) && !navMenuWrapper.contains(e.target)) {
-        navToggle.classList.remove('open');
-        navMenuWrapper.classList.remove('show');
+    .footer-about p {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      max-width: 450px;
+    }
+
+    .footer-contact h4 {
+      color: #ffffff;
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .footer-contact p {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .social-link {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .social-link:hover {
+      color: var(--accent-color);
+    }
+
+    .footer-bottom {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding-top: 24px;
+      border-top: 1px solid #1e293b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: flex;
       }
+
+      .nav-menu-wrapper {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 1px solid var(--border-color);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 24px;
+        box-sizing: border-box;
+        display: none;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+      }
+
+      .nav-menu-wrapper.show {
+        display: flex;
+      }
+
+      .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 16px;
+      }
+
+      .nav-link {
+        display: block;
+        width: 100%;
+        padding: 8px 12px;
+      }
+
+      .nav-actions {
+        border-left: none;
+        border-top: 1px solid var(--border-color);
+        padding-left: 0;
+        padding-top: 16px;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+
+      /* Animasi Hamburger */
+      .nav-toggle.open .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .nav-toggle.open .bar:nth-child(2) {
+        opacity: 0;
+      }
+      .nav-toggle.open .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER & NAVBAR -->
+  <header class="custom-navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">
+        <span class="brand-name">Rivaldi Fiqriyansyah</span>
+        <span class="brand-sub">Geomatics & Urban Planner</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <div class="nav-menu-wrapper" id="navMenuWrapper">
+        <ul class="nav-menu">
+          <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a></li>
+          <li><a href="/cv/" class="nav-link {% if page.url contains '/cv/' or page.url contains '/journey/' %}active{% endif %}">About</a></li>
+          <li><a href="/projects/" class="nav-link {% if page.url contains '/projects/' or page.url contains '/software/' %}active{% endif %}">Projects</a></li>
+          <li><a href="/gallery/" class="nav-link {% if page.url contains '/gallery/' %}active{% endif %}">Gallery</a></li>
+          <li><a href="/writing/" class="nav-link {% if page.url contains '/writing/' or page.url contains '/blog/' %}active{% endif %}">Writing</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="lang-selector">
+            <a href="#" class="lang-btn active">ID</a>
+            <span class="lang-divider\">|</span>
+            <a href="/en/" class="lang-btn">EN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- WADAH UTAMA UNTUK KONTEN GENERASI MARKDOWN -->
+  <main class="main-content">
+    {{ content }}
+  </main>
+
+  <!-- FOOTER PROFESIONAL (MENAMPILKAN KONTAK) -->
+  <footer class="custom-footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <div class="footer-logo">Rivaldi Fiqriyansyah</div>
+        <p>Lulusan Teknik Geomatika yang berfokus pada pengolahan data spasial, pemetaan modern, perencanaan wilayah berkelanjutan, dan teknologi perkotaan.</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Hubungi Saya</h4>
+        <p><strong>Email:</strong> rivaldi.fiqri@gmail.com (atau sesuaikan emailmu)</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/" target="_blank" class="social-link">LinkedIn</a>
+          <a href="https://github.com/RivaldiMpam" target="_blank" class="social-link">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Rivaldi Fiqriyansyah. All Rights Reserved.</p>
+      <p>Dibuat dengan Jekyll & GitHub Pages</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT UNTUK HAMBURGER MENU MOBILE -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navToggle = document.getElementById('navToggle');
+      const navMenuWrapper = document.getElementById('navMenuWrapper');
+
+      navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('open');
+        navMenuWrapper.classList.toggle('show');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!navToggle.contains(e.target) && !navMenuWrapper.contains(e.target)) {
+          navToggle.classList.remove('open');
+          navMenuWrapper.classList.remove('show');
+        }
+      });
     });
   </script>
+</body>
+</html>
