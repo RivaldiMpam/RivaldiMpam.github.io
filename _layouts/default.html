@@ -5,34 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title }} | Rivaldi Fiqriyansyah</title>
 
-  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <!-- Google Fonts: Plus Jakarta Sans (Premium Korporat) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    /* VARIABEL WARNA DAN STYLE UTAMA */
+    /* VARIABEL WARNA & TEMA GLASSMORPHISM */
     :root {
-      --font-main: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      --bg-color: #f8fafc; /* Latar belakang premium abu-slate sangat terang */
-      --text-main: #1e293b; /* Slate gelap untuk kenyamanan membaca */
-      --text-muted: #64748b; /* Slate medium */
-      --accent-color: #10b981; /* Hijau Emerald khas Geomatika & Tata Wilayah */
-      --accent-hover: #059669;
-      --card-bg: #ffffff;
-      --border-color: #e2e8f0;
-      --max-width: 1000px;
+      --primary-color: #2ecc71; /* Hijau Geomatika */
+      --primary-hover: #27ae60;
+      --text-light: #ffffff; /* Teks putih untuk background gelap */
+      --text-muted: #cbd5e1;
+      --glass-bg: rgba(15, 23, 42, 0.85); /* Box transparan gelap */
+      --glass-border: rgba(255, 255, 255, 0.08);
     }
 
-    body.dark-theme {
-      --bg-color: #0f172a; /* Gelap premium */
-      --text-main: #f1f5f9;
-      --text-muted: #94a3b8;
-      --card-bg: #1e293b;
-      --border-color: #334155;
-    }
-
-    /* GLOBAL RESET */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -40,108 +28,47 @@
     }
 
     body {
-      font-family: var(--font-main);
-      background-color: var(--bg-color);
-      color: var(--text-main);
-      line-height: 1.75;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      /* Background foto hutan pakis estetik (menggunakan gambar lokal atau fallback hutan hijau gelap berkualitas tinggi) */
+      background: linear-gradient(rgba(10, 15, 30, 0.6), rgba(10, 15, 30, 0.6)),
+                  url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: var(--text-light);
+      line-height: 1.6;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
-      min-height: 100vh;
-      transition: background-color 0.3s, color 0.3s;
-      -webkit-font-smoothing: antialiased;
     }
 
-    /* DESAIN OTOMATIS UNTUK TEKS MARKDOWN KAMU */
-    .main-content {
+    /* GLASSMORPHISM CONTAINER */
+    .container {
+      max-width: 1000px;
+      width: 90%;
+      margin: 40px auto;
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
       flex: 1;
-      width: 100%;
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 48px 24px;
     }
 
-    /* Styling Judul Utama Halaman */
-    .main-content h1 {
-      font-size: 2.25rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      color: #0f172a;
-      margin-bottom: 24px;
-      line-height: 1.25;
-    }
-    body.dark-theme .main-content h1 {
-      color: #ffffff;
-    }
-
-    /* Styling Sub-judul / Heading 2 */
-    .main-content h2 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      color: #1e293b;
-      margin-top: 40px;
-      margin-bottom: 16px;
-      border-left: 4px solid var(--accent-color);
-      padding-left: 12px;
-    }
-    body.dark-theme .main-content h2 {
-      color: #f1f5f9;
-    }
-
-    /* Styling Paragraph */
-    .main-content p {
-      font-size: 1.05rem;
-      color: var(--text-main);
-      margin-bottom: 20px;
-      opacity: 0.95;
-    }
-
-    /* Styling List (ul & ol) */
-    .main-content ul, .main-content ol {
-      margin-bottom: 24px;
-      padding-left: 24px;
-    }
-    .main-content li {
-      margin-bottom: 8px;
-      font-size: 1.05rem;
-    }
-
-    /* Styling Gambar Otomatis */
-    .main-content img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-      margin: 24px 0;
-      display: block;
-    }
-
-    /* Styling Teks Tebal (Bold) */
-    .main-content strong {
-      font-weight: 700;
-      color: #0f172a;
-    }
-    body.dark-theme .main-content strong {
-      color: #ffffff;
-    }
-
-    /* NAVBAR STYLING */
+    /* NAVBAR ELEGAN */
     .custom-navbar {
       position: sticky;
       top: 0;
       z-index: 1000;
       width: 100%;
-      background-color: rgba(255, 255, 255, 0.85);
-      border-bottom: 1px solid var(--border-color);
+      background: rgba(15, 23, 42, 0.8);
+      border-bottom: 1px solid var(--glass-border);
       backdrop-filter: blur(12px);
-      transition: all 0.3s ease;
-    }
-    body.dark-theme .custom-navbar {
-      background-color: rgba(15, 23, 42, 0.85);
+      -webkit-backdrop-filter: blur(12px);
     }
 
     .nav-container {
-      max-width: var(--max-width);
+      max-width: 1000px;
       margin: 0 auto;
       padding: 16px 24px;
       display: flex;
@@ -153,117 +80,56 @@
       display: flex;
       flex-direction: column;
       text-decoration: none;
-      color: inherit;
     }
 
     .brand-name {
       font-size: 1.2rem;
       font-weight: 800;
       letter-spacing: -0.5px;
-      color: #0f172a;
-    }
-    body.dark-theme .brand-name {
       color: #ffffff;
     }
 
     .brand-sub {
       font-size: 0.75rem;
-      color: var(--text-muted);
-      font-weight: 500;
-      margin-top: 2px;
+      color: var(--primary-color);
+      font-weight: 600;
     }
 
     .nav-menu-wrapper {
       display: flex;
       align-items: center;
-      gap: 32px;
+      gap: 24px;
     }
 
     .nav-menu {
       list-style: none;
       display: flex;
       align-items: center;
-      gap: 24px;
+      gap: 12px;
     }
 
     .nav-link {
-      text-decoration: none;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      color: var(--text-muted);
+      color: #94a3b8;
+      text-decoration: none;
       padding: 6px 12px;
       border-radius: 6px;
       transition: all 0.2s ease;
     }
 
     .nav-link:hover, .nav-link.active {
-      color: var(--accent-color);
-      background-color: rgba(16, 185, 129, 0.08);
+      color: var(--primary-color);
+      background-color: rgba(46, 204, 113, 0.1);
     }
 
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      border-left: 1px solid var(--border-color);
-      padding-left: 16px;
-    }
-
-    .lang-selector {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.85rem;
-    }
-
-    .lang-btn {
-      text-decoration: none;
-      color: #94a3b8;
-      font-weight: 700;
-    }
-
-    .lang-btn.active, .lang-btn:hover {
-      color: var(--text-main);
-    }
-
-    .lang-divider {
-      color: var(--border-color);
-    }
-
-    /* Theme Toggle Button (Dark Mode) */
-    .theme-toggle {
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 6px;
-      border-radius: 50%;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: background-color 0.2s, color 0.2s;
-    }
-
-    .theme-toggle:hover {
-      background-color: rgba(0, 0, 0, 0.05);
-      color: var(--accent-color);
-    }
-    body.dark-theme .theme-toggle:hover {
-      background-color: rgba(255, 255, 255, 0.05);
-    }
-
-    .sun-icon {
-      width: 20px;
-      height: 20px;
-    }
-
-    /* Hamburger Toggle Button (Mobile) */
+    /* HAMBURGER BUTTON (MOBILE) */
     .nav-toggle {
       display: none;
       flex-direction: column;
       justify-content: space-between;
-      width: 20px;
-      height: 16px;
+      width: 22px;
+      height: 18px;
       background: transparent;
       border: none;
       cursor: pointer;
@@ -272,81 +138,86 @@
     .nav-toggle .bar {
       width: 100%;
       height: 2px;
-      background-color: var(--text-main);
+      background-color: #ffffff;
       transition: all 0.3s ease;
     }
 
-    /* FOOTER (Inspirasi Pertamina & Astra) */
-    .custom-footer {
-      background-color: #0f172a;
+    /* FOOTER */
+    footer {
+      background-color: rgba(15, 23, 42, 0.9);
       color: #94a3b8;
-      padding: 48px 24px 24px;
-      border-top: 1px solid #1e293b;
+      padding: 40px 24px;
+      border-top: 1px solid var(--glass-border);
       margin-top: auto;
     }
 
     .footer-container {
-      max-width: var(--max-width);
+      max-width: 1000px;
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 40px;
-      margin-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 32px;
     }
 
-    .footer-about h4 {
+    .footer-brand {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .footer-brand h4 {
       color: #ffffff;
-      font-size: 1.2rem;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
-
-    .footer-about p {
-      font-size: 0.9rem;
-      max-width: 450px;
-      line-height: 1.6;
-    }
-
-    .footer-contact h4 {
-      color: #ffffff;
-      font-size: 1rem;
-      margin-bottom: 16px;
-    }
-
-    .footer-contact p {
-      font-size: 0.9rem;
+      font-size: 1.1rem;
+      font-weight: 700;
       margin-bottom: 8px;
     }
 
-    .footer-socials {
-      display: flex;
-      gap: 16px;
-      margin-top: 16px;
+    .footer-brand p {
+      font-size: 0.85rem;
+      max-width: 320px;
     }
 
-    .social-link {
-      color: #94a3b8;
+    .footer-links {
+      display: flex;
+      gap: 48px;
+    }
+
+    .footer-col h5 {
+      color: #ffffff;
       font-size: 0.9rem;
-      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-col ul li a {
+      color: #94a3b8;
+      font-size: 0.85rem;
       text-decoration: none;
     }
 
-    .social-link:hover {
-      color: var(--accent-color);
+    .footer-col ul li a:hover {
+      color: var(--primary-color);
     }
 
     .footer-bottom {
-      max-width: var(--max-width);
-      margin: 0 auto;
+      max-width: 1000px;
+      margin: 32px auto 0 auto;
       padding-top: 24px;
-      border-top: 1px solid #1e293b;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
       display: flex;
       justify-content: space-between;
       align-items: center;
       font-size: 0.8rem;
     }
 
-    /* RESPONSIVE DESIGN (MOBILE & TABLET) */
+    /* RESPONSIVE DESIGN */
     @media (max-width: 768px) {
       .nav-toggle {
         display: flex;
@@ -357,15 +228,14 @@
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--card-bg);
-        border-bottom: 1px solid var(--border-color);
+        background-color: rgba(15, 23, 42, 0.95);
+        border-bottom: 1px solid var(--glass-border);
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
         padding: 24px;
-        box-sizing: border-box;
         display: none;
-        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
       }
 
       .nav-menu-wrapper.show {
@@ -382,153 +252,95 @@
       .nav-link {
         display: block;
         width: 100%;
-        padding: 8px 12px;
       }
 
-      .nav-actions {
-        border-left: none;
-        border-top: 1px solid var(--border-color);
-        padding-left: 0;
-        padding-top: 16px;
-        width: 100%;
-        justify-content: space-between;
-      }
-
-      .footer-container {
-        grid-template-columns: 1fr;
-        gap: 32px;
-      }
-
-      .footer-bottom {
-        flex-direction: column;
-        gap: 12px;
-        text-align: center;
-      }
-
-      .nav-toggle.open .bar:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
-      }
-      .nav-toggle.open .bar:nth-child(2) {
-        opacity: 0;
-      }
-      .nav-toggle.open .bar:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
-      }
+      .nav-toggle.open .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+      .nav-toggle.open .bar:nth-child(2) { opacity: 0; }
+      .nav-toggle.open .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAVIGATION BAR -->
-  <header class="custom-navbar">
+  <!-- NAVBAR -->
+  <nav class="custom-navbar">
     <div class="nav-container">
       <a href="/" class="nav-brand">
         <span class="brand-name">Rivaldi Fiqriyansyah</span>
-        <span class="brand-sub">Geomatics & Urban Planner</span>
+        <span class="brand-sub">Land Surveyor | GIS & Spatial Data Analyst | Urban Planning Student</span>
       </a>
 
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span class="bar"></span>
         <span class="bar"></span>
-        <span class="bar"></span>
+        <span class="bar font"></span>
       </button>
 
       <div class="nav-menu-wrapper" id="navMenuWrapper">
         <ul class="nav-menu">
           <li><a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a></li>
           <li><a href="/journey/" class="nav-link {% if page.url contains '/journey/' %}active{% endif %}">Journey</a></li>
-          <li><a href="/cv/" class="nav-link {% if page.url contains '/cv/' %}active{% endif %}">CV</a></li>
-          <li><a href="/projects/" class="nav-link {% if page.url contains '/projects/' or page.url contains '/software/' %}active{% endif %}">Projects</a></li>
+          <li><a href="/cv/" class="nav-link {% if page.url contains '/cv/' %}active{% endif %}">About</a></li>
+          <li><a href="/projects/" class="nav-link {% if page.url contains '/projects/' %}active{% endif %}">Projects</a></li>
           <li><a href="/gallery/" class="nav-link {% if page.url contains '/gallery/' %}active{% endif %}">Gallery</a></li>
         </ul>
-
-        <div class="nav-actions">
-          <div class="lang-selector">
-            <a href="#" class="lang-btn active">ID</a>
-            <span class="lang-divider">|</span>
-            <a href="/en/" class="lang-btn">EN</a>
-          </div>
-
-          <button class="theme-toggle" id="themeToggleBtn" aria-label="Toggle theme">
-            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="5"></circle>
-              <line x1="12" y1="1" x2="12" y2="3"></line>
-              <line x1="12" y1="21" x2="12" y2="23"></line>
-              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-              <line x1="1" y1="12" x2="3" y2="12"></line>
-              <line x1="21" y1="12" x2="23" y2="12"></line>
-              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-            </svg>
-          </button>
-        </div>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <!-- KONTEN MARKDOWN MAKSIMAL Grounded -->
-  <main class="main-content">
+  <!-- MAIN CONTENT -->
+  <main class="container">
     {{ content }}
   </main>
 
-  <!-- FOOTER KONTAK (Astra / Pertamina Style) -->
-  <footer class="custom-footer">
+  <!-- FOOTER -->
+  <footer>
     <div class="footer-container">
-      <div class="footer-about">
+      <div class="footer-brand">
         <h4>Rivaldi Fiqriyansyah</h4>
-        <p>Insinyur Geomatika dan Perencana Kota Berkelanjutan. Berfokus pada pengolahan data spasial, pemetaan digital modern, dan tata ruang komprehensif.</p>
+        <p>Lulusan Teknik Geomatika dan Geospasial, saat ini sedang menempuh S1 Perencanaan Wilayah dan Kota. Memiliki pengalaman kerja sejak 2022 dengan fokus pada pengolahan data spasial, pemetaan modern, serta pengembangan perencanaan wilayah yang berkelanjutan.
+</p>
       </div>
-      <div class="footer-contact">
-        <h4>Kontak Hubung</h4>
-        <p><strong>Lokasi:</strong> Bogor, Jawa Barat, Indonesia</p>
-        <p><strong>Email:</strong> rivaldimpam@gmail.com</p>
-        <div class="footer-socials">
-          <a href="https://linkedin.com/in/rivaldifiqriyansyah" target="_blank" class="social-link">LinkedIn</a>
-          <a href="https://github.com/RivaldiMpam" target="_blank" class="social-link">GitHub</a>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Tautan</h5>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/journey/">Journey</a></li>
+            <li><a href="/cv/">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Kontak</h5>
+          <ul>
+            <li><a href="mailto:rivaldimpam@gmail.com">rivaldifiqriyansah@gmail.com</a></li>
+            <li><a href="https://linkedin.com/in/rivaldifiqriyansyah" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/RivaldiMpam" target="_blank">GitHub</a></li>
+          </ul>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Rivaldi Fiqriyansyah. Hak Cipta Dilindungi.</p>
+      <p>&copy; 2026 Rivaldi Fiqriyansyah. All Rights Reserved.</p>
       <p>Dibuat dengan Jekyll & GitHub Pages</p>
     </div>
   </footer>
 
-  <!-- JAVASCRIPT NAV TOGGLE & DARK MODE -->
+  <!-- SCRIPT FOR MOBILE MENU -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const navToggle = document.getElementById('navToggle');
       const navMenuWrapper = document.getElementById('navMenuWrapper');
-      const themeToggleBtn = document.getElementById('themeToggleBtn');
-      const body = document.body;
 
-      // Toggle Menu Mobile
       navToggle.addEventListener('click', () => {
         navToggle.classList.toggle('open');
         navMenuWrapper.classList.toggle('show');
       });
 
-      // Tutup menu saat klik luar navbar
       document.addEventListener('click', (e) => {
         if (!navToggle.contains(e.target) && !navMenuWrapper.contains(e.target)) {
           navToggle.classList.remove('open');
           navMenuWrapper.classList.remove('show');
-        }
-      });
-
-      // Simple Dark Mode
-      const savedTheme = localStorage.getItem('theme');
-      if (savedTheme === 'dark') {
-        body.classList.add('dark-theme');
-      }
-
-      themeToggleBtn.addEventListener('click', () => {
-        body.classList.toggle('dark-theme');
-        if (body.classList.contains('dark-theme')) {
-          localStorage.setItem('theme', 'dark');
-        } else {
-          localStorage.setItem('theme', 'light');
         }
       });
     });
