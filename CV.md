@@ -13,7 +13,7 @@ permalink: /cv/
     Lulusan Teknik Geomatika dengan pengalaman sebagai surveyor dan pengawas lapangan di berbagai proyek konstruksi. Terbiasa mengumpulkan, mengolah, dan menganalisis data spasial menggunakan berbagai software GIS, perangkat GPS, dan teknologi pemetaan modern lainnya.
   </p>
   <div class="hero-actions" style="margin-top:20px;">
-    <a href="/files/CV_Rivaldi Fiqriyansyah.pdf" class="btn btn-primary i18n" data-id="Unduh CV (PDF)" data-en="Download CV (PDF)">Unduh CV (PDF)</a>
+    <a href="/files/CV_RIVALDI FIQRIYANSAH.pdf" class="btn btn-primary i18n" data-id="Unduh CV (PDF)" data-en="Download CV (PDF)">Unduh CV (PDF)</a>
     <a href="mailto:rivaldifiqriyansah@gmail.com" class="btn btn-outline i18n" data-id="Hubungi Saya" data-en="Get in Touch">Hubungi Saya</a>
   </div>
 </div>
