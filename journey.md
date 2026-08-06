@@ -7,7 +7,7 @@ permalink: /journey/
 <div class="section-inner page-header">
   <p class="eyebrow i18n" data-id="Perjalanan" data-en="Journey">Perjalanan</p>
   <h1 class="i18n" data-id="Perjalanan Karier Saya" data-en="My Career Journey">Perjalanan Karier Saya</h1>
-  <p class="i18n" data-id="Dari magang pertama sampai jadi Land Surveyor mandiri — tiga fase yang membentuk cara saya bekerja hari ini." data-en="From my first internship to becoming an independent Land Surveyor — three phases that shaped how I work today.">Dari magang pertama sampai jadi Land Surveyor mandiri — tiga fase yang membentuk cara saya bekerja hari ini.</p>
+  <p class="i18n" data-id="Dari magang pertama sampai jadi Land Surveyor mandiri — tiga fase yang membentuk cara saya bekerja hari ini." data-en="From my first internship to becoming an independent Land Surveyor — three phases that shaped how I work today.">Cerita singkat dari fase awal magang hingga posisi saya saat ini.</p>
 </div>
 
 <div class="section">
