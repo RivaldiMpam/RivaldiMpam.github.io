@@ -1,965 +1,161 @@
-<!DOCTYPE html>
-<html lang="id" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | Rivaldi Fiqriyansyah</title>
-  <meta name="description" content="Rivaldi Fiqriyansyah — Land Surveyor, GIS &amp; Spatial Data Analyst, Urban Planning Student.">
+---
+layout: default
+title: Home
+permalink: /
+---
 
-  <!-- Set theme & language before first paint to avoid flash-of-wrong-theme -->
-  <script>
-    (function () {
-      var theme = localStorage.getItem('site-theme') || 'light';
-      var lang = localStorage.getItem('site-lang') || 'id';
-      document.documentElement.setAttribute('data-theme', theme);
-      document.documentElement.setAttribute('lang', lang);
-    })();
-  </script>
+<section class="hero full-bleed" style="background-image: url('/images/sampul-banner.jpg');">
+  <div class="hero-content">
+    <p class="eyebrow hero-eyebrow i18n" data-id="Land Surveyor · GIS Analyst · Urban Planning" data-en="Land Surveyor · GIS Analyst · Urban Planning">Land Surveyor · GIS Analyst · Urban Planning</p>
+    <h1 class="i18n" data-id="Surveyor yang Menjembatani Data Lapangan dan Perencanaan Kota" data-en="A Surveyor Bridging Field Data and City Planning">Surveyor yang Menjembatani Data Lapangan dan Perencanaan Kota</h1>
+    <p class="i18n" data-id="Saya mengukur, mengolah, dan menganalisis data spasial untuk mendukung proyek konstruksi dan perencanaan wilayah — mulai dari pengukuran lapangan sampai jadi peta digital yang siap dipakai." data-en="I measure, process, and analyze spatial data to support construction projects and regional planning — from field surveys to ready-to-use digital maps.">Saya mengukur, mengolah, dan menganalisis data spasial untuk mendukung proyek konstruksi dan perencanaan wilayah — mulai dari pengukuran lapangan sampai jadi peta digital yang siap dipakai.</p>
+    <div class="hero-actions">
+      <a href="/projects/" class="btn btn-primary i18n" data-id="Lihat Proyek" data-en="View Projects">Lihat Proyek</a>
+      <a href="/cv/" class="btn btn-outline i18n" data-id="Unduh CV" data-en="Download CV">Unduh CV</a>
+    </div>
+  </div>
+</section>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<section class="stats-bar full-bleed">
+  <div class="stats-bar-inner">
+    <div class="stat-item">
+      <div class="stat-number">3+</div>
+      <div class="stat-label i18n" data-id="Tahun Pengalaman Lapangan" data-en="Years of Field Experience">Tahun Pengalaman Lapangan</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">GIS &amp; GNSS</div>
+      <div class="stat-label i18n" data-id="Spatial Analysis Tools" data-en="Spatial Analysis Tools">Spatial Analysis Tools</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">Sem. 5</div>
+      <div class="stat-label i18n" data-id="S1 Perencanaan Wilayah &amp; Kota" data-en="Urban &amp; Regional Planning, BSc">S1 Perencanaan Wilayah &amp; Kota</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">9,2 Km</div>
+      <div class="stat-label i18n" data-id="Jalan Kawasan Diawasi" data-en="Area Road Supervised">Jalan Kawasan Diawasi</div>
+    </div>
+  </div>
+</section>
 
-  <style>
-    /* ============ DESIGN TOKENS ============ */
-    :root {
-      --font-display: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      --font-mono: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+<section class="section">
+  <div class="section-inner about-grid">
+    <div class="about-copy">
+      <p class="eyebrow i18n" data-id="Tentang Saya" data-en="About Me">Tentang Saya</p>
+      <h2 class="i18n" data-id="Dari Lapangan ke Perencanaan Wilayah" data-en="From the Field to Regional Planning">Dari Lapangan ke Perencanaan Wilayah</h2>
+      <p class="i18n"
+         data-id="Berlatar belakang Teknik Geomatika dan Geospasial, dengan pengalaman di survei dan pengawasan proyek konstruksi. Terbiasa mengolah data spasial menggunakan GIS, GNSS, dan teknologi pemetaan modern. Saat ini bekerja sebagai Land Surveyor dan menempuh studi Perencanaan Wilayah dan Kota, dengan fokus pada pengembangan solusi berbasis data untuk perencanaan berkelanjutan."
+         data-en="Background in Geomatics and Geospatial Engineering, with experience in surveying and construction project supervision. Used to processing spatial data using GIS, GNSS, and modern mapping technology. Currently working as a Land Surveyor while studying Urban and Regional Planning, with a focus on developing data-driven solutions for sustainable planning.">
+        Berlatar belakang Teknik Geomatika dan Geospasial, dengan pengalaman di survei dan pengawasan proyek konstruksi. Terbiasa mengolah data spasial menggunakan GIS, GNSS, dan teknologi pemetaan modern. Saat ini bekerja sebagai Land Surveyor dan menempuh studi Perencanaan Wilayah dan Kota, dengan fokus pada pengembangan solusi berbasis data untuk perencanaan berkelanjutan.
+      </p>
+      <a href="/journey/" class="btn btn-outline i18n" data-id="Baca Perjalanan Lengkap" data-en="Read Full Journey">Baca Perjalanan Lengkap</a>
+    </div>
+    <div class="about-media">
+      <img src="/images/foto-profil.jpg" alt="Rivaldi Fiqriyansyah" class="cool-photo">
+    </div>
+  </div>
+</section>
 
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 20px;
-      --max-width: 1160px;
-      --transition: 180ms ease;
-    }
+<section class="section section-alt full-bleed">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="eyebrow i18n" data-id="Fokus Keahlian" data-en="Areas of Focus">Fokus Keahlian</p>
+      <h2 class="i18n" data-id="Tiga Bidang yang Saya Dalami" data-en="Three Areas I Work In">Tiga Bidang yang Saya Dalami</h2>
+      <p class="i18n" data-id="Dari pengukuran di lapangan sampai perencanaan di atas kertas — ini lingkup kerja saya sehari-hari." data-en="From measuring in the field to planning on paper — this is my day-to-day scope of work.">Dari pengukuran di lapangan sampai perencanaan di atas kertas — ini lingkup kerja saya sehari-hari.</p>
+    </div>
+    <div class="focus-grid">
+      <div class="focus-card">
+        <div class="focus-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v4M12 21v-4M5 12H3M21 12h-2"/><circle cx="12" cy="12" r="5"/></svg>
+        </div>
+        <h3 class="i18n" data-id="Land Surveying" data-en="Land Surveying">Land Surveying</h3>
+        <p class="i18n" data-id="Pengukuran lapangan pakai Total Station, GNSS Geodetic, dan drone — mulai dari topografi, pemasangan patok batas, sampai stake-out konstruksi." data-en="Field surveying with Total Station, Geodetic GNSS, and drones — from topographic surveys and boundary staking to construction stake-out.">Pengukuran lapangan pakai Total Station, GNSS Geodetic, dan drone — mulai dari topografi, pemasangan patok batas, sampai stake-out konstruksi.</p>
+      </div>
+      <div class="focus-card">
+        <div class="focus-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 4v13M15 7v13M4 6l5-2 6 3 5-2v13l-5 2-6-3-5 2Z"/></svg>
+        </div>
+        <h3 class="i18n" data-id="GIS &amp; Spatial Analysis" data-en="GIS &amp; Spatial Analysis">GIS &amp; Spatial Analysis</h3>
+        <p class="i18n" data-id="Mengolah data hasil ukur jadi peta dan basis data yang rapi, pakai ArcGIS Pro, Civil 3D, dan Agisoft Metashape untuk hasil mapping drone." data-en="Turning raw survey data into clean maps and databases, using ArcGIS Pro, Civil 3D, and Agisoft Metashape for drone mapping output.">Mengolah data hasil ukur jadi peta dan basis data yang rapi, pakai ArcGIS Pro, Civil 3D, dan Agisoft Metashape untuk hasil mapping drone.</p>
+      </div>
+      <div class="focus-card">
+        <div class="focus-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21V9l6-4 6 4v12M9 21v-6h6v6M15 21V9l6 4v8"/></svg>
+        </div>
+        <h3 class="i18n" data-id="Urban Planning" data-en="Urban Planning">Urban Planning</h3>
+        <p class="i18n" data-id="Sedang menempuh S1 Perencanaan Wilayah dan Kota, buat ngedalemin sisi perencanaan dari data yang selama ini saya kumpulin langsung di lapangan." data-en="Currently pursuing a degree in Urban and Regional Planning, to go deeper into the planning side of the data I've been collecting in the field.">Sedang menempuh S1 Perencanaan Wilayah dan Kota, buat ngedalemin sisi perencanaan dari data yang selama ini saya kumpulin langsung di lapangan.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    :root[data-theme="dark"] {
-      --bg: #17181a;
-      --surface: #1e1f22;
-      --surface-2: #26272b;
-      --border: rgba(255, 255, 255, 0.08);
-      --text: #eeeeef;
-      --text-muted: #a3a4a8;
-      --text-dim: #717278;
-      --accent: #5b84e0;
-      --accent-strong: #82a3ec;
-      --shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
-      --pattern-opacity: 0.045;
-      --overlay: rgba(10, 10, 11, 0.6);
-    }
-
-    :root[data-theme="light"] {
-      --bg: #f5f6f8;
-      --surface: #ffffff;
-      --surface-2: #edeff3;
-      --border: rgba(15, 23, 42, 0.1);
-      --text: #14181f;
-      --text-muted: #4b5563;
-      --text-dim: #7a8494;
-      --accent: #3a5fc4;
-      --accent-strong: #2b4aa0;
-      --shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
-      --pattern-opacity: 0.05;
-      --overlay: rgba(255, 255, 255, 0.6);
-    }
-
-    /* ============ RESET ============ */
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { scroll-behavior: smooth; }
-    @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
-      * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
-    }
-
-    body {
-      font-family: var(--font-body);
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      -webkit-font-smoothing: antialiased;
-      transition: background var(--transition), color var(--transition);
-      overflow-x: hidden;
-    }
-
-    img { max-width: 100%; display: block; }
-    a { color: inherit; }
-
-    h1, h2, h3, h4 {
-      font-family: var(--font-display);
-      color: var(--text);
-      font-weight: 700;
-      letter-spacing: -0.02em;
-      line-height: 1.2;
-    }
-
-    .skip-link {
-      position: absolute;
-      left: -999px;
-      top: 0;
-      background: var(--accent);
-      color: #0e1512;
-      padding: 10px 18px;
-      border-radius: 0 0 8px 0;
-      font-weight: 600;
-      z-index: 2000;
-    }
-    .skip-link:focus { left: 0; }
-
-    :focus-visible {
-      outline: 2px solid var(--accent);
-      outline-offset: 3px;
-      border-radius: 4px;
-    }
-
-    /* ============ BACKGROUND CONTOUR PATTERN ============ */
-    .contour-bg {
-      position: fixed;
-      inset: 0;
-      z-index: -1;
-      opacity: var(--pattern-opacity);
-      pointer-events: none;
-    }
-
-    /* ============ NAVBAR ============ */
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      width: 100%;
-      background: var(--overlay);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .nav-container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 16px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 24px;
-    }
-
-    .nav-brand { display: flex; flex-direction: column; text-decoration: none; }
-    .brand-name { font-family: var(--font-display); font-size: 1.15rem; font-weight: 700; letter-spacing: -0.02em; }
-    .brand-sub { font-size: 0.72rem; color: var(--accent); font-weight: 500; font-family: var(--font-mono); letter-spacing: 0.02em; }
-
-    .nav-menu-wrapper { display: flex; align-items: center; gap: 20px; }
-    .nav-menu { list-style: none; display: flex; align-items: center; gap: 4px; }
-
-    .nav-link {
-      font-size: 0.92rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      text-decoration: none;
-      padding: 8px 14px;
-      border-radius: var(--radius-sm);
-      transition: color var(--transition), background-color var(--transition);
-    }
-    .nav-link:hover, .nav-link.active { color: var(--accent); background-color: color-mix(in srgb, var(--accent) 12%, transparent); }
-
-    .nav-utils { display: flex; align-items: center; gap: 8px; }
-
-    .util-btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      width: auto;
-      min-width: 38px;
-      height: 38px;
-      padding: 0 10px;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      color: var(--text);
-      cursor: pointer;
-      font-family: var(--font-mono);
-      font-size: 0.75rem;
-      font-weight: 500;
-      letter-spacing: 0.03em;
-      transition: border-color var(--transition), color var(--transition);
-    }
-    .util-btn:hover { border-color: var(--accent); color: var(--accent); }
-    .util-btn svg { width: 16px; height: 16px; }
-
-    .nav-toggle {
-      display: none;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 20px;
-      height: 16px;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-    }
-    .nav-toggle .bar { width: 100%; height: 2px; background-color: var(--text); transition: transform var(--transition), opacity var(--transition); }
-
-    /* ============ MAIN ============ */
-    main.container {
-      max-width: var(--max-width);
-      width: 92%;
-      margin: 0 auto;
-      flex: 1;
-    }
-
-    .panel {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow);
-      padding: 40px;
-      margin: 48px 0;
-    }
-
-    /* ============ SHARED COMPONENTS ============ */
-    .cool-photo {
-      width: 100%;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      transition: transform 400ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow var(--transition), border-color var(--transition);
-    }
-    .cool-photo:hover { transform: scale(1.02); box-shadow: 0 18px 36px color-mix(in srgb, var(--accent) 20%, transparent); border-color: var(--accent); }
-
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      font-family: var(--font-mono);
-      font-size: 0.72rem;
-      font-weight: 500;
-      letter-spacing: 0.03em;
-      color: var(--accent-strong);
-      background: color-mix(in srgb, var(--accent) 12%, transparent);
-      border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
-      padding: 5px 12px;
-      border-radius: 999px;
-    }
-
-    .eyebrow {
-      font-family: var(--font-mono);
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--accent);
-      font-weight: 500;
-    }
-
-    .card {
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 22px;
-    }
-
-    .contact-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-    .contact-list li { display: flex; align-items: center; gap: 10px; font-size: 0.92rem; color: var(--text-muted); }
-    .contact-list svg { width: 17px; height: 17px; flex-shrink: 0; color: var(--accent); }
-    .contact-list a { text-decoration: none; transition: color var(--transition); }
-    .contact-list a:hover { color: var(--accent); }
-
-    /* ============ FOOTER ============ */
-    footer {
-      background: var(--surface);
-      color: var(--text-muted);
-      padding: 44px 24px;
-      border-top: 1px solid var(--border);
-      margin-top: auto;
-    }
-    .footer-container { max-width: var(--max-width); margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px; }
-    .footer-brand { flex: 1.5; min-width: 260px; }
-    .footer-brand h4 { font-size: 1.05rem; margin-bottom: 10px; }
-    .footer-brand p { font-size: 0.88rem; max-width: 380px; }
-    .footer-links { display: flex; gap: 56px; }
-    .footer-col h5 { font-size: 0.85rem; margin-bottom: 14px; font-weight: 700; color: var(--text); text-transform: uppercase; letter-spacing: 0.06em; }
-    .footer-col ul { list-style: none; }
-    .footer-col ul li { margin-bottom: 9px; }
-    .footer-col ul li a { font-size: 0.88rem; text-decoration: none; transition: color var(--transition); }
-    .footer-col ul li a:hover { color: var(--accent); }
-    .footer-bottom {
-      max-width: var(--max-width);
-      margin: 28px auto 0 auto;
-      padding-top: 20px;
-      border-top: 1px solid var(--border);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: var(--font-mono);
-    }
-
-    /* ============ FULL-BLEED UTILITY ============ */
-    .full-bleed {
-      width: 100vw;
-      position: relative;
-      left: 50%;
-      right: 50%;
-      margin-left: -50vw;
-      margin-right: -50vw;
-    }
-
-    /* ============ HERO ============ */
-    .hero {
-      position: relative;
-      min-height: 78vh;
-      display: flex;
-      align-items: center;
-      background-color: var(--surface-2);
-      background-size: cover;
-      background-position: center;
-      overflow: hidden;
-      margin-bottom: 0;
-    }
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(90deg, rgba(10,12,16,0.75) 0%, rgba(10,12,16,0.4) 40%, rgba(10,12,16,0.1) 70%);
-    }
-    :root[data-theme="light"] .hero::after {
-      background: linear-gradient(90deg, rgba(20,24,31,0.7) 0%, rgba(20,24,31,0.35) 40%, rgba(20,24,31,0.08) 70%);
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: var(--max-width);
-      width: 92%;
-      margin: 0 auto;
-      padding: 24px 24px 24px;
-      color: #ffffff;
-    }
-    .hero-content h1,
-    .hero-content p,
-    .hero-actions { max-width: 420px; }
-    .hero-eyebrow { color: #ffffff; opacity: 0.85; }
-    .hero-content h1 {
-      color: #ffffff;
-      font-size: clamp(2rem, 3.6vw, 2.9rem);
-      max-width: 16ch;
-      margin: 14px 0 18px;
-    }
-    .hero-content p {
-      color: rgba(255,255,255,0.88);
-      font-size: 1.1rem;
-      margin-bottom: 28px;
-    }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 13px 24px;
-      border-radius: var(--radius-sm);
-      font-weight: 600;
-      font-size: 0.92rem;
-      text-decoration: none;
-      transition: background-color var(--transition), color var(--transition), border-color var(--transition), transform var(--transition);
-      border: 1px solid transparent;
-    }
-    .btn:hover { transform: translateY(-1px); }
-    .btn-primary { background: var(--accent); color: #ffffff; }
-    .btn-primary:hover { background: var(--accent-strong); }
-    .btn-outline { background: transparent; color: #ffffff; border-color: rgba(255,255,255,0.5); }
-    .btn-outline:hover { border-color: #ffffff; background: rgba(255,255,255,0.08); }
-
-    /* ============ STATS BAR ============ */
-    .stats-bar {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-    }
-    .stats-bar-inner {
-      max-width: var(--max-width);
-      width: 92%;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-    .stat-item {
-      padding: 28px 20px;
-      text-align: center;
-      border-left: 1px solid var(--border);
-    }
-    .stat-item:first-child { border-left: none; }
-    .stat-number { font-size: 2rem; font-weight: 800; color: var(--text); letter-spacing: -0.02em; }
-    .stat-label { font-size: 0.82rem; color: var(--text-muted); margin-top: 4px; }
-
-    /* ============ SECTION SCAFFOLDING ============ */
-    .section { padding: 88px 0; }
-    .section-tight { padding: 64px 0; }
-    .section-inner { max-width: var(--max-width); width: 92%; margin: 0 auto; }
-    .section-header { max-width: 640px; margin-bottom: 48px; }
-    .section-header h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 10px 0 14px; }
-    .section-header p { color: var(--text-muted); font-size: 1.02rem; }
-    .section-alt { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-
-    /* ============ ABOUT / INTRO GRID ============ */
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
-    .about-grid img { border-radius: var(--radius-md); box-shadow: var(--shadow); }
-    .about-copy p { color: var(--text-muted); font-size: 1.02rem; line-height: 1.85; margin-bottom: 18px; }
-
-    /* ============ FOCUS AREA CARDS ============ */
-    .focus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-    .focus-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 30px 26px;
-      transition: border-color var(--transition), transform var(--transition);
-    }
-    .focus-card:hover { border-color: var(--accent); transform: translateY(-3px); }
-    .focus-icon {
-      width: 46px; height: 46px;
-      display: flex; align-items: center; justify-content: center;
-      border-radius: var(--radius-sm);
-      background: color-mix(in srgb, var(--accent) 14%, transparent);
-      color: var(--accent);
-      margin-bottom: 18px;
-    }
-    .focus-icon svg { width: 22px; height: 22px; }
-    .focus-card h3 { font-size: 1.08rem; margin-bottom: 10px; }
-    .focus-card p { color: var(--text-muted); font-size: 0.94rem; line-height: 1.7; }
-
-    /* ============ FEATURED WORK ============ */
-    .work-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
-    .work-card { border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); background: var(--surface); text-decoration: none; display: block; transition: transform var(--transition), box-shadow var(--transition); }
-    .work-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
-    .work-card-img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }
-    .work-card-body { padding: 20px 22px 24px; }
-    .work-card-tag { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); }
-    .work-card h3 { font-size: 1.02rem; margin: 8px 0 8px; }
-    .work-card p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
-
-    /* ============ TIMELINE / JOURNEY ============ */
-    .timeline { position: relative; padding-left: 28px; border-left: 2px solid var(--border); display: flex; flex-direction: column; gap: 36px; }
-    .timeline-item { position: relative; }
-    .timeline-item::before {
-      content: "";
-      position: absolute;
-      left: -33.5px;
-      top: 4px;
-      width: 10px; height: 10px;
-      border-radius: 50%;
-      background: var(--accent);
-      border: 3px solid var(--surface);
-    }
-    .timeline-date { font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); }
-    .timeline-item h3 { font-size: 1.05rem; margin: 6px 0 6px; }
-    .timeline-item p { color: var(--text-muted); font-size: 0.94rem; line-height: 1.7; }
-
-    /* ============ CTA BAND ============ */
-    .cta-band {
-      background: var(--surface-2);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      text-align: center;
-      padding: 72px 24px;
-    }
-    .cta-band h2 { font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 14px; }
-    .cta-band p { color: var(--text-muted); max-width: 52ch; margin: 0 auto 28px; }
-    .cta-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
-    .cta-actions .btn-primary { background: var(--accent); color: #fff; }
-    .cta-actions .btn-outline { background: transparent; color: var(--text); border-color: var(--border); }
-    .cta-actions .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
-
-    /* ============ PROJECT / CASE STUDY PAGES ============ */
-    .project-header {
-      position: relative;
-      min-height: 46vh;
-      display: flex;
-      align-items: flex-end;
-      background-color: var(--surface-2);
-      background-size: cover;
-      background-position: center;
-      overflow: hidden;
-    }
-    .project-header::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(10,12,16,0.2) 0%, rgba(10,12,16,0.4) 55%, rgba(10,12,16,0.9) 100%);
-    }
-    :root[data-theme="light"] .project-header::after {
-      background: linear-gradient(180deg, rgba(20,24,31,0.15) 0%, rgba(20,24,31,0.3) 55%, rgba(20,24,31,0.85) 100%);
-    }
-    .project-header-inner {
-      position: relative;
-      z-index: 1;
-      max-width: var(--max-width);
-      width: 92%;
-      margin: 0 auto;
-      padding: 48px 24px 40px;
-      color: #ffffff;
-    }
-    .back-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      color: rgba(255,255,255,0.85);
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 22px;
-      transition: color var(--transition);
-    }
-    .back-link:hover { color: #ffffff; }
-    .project-header-inner .eyebrow { color: #ffffff; opacity: 0.85; }
-    .project-header-inner h1 { color: #ffffff; font-size: clamp(1.8rem, 3.4vw, 2.6rem); margin: 12px 0 12px; max-width: 22ch; }
-    .project-meta { color: rgba(255,255,255,0.85); font-size: 1rem; max-width: 60ch; }
-    .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
-
-    .project-body { max-width: 760px; }
-    .project-body h2 { font-size: 1.4rem; margin: 44px 0 16px; padding-bottom: 12px; border-bottom: 1px solid var(--border); }
-    .project-body h2:first-child { margin-top: 0; }
-    .project-body p, .project-body li { font-size: 1rem; line-height: 1.85; color: var(--text-muted); margin-bottom: 14px; }
-    .project-body h3 { font-size: 1.08rem; margin: 26px 0 10px; color: var(--text); }
-    .project-body ul, .project-body ol { padding-left: 20px; margin-bottom: 14px; }
-    .project-body strong { color: var(--text); }
-
-    .inline-image {
-      width: 100%;
-      border-radius: var(--radius-md);
-      margin: 20px 0;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      cursor: zoom-in;
-      transition: transform var(--transition), border-color var(--transition);
-    }
-    .inline-image:hover { transform: scale(1.015); border-color: var(--accent); }
-    .image-caption { font-size: 0.85rem; color: var(--text-dim); margin-top: -10px; margin-bottom: 24px; }
-
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      z-index: 3000;
-      inset: 0;
-      background-color: rgba(8, 10, 14, 0.92);
-      align-items: center;
-      justify-content: center;
-      padding: 40px;
-    }
-    .modal-overlay.show { display: flex; }
-    .modal-content { max-width: 90vw; max-height: 90vh; border-radius: 8px; box-shadow: 0 0 40px rgba(0,0,0,0.6); object-fit: contain; }
-    .close-modal {
-      position: absolute; top: 20px; right: 28px;
-      color: #fff; font-size: 2.2rem; font-weight: 300; line-height: 1;
-      cursor: pointer; transition: color var(--transition); background: none; border: none;
-    }
-    .close-modal:hover { color: var(--accent); }
-
-    /* ============ PAGE HEADER (non-home pages) ============ */
-    .page-header { padding: 56px 0 8px; }
-    .page-header .eyebrow { display: block; margin-bottom: 10px; }
-    .page-header h1 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
-    .page-header p { color: var(--text-muted); max-width: 60ch; margin-top: 14px; font-size: 1.02rem; }
-
-    /* ============ TIMELINE GALLERY (photo grid inside a timeline item) ============ */
-    .timeline-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 10px;
-      margin-top: 18px;
-    }
-    .timeline-gallery img {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border);
-      cursor: zoom-in;
-      transition: opacity var(--transition), transform var(--transition);
-    }
-    .timeline-gallery img:hover { opacity: 0.85; transform: scale(1.01); }
-
-    /* ============ LIGHTBOX / IMAGE MODAL (shared) ============ */
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      z-index: 2000;
-      background-color: rgba(0,0,0,0.9);
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-    .modal-overlay.show { display: flex; }
-    .modal-content { max-width: 90vw; max-height: 90vh; border-radius: 8px; box-shadow: 0 0 30px rgba(0,0,0,0.6); object-fit: contain; }
-    .close-modal {
-      position: absolute; top: 20px; right: 28px;
-      color: #fff; font-size: 34px; font-weight: 700;
-      cursor: pointer; line-height: 1;
-    }
-    .close-modal:hover { color: var(--accent-strong); }
-
-    /* ============ ARTICLE / PROJECT PAGE ============ */
-    .article-hero {
-      position: relative;
-      min-height: 46vh;
-      display: flex;
-      align-items: flex-end;
-      background-size: cover;
-      background-position: center;
-      background-color: var(--surface-2);
-    }
-    .article-hero::after {
-      content: "";
-      position: absolute; inset: 0;
-      background: linear-gradient(180deg, rgba(10,12,16,0.1) 0%, rgba(10,12,16,0.85) 100%);
-    }
-    .article-hero-content { position: relative; z-index: 1; max-width: var(--max-width); width: 92%; margin: 0 auto; padding: 40px 24px; color: #fff; }
-    .article-hero-content .eyebrow { color: #fff; opacity: 0.85; }
-    .article-hero-content h1 { color: #fff; font-size: clamp(1.7rem, 3.4vw, 2.4rem); margin: 10px 0 6px; max-width: 26ch; }
-    .article-hero-content .article-meta { color: rgba(255,255,255,0.8); font-size: 0.92rem; }
-
-    .article-body { max-width: 760px; margin: 0 auto; }
-    .article-body h2 { font-size: 1.35rem; margin: 40px 0 14px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
-    .article-body p, .article-body li { color: var(--text-muted); font-size: 1rem; line-height: 1.85; }
-    .article-body ol, .article-body ul { padding-left: 22px; margin-bottom: 16px; }
-    .article-body li { margin-bottom: 8px; }
-    .article-body strong { color: var(--text); }
-    .article-body img.inline-image {
-      width: 100%;
-      border-radius: var(--radius-md);
-      border: 1px solid var(--border);
-      margin: 18px 0;
-      cursor: zoom-in;
-      transition: opacity var(--transition);
-    }
-    .article-body img.inline-image:hover { opacity: 0.9; }
-    .back-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.9rem; font-weight: 600; color: var(--text-muted); text-decoration: none; margin-bottom: 12px; }
-    .back-link:hover { color: var(--accent); }
-
-    /* ============ GALLERY GRID ============ */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 18px;
-    }
-    .gallery-item { border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); background: var(--surface); }
-    .gallery-item img {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      display: block;
-      cursor: zoom-in;
-      transition: transform var(--transition), opacity var(--transition);
-    }
-    .gallery-item img:hover { transform: scale(1.02); opacity: 0.92; }
-    .gallery-caption { padding: 10px 14px; font-size: 0.85rem; color: var(--text-muted); }
-    .gallery-group { margin-bottom: 56px; }
-    .gallery-group-title { font-size: 1.1rem; margin-bottom: 18px; }
-
-    /* ============ EDITORIAL STORY BLOCK (Journey page) ============ */
-    .story-block {
-      padding: 64px 0;
-      border-bottom: 1px solid var(--border);
-    }
-    .story-block:first-child { padding-top: 8px; }
-    .story-block:last-child { border-bottom: none; }
-
-    .story-cover {
-      width: 100%;
-      aspect-ratio: 16 / 7;
-      object-fit: cover;
-      border-radius: var(--radius-lg);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      cursor: zoom-in;
-      display: block;
-      margin-bottom: 36px;
-      transition: opacity var(--transition);
-    }
-    .story-cover:hover { opacity: 0.92; }
-
-    .story-text { max-width: 700px; margin: 0 auto; }
-    .story-block-head { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
-    .story-badge {
-      width: 38px; height: 38px; flex-shrink: 0;
-      border-radius: 50%;
-      background: var(--surface-2);
-      border: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: center;
-      font-family: var(--font-display); font-weight: 800; font-size: 0.9rem;
-      color: var(--accent);
-    }
-    .story-text h2 { font-size: 1.45rem; margin-bottom: 16px; }
-    .story-text p { color: var(--text-muted); font-size: 1rem; line-height: 1.85; margin-bottom: 14px; }
-    .story-text strong { color: var(--text); }
-    .story-role-label {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--accent);
-      margin: 22px 0 8px;
-    }
-    .pull-quote {
-      border-left: 3px solid var(--accent);
-      padding-left: 18px;
-      margin: 22px 0;
-      font-size: 1.08rem;
-      font-style: italic;
-      color: var(--text);
-    }
-
-    .story-gallery-strip {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 10px;
-      max-width: 700px;
-      margin: 28px auto 0;
-    }
-    .story-gallery-strip img {
-      width: 100%;
-      aspect-ratio: 4 / 3;
-      object-fit: cover;
-      border-radius: var(--radius-sm);
-      border: 1px solid var(--border);
-      cursor: zoom-in;
-      transition: opacity var(--transition);
-    }
-    .story-gallery-strip img:hover { opacity: 0.85; }
-
-    /* ============ RESPONSIVE ============ */
-    @media (max-width: 768px) {
-      main.container { margin: 32px auto; }
-      .panel { padding: 24px; }
-      .nav-toggle { display: flex; }
-      .nav-menu-wrapper {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: var(--surface);
-        border-bottom: 1px solid var(--border);
-        flex-direction: column;
-        align-items: stretch;
-        gap: 16px;
-        padding: 20px 24px;
-        display: none;
-        box-shadow: var(--shadow);
-      }
-      .nav-menu-wrapper.show { display: flex; }
-      .nav-menu { flex-direction: column; align-items: flex-start; width: 100%; gap: 4px; }
-      .nav-link { display: block; width: 100%; }
-      .nav-utils { justify-content: flex-start; }
-      .nav-toggle.open .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-      .nav-toggle.open .bar:nth-child(2) { opacity: 0; }
-      .nav-toggle.open .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-      .stats-bar-inner { grid-template-columns: repeat(2, 1fr); }
-      .stat-item:nth-child(3) { border-left: none; }
-      .about-grid, .focus-grid, .work-grid { grid-template-columns: 1fr; }
-      .about-grid { gap: 32px; }
-      .about-grid .about-media { order: -1; }
-      .section { padding: 56px 0; }
-      .hero { min-height: 68vh; }
-      .story-block { padding: 40px 0; }
-      .story-cover { aspect-ratio: 4 / 3; }
-      .story-gallery-strip { grid-template-columns: repeat(2, 1fr); }
-    }
-  </style>
-</head>
-<body>
-
-  <a href="#main-content" class="skip-link">Skip to content</a>
-
-  <!-- Decorative topographic contour background -->
-  <svg class="contour-bg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
-    <g fill="none" stroke="var(--text-dim)" stroke-width="1">
-      <path d="M-50,120 C 200,60 350,180 600,110 S 1000,40 1250,130"/>
-      <path d="M-50,220 C 220,150 380,270 620,210 S 980,140 1250,230"/>
-      <path d="M-50,320 C 240,260 400,360 640,300 S 960,230 1250,330"/>
-      <path d="M-50,420 C 200,470 420,380 660,440 S 940,510 1250,430"/>
-      <path d="M-50,520 C 220,560 400,480 660,540 S 920,600 1250,530"/>
-      <path d="M-50,620 C 240,650 420,590 660,640 S 900,690 1250,620"/>
-      <path d="M-50,700 C 260,730 440,680 680,720 S 900,760 1250,700"/>
-    </g>
-  </svg>
-
-  <header class="site-header">
-    <div class="nav-container">
-      <a href="/" class="nav-brand">
-        <span class="brand-name">Rivaldi Fiqriyansyah</span>
-        <span class="brand-sub i18n" data-id="LAND SURVEYOR · GIS ANALYST · URBAN PLANNING" data-en="LAND SURVEYOR · GIS ANALYST · URBAN PLANNING">LAND SURVEYOR · GIS ANALYST · URBAN PLANNING</span>
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <p class="eyebrow i18n" data-id="Proyek Terpilih" data-en="Featured Work">Proyek Terpilih</p>
+      <h2 class="i18n" data-id="Beberapa Proyek yang Pernah Saya Kerjakan" data-en="A Few Projects I've Worked On">Beberapa Proyek yang Pernah Saya Kerjakan</h2>
+    </div>
+    <div class="work-grid">
+      <a href="/software/arcgis/digitasi/" class="work-card">
+        <img src="/images/software/georeference-pdf.jpg" alt="Spatial Data Recovery" class="work-card-img">
+        <div class="work-card-body">
+          <div class="work-card-tag i18n" data-id="GIS &amp; Spatial Analysis" data-en="GIS &amp; Spatial Analysis">GIS &amp; Spatial Analysis</div>
+          <h3 class="i18n" data-id="Spatial Data Recovery" data-en="Spatial Data Recovery">Spatial Data Recovery</h3>
+          <p class="i18n" data-id="Menyelamatkan data 60 bidang lahan (10,7 ha) yang hilang, lewat digitasi dan georeferencing peta lama." data-en="Recovering 60 land parcels (10.7 ha) of missing data through digitizing and georeferencing an old map.">Menyelamatkan data 60 bidang lahan (10,7 ha) yang hilang, lewat digitasi dan georeferencing peta lama.</p>
+        </div>
       </a>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-
-      <div class="nav-menu-wrapper" id="navMenuWrapper">
-        <ul class="nav-menu">
-          <li><a href="/" class="nav-link{% if page.url == '/' %} active{% endif %} i18n" data-id="Beranda" data-en="Home">Beranda</a></li>
-          <li><a href="/journey/" class="nav-link{% if page.url contains '/journey/' %} active{% endif %} i18n" data-id="Perjalanan" data-en="Journey">Perjalanan</a></li>
-          <li><a href="/cv/" class="nav-link{% if page.url contains '/cv/' %} active{% endif %} i18n" data-id="Tentang" data-en="About">Tentang</a></li>
-          <li><a href="/projects/" class="nav-link{% if page.url contains '/projects/' %} active{% endif %} i18n" data-id="Proyek" data-en="Projects">Proyek</a></li>
-          <li><a href="/gallery/" class="nav-link{% if page.url contains '/gallery/' %} active{% endif %} i18n" data-id="Galeri" data-en="Gallery">Galeri</a></li>
-        </ul>
-
-        <div class="nav-utils">
-          <button id="langToggle" class="util-btn" aria-label="Switch language / Ganti bahasa">EN</button>
-          <button id="themeToggle" class="util-btn" aria-label="Toggle dark or light theme">
-            <svg id="themeIconSun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-            <svg id="themeIconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
-          </button>
+      <a href="/software/arcgis/model-builder/" class="work-card">
+        <img src="/images/software/hasil-peta-topografi.jpg" alt="Peta Topografi Kecamatan" class="work-card-img">
+        <div class="work-card-body">
+          <div class="work-card-tag i18n" data-id="Urban Planning" data-en="Urban Planning">Urban Planning</div>
+          <h3 class="i18n" data-id="Peta Topografi Kecamatan" data-en="Sub-District Topographic Map">Peta Topografi Kecamatan</h3>
+          <p class="i18n" data-id="Membuat peta topografi tingkat kecamatan pakai data DEMNAS BIG, buat mendukung tahap awal perencanaan tata ruang." data-en="Producing a sub-district-level topographic map using BIG's DEMNAS data, to support early-stage spatial planning.">Membuat peta topografi tingkat kecamatan pakai data DEMNAS BIG, buat mendukung tahap awal perencanaan tata ruang.</p>
         </div>
-      </div>
+      </a>
+      <a href="/software/arcgis/model-builder/" class="work-card">
+        <img src="/images/software/modelbuilder-workflow.jpg" alt="Otomatisasi ModelBuilder" class="work-card-img">
+        <div class="work-card-body">
+          <div class="work-card-tag i18n" data-id="GIS &amp; Spatial Analysis" data-en="GIS &amp; Spatial Analysis">GIS &amp; Spatial Analysis</div>
+          <h3 class="i18n" data-id="Otomatisasi ModelBuilder" data-en="ModelBuilder Automation">Otomatisasi ModelBuilder</h3>
+          <p class="i18n" data-id="Merancang alur kerja otomatis di ArcGIS Pro biar proses ekstraksi topografi lebih cepat dan bisa dipakai ulang." data-en="Designing an automated ArcGIS Pro workflow to make topographic extraction faster and reusable.">Merancang alur kerja otomatis di ArcGIS Pro biar proses ekstraksi topografi lebih cepat dan bisa dipakai ulang.</p>
+        </div>
+      </a>
     </div>
-  </header>
-
-  <main class="container" id="main-content">
-    {{ content }}
-  </main>
-
-  <div class="modal-overlay" id="imageModal">
-    <span class="close-modal" id="closeModal">&times;</span>
-    <img class="modal-content" id="modalImg" src="" alt="">
   </div>
+</section>
 
-  <footer>
-    <div class="footer-container">
-      <div class="footer-brand">
-        <h4>Rivaldi Fiqriyansyah</h4>
-        <p class="i18n" data-id="Lulusan Teknik Geomatika yang berfokus pada analisis spasial, pemetaan digital, dan perencanaan wilayah berkelanjutan." data-en="Geomatics Engineering graduate focused on spatial analysis, digital mapping, and sustainable regional planning.">Lulusan Teknik Geomatika yang berfokus pada analisis spasial, pemetaan digital, dan perencanaan wilayah berkelanjutan.</p>
+<section class="section section-alt full-bleed">
+  <div class="section-inner" style="max-width: 760px;">
+    <div class="section-header">
+      <p class="eyebrow i18n" data-id="Perjalanan" data-en="Journey">Perjalanan</p>
+      <h2 class="i18n" data-id="Titik-Titik Penting" data-en="Key Milestones">Titik-Titik Penting</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2022</div>
+        <h3 class="i18n" data-id="Magang di PT Kalimantan Industrial Park Indonesia" data-en="Internship at PT Kalimantan Industrial Park Indonesia">Magang di PT Kalimantan Industrial Park Indonesia</h3>
+        <p class="i18n" data-id="Langkah pertama sebagai Asisten GIS Analis, mengolah data lahan dan belajar dasar-dasar pemetaan lapangan." data-en="First step as a GIS Analyst Assistant, processing land data and learning the basics of field mapping.">Langkah pertama sebagai Asisten GIS Analis, mengolah data lahan dan belajar dasar-dasar pemetaan lapangan.</p>
       </div>
-      <div class="footer-links">
-        <div class="footer-col">
-          <h5 class="i18n" data-id="Tautan" data-en="Links">Tautan</h5>
-          <ul>
-            <li><a href="/" class="i18n" data-id="Beranda" data-en="Home">Beranda</a></li>
-            <li><a href="/journey/" class="i18n" data-id="Perjalanan" data-en="Journey">Perjalanan</a></li>
-            <li><a href="/cv/" class="i18n" data-id="Tentang" data-en="About">Tentang</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h5 class="i18n" data-id="Kontak" data-en="Contact">Kontak</h5>
-          <ul>
-            <li><a href="mailto:rivaldifiqriyansah@gmail.com">rivaldifiqriyansah@gmail.com</a></li>
-            <li><a href="https://linkedin.com/in/rivaldifiqriyansyah" target="_blank" rel="noopener">LinkedIn</a></li>
-            <li><a href="https://github.com/RivaldiMpam" target="_blank" rel="noopener">GitHub</a></li>
-          </ul>
-        </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2022 – 2025</div>
+        <h3 class="i18n" data-id="Asisten Surveyor, lalu Surveyor di PT KIPI" data-en="Surveyor Assistant, then Surveyor at PT KIPI">Asisten Surveyor, lalu Surveyor di PT KIPI</h3>
+        <p class="i18n" data-id="Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare." data-en="Grew from community land surveys to supervising land development across hundreds of hectares of industrial area.">Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare.</p>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2026 – Sekarang</div>
+        <h3 class="i18n" data-id="Land Surveyor di PT Inti Innovaco, sambil kuliah PWK" data-en="Land Surveyor at PT Inti Innovaco, while studying PWK">Land Surveyor di PT Inti Innovaco, sambil kuliah PWK</h3>
+        <p class="i18n" data-id="Kembali ke Bogor, kerja mandiri tanpa tim, sambil mulai serius menekuni jalur perencanaan wilayah dan kota." data-en="Back in Bogor, working independently without a team, while starting to seriously pursue the urban and regional planning path.">Kembali ke Bogor, kerja mandiri tanpa tim, sambil mulai serius menekuni jalur perencanaan wilayah dan kota.</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Rivaldi Fiqriyansyah</p>
-      <p class="i18n" data-id="Dibuat dengan Jekyll & GitHub Pages" data-en="Built with Jekyll & GitHub Pages">Dibuat dengan Jekyll & GitHub Pages</p>
-    </div>
-  </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      var root = document.documentElement;
-
-      /* ---- mobile nav ---- */
-      var navToggle = document.getElementById('navToggle');
-      var navMenuWrapper = document.getElementById('navMenuWrapper');
-      navToggle.addEventListener('click', () => {
-        var open = navToggle.classList.toggle('open');
-        navMenuWrapper.classList.toggle('show');
-        navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-      document.addEventListener('click', (e) => {
-        if (!navToggle.contains(e.target) && !navMenuWrapper.contains(e.target)) {
-          navToggle.classList.remove('open');
-          navMenuWrapper.classList.remove('show');
-          navToggle.setAttribute('aria-expanded', 'false');
-        }
-      });
-
-      /* ---- theme toggle ---- */
-      var themeToggle = document.getElementById('themeToggle');
-      var sunIcon = document.getElementById('themeIconSun');
-      var moonIcon = document.getElementById('themeIconMoon');
-
-      function reflectTheme(theme) {
-        sunIcon.style.display = theme === 'dark' ? 'block' : 'none';
-        moonIcon.style.display = theme === 'dark' ? 'none' : 'block';
-      }
-      reflectTheme(root.getAttribute('data-theme') || 'dark');
-
-      themeToggle.addEventListener('click', () => {
-        var current = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-        root.setAttribute('data-theme', current);
-        localStorage.setItem('site-theme', current);
-        reflectTheme(current);
-      });
-
-      /* ---- language toggle ---- */
-      var langToggle = document.getElementById('langToggle');
-      var i18nEls = document.querySelectorAll('.i18n');
-
-      function applyLang(lang) {
-        root.setAttribute('lang', lang);
-        langToggle.textContent = lang === 'id' ? 'EN' : 'ID';
-        i18nEls.forEach((el) => {
-          var htmlAttr = 'data-' + lang + '-html';
-          if (el.hasAttribute(htmlAttr)) {
-            el.innerHTML = el.getAttribute(htmlAttr);
-            return;
-          }
-          var text = el.getAttribute('data-' + lang);
-          if (text !== null) el.textContent = text;
-        });
-      }
-
-      var savedLang = localStorage.getItem('site-lang') || 'id';
-      applyLang(savedLang);
-
-      langToggle.addEventListener('click', () => {
-        var next = root.getAttribute('lang') === 'id' ? 'en' : 'id';
-        localStorage.setItem('site-lang', next);
-        applyLang(next);
-      });
-
-      /* ---- shared lightbox ---- */
-      var modal = document.getElementById('imageModal');
-      var modalImg = document.getElementById('modalImg');
-      var closeModal = document.getElementById('closeModal');
-
-      document.querySelectorAll('.inline-image, .timeline-gallery img, .gallery-grid img, .story-cover, .story-gallery-strip img, img.zoomable').forEach((img) => {
-        img.addEventListener('click', () => {
-          modalImg.src = img.getAttribute('src');
-          modalImg.alt = img.getAttribute('alt') || '';
-          modal.classList.add('show');
-        });
-      });
-
-      function hideModal() {
-        modal.classList.remove('show');
-        modalImg.src = '';
-      }
-      closeModal.addEventListener('click', hideModal);
-      modal.addEventListener('click', (e) => { if (e.target === modal) hideModal(); });
-      document.addEventListener('keydown', (e) => { if (e.key === 'Escape') hideModal(); });
-    });
-  </script>
-  <!-- Global image lightbox (used by .inline-image across project pages) -->
-  <div id="image-modal" class="modal-overlay" onclick="closeModal()">
-    <button class="close-modal" aria-label="Close">&times;</button>
-    <img id="zoomed-img" class="modal-content" src="" alt="">
   </div>
+</section>
 
-  <script>
-    function openModal(src) {
-      document.getElementById('zoomed-img').src = src;
-      document.getElementById('image-modal').classList.add('show');
-    }
-    function closeModal() {
-      document.getElementById('image-modal').classList.remove('show');
-      document.getElementById('zoomed-img').src = '';
-    }
-    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
-  </script>
-</body>
-</html>
+<section class="cta-band full-bleed">
+  <div class="section-inner">
+    <h2 class="i18n" data-id="Tertarik Kolaborasi?" data-en="Interested in Working Together?">Tertarik Kolaborasi?</h2>
+    <p class="i18n" data-id="Terbuka buat ngobrolin proyek survei, pemetaan, atau riset spasial. Hubungi saya lewat email atau LinkedIn." data-en="Open to talk about survey, mapping, or spatial research projects. Reach out via email or LinkedIn.">Terbuka buat ngobrolin proyek survei, pemetaan, atau riset spasial. Hubungi saya lewat email atau LinkedIn.</p>
+    <div class="cta-actions">
+      <a href="mailto:rivaldifiqriyansah@gmail.com" class="btn btn-primary i18n" data-id="Hubungi Saya" data-en="Get in Touch">Hubungi Saya</a>
+      <a href="https://linkedin.com/in/rivaldifiqriyansyah" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+    </div>
+  </div>
+</section>
