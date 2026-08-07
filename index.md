@@ -129,7 +129,6 @@ permalink: /
   <div class="section-inner" style="max-width: 760px;">
     <div class="section-header">
       <p class="eyebrow i18n" data-id="Perjalanan" data-en="Journey">Perjalanan</p>
-      <h2 class="i18n" data-id="Titik-Titik Penting" data-en="Key Milestones">Titik-Titik Penting</h2>
     </div>
     <div class="timeline">
       <div class="timeline-item">
