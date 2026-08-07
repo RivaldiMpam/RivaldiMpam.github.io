@@ -4,15 +4,15 @@ layout: default
 <article>
   <section class="article-hero full-bleed" style="background-image: url('{{ page.cover_image }}');">
     <div class="article-hero-content">
-      <p class="eyebrow">{{ page.category }}</p>
-      <h1>{{ page.title }}</h1>
-      <p class="article-meta">{{ page.subtitle }}</p>
+      <p class="eyebrow i18n" data-id="{{ page.category }}" data-en="{{ page.category_en | default: page.category }}">{{ page.category }}</p>
+      <h1 class="i18n" data-id="{{ page.title }}" data-en="{{ page.title_en | default: page.title }}">{{ page.title }}</h1>
+      <p class="article-meta i18n" data-id="{{ page.subtitle }}" data-en="{{ page.subtitle_en | default: page.subtitle }}">{{ page.subtitle }}</p>
     </div>
   </section>
 
   <div class="section">
     <div class="section-inner">
-      <a href="{{ page.back_url | default: '/projects/' }}" class="back-link">&larr; Kembali ke Proyek</a>
+      <a href="{{ page.back_url | default: '/projects/' }}" class="back-link">&larr; <span class="i18n" data-id="Kembali ke Proyek" data-en="Back to Projects">Kembali ke Proyek</span></a>
       <div class="article-body">
         {{ content }}
       </div>
