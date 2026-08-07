@@ -4,7 +4,7 @@ title: Projects Portfolio
 permalink: /projects/
 ---
 
-<div class="section-header" style="text-align: center; margin-bottom: 40px;">
+<div style="text-align: center; margin: 0 auto 40px; max-width: 640px;">
   <h1 class="i18n" data-id="Portofolio Proyek" data-en="Project Portfolio" style="font-size: 2.25rem; font-weight: 800; margin-bottom: 8px;">Portofolio Proyek</h1>
   <p class="i18n" data-id="Kumpulan solusi spasial, automasi GIS, dan pemetaan wilayah digital." data-en="A collection of spatial solutions, GIS automation, and digital regional mapping." style="color: var(--text-muted); font-size: 1.1rem;">Kumpulan solusi spasial, automasi GIS, dan pemetaan wilayah digital.</p>
 </div>
