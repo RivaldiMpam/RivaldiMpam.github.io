@@ -6,6 +6,12 @@
   <title>{{ page.title }} | Rivaldi Fiqriyansyah</title>
   <meta name="description" content="Rivaldi Fiqriyansyah — Land Surveyor, GIS &amp; Spatial Data Analyst, Urban Planning Student.">
 
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon/favicon-192.png">
+  <link rel="shortcut icon" type="image/png" href="/images/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+
   <!-- Set theme & language before first paint to avoid flash-of-wrong-theme -->
   <script>
     (function () {
@@ -33,6 +39,13 @@
       --max-width: 1160px;
       --transition: 180ms ease;
     }
+
+    /* ============ LONG-FORM BILINGUAL CONTENT BLOCKS ============ */
+    /* Wrap Indonesian copy in <div class="lang-id" markdown="1"> and its English
+       counterpart in <div class="lang-en" markdown="1">. Only the block matching
+       <html lang="..."> is shown, so it follows the saved EN/ID preference. */
+    html[lang="id"] .lang-en { display: none !important; }
+    html[lang="en"] .lang-id { display: none !important; }
 
     :root[data-theme="dark"] {
       --bg: #17181a;
