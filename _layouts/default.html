@@ -311,7 +311,7 @@
       position: relative;
       min-height: 78vh;
       display: flex;
-      align-items: flex-end;
+      align-items: flex-start;
       background-color: var(--surface-2);
       background-size: cover;
       background-position: center;
@@ -322,10 +322,10 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(10,12,16,0.15) 0%, rgba(10,12,16,0.35) 55%, rgba(10,12,16,0.88) 100%);
+      background: linear-gradient(180deg, rgba(10,12,16,0.75) 0%, rgba(10,12,16,0.25) 45%, rgba(10,12,16,0.15) 100%);
     }
     :root[data-theme="light"] .hero::after {
-      background: linear-gradient(180deg, rgba(20,24,31,0.1) 0%, rgba(20,24,31,0.25) 55%, rgba(20,24,31,0.82) 100%);
+      background: linear-gradient(180deg, rgba(20,24,31,0.7) 0%, rgba(20,24,31,0.2) 45%, rgba(20,24,31,0.1) 100%);
     }
     .hero-content {
       position: relative;
@@ -333,9 +333,12 @@
       max-width: var(--max-width);
       width: 92%;
       margin: 0 auto;
-      padding: 64px 24px 56px;
+      padding: 88px 24px 64px;
       color: #ffffff;
     }
+    .hero-content h1,
+    .hero-content p,
+    .hero-actions { max-width: 560px; }
     .hero-eyebrow { color: #ffffff; opacity: 0.85; }
     .hero-content h1 {
       color: #ffffff;
@@ -656,54 +659,40 @@
 
     /* ============ EDITORIAL STORY BLOCK (Journey page) ============ */
     .story-block {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 56px;
-      align-items: center;
-      padding: 72px 0;
+      padding: 64px 0;
       border-bottom: 1px solid var(--border);
-      position: relative;
     }
-    .story-block:first-child { padding-top: 24px; }
+    .story-block:first-child { padding-top: 8px; }
     .story-block:last-child { border-bottom: none; }
-    .story-block.reverse .story-media { order: 2; }
-    .story-number {
-      position: absolute;
-      top: 42px;
-      font-size: 6rem;
-      font-weight: 800;
-      color: var(--surface-2);
-      line-height: 1;
-      z-index: 0;
-      font-family: var(--font-display);
-      user-select: none;
+
+    .story-cover {
+      width: 100%;
+      aspect-ratio: 16 / 7;
+      object-fit: cover;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      cursor: zoom-in;
+      display: block;
+      margin-bottom: 36px;
+      transition: opacity var(--transition);
     }
-    .story-text { position: relative; z-index: 1; }
-    .story-text .timeline-date { display: inline-block; margin-bottom: 10px; }
-    .story-text h2 { font-size: 1.5rem; margin-bottom: 16px; }
+    .story-cover:hover { opacity: 0.92; }
+
+    .story-text { max-width: 700px; margin: 0 auto; }
+    .story-block-head { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+    .story-badge {
+      width: 38px; height: 38px; flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display); font-weight: 800; font-size: 0.9rem;
+      color: var(--accent);
+    }
+    .story-text h2 { font-size: 1.45rem; margin-bottom: 16px; }
     .story-text p { color: var(--text-muted); font-size: 1rem; line-height: 1.85; margin-bottom: 14px; }
     .story-text strong { color: var(--text); }
-    .story-media { position: relative; z-index: 1; }
-    .story-media-main {
-      width: 100%; aspect-ratio: 4 / 3; object-fit: cover;
-      border-radius: var(--radius-lg); border: 1px solid var(--border);
-      box-shadow: var(--shadow); cursor: zoom-in; display: block;
-    }
-    .story-gallery { display: flex; gap: 10px; margin-top: 12px; }
-    .story-gallery img {
-      flex: 1; aspect-ratio: 1; object-fit: cover;
-      border-radius: var(--radius-sm); border: 1px solid var(--border);
-      cursor: zoom-in; transition: opacity var(--transition);
-    }
-    .story-gallery img:hover { opacity: 0.85; }
-    .pull-quote {
-      border-left: 3px solid var(--accent);
-      padding-left: 18px;
-      margin: 20px 0;
-      font-size: 1.08rem;
-      font-style: italic;
-      color: var(--text);
-    }
     .story-role-label {
       display: inline-block;
       font-size: 0.75rem;
@@ -713,6 +702,32 @@
       color: var(--accent);
       margin: 22px 0 8px;
     }
+    .pull-quote {
+      border-left: 3px solid var(--accent);
+      padding-left: 18px;
+      margin: 22px 0;
+      font-size: 1.08rem;
+      font-style: italic;
+      color: var(--text);
+    }
+
+    .story-gallery-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      max-width: 700px;
+      margin: 28px auto 0;
+    }
+    .story-gallery-strip img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      cursor: zoom-in;
+      transition: opacity var(--transition);
+    }
+    .story-gallery-strip img:hover { opacity: 0.85; }
 
     /* ============ RESPONSIVE ============ */
     @media (max-width: 768px) {
@@ -747,9 +762,9 @@
       .about-grid .about-media { order: -1; }
       .section { padding: 56px 0; }
       .hero { min-height: 68vh; }
-      .story-block, .story-block.reverse { grid-template-columns: 1fr; padding: 48px 0; }
-      .story-block .story-media { order: -1; }
-      .story-number { display: none; }
+      .story-block { padding: 40px 0; }
+      .story-cover { aspect-ratio: 4 / 3; }
+      .story-gallery-strip { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
@@ -913,7 +928,7 @@
       var modalImg = document.getElementById('modalImg');
       var closeModal = document.getElementById('closeModal');
 
-      document.querySelectorAll('.inline-image, .timeline-gallery img, .gallery-grid img, .story-media-main, .story-gallery img, img.zoomable').forEach((img) => {
+      document.querySelectorAll('.inline-image, .timeline-gallery img, .gallery-grid img, .story-cover, .story-gallery-strip img, img.zoomable').forEach((img) => {
         img.addEventListener('click', () => {
           modalImg.src = img.getAttribute('src');
           modalImg.alt = img.getAttribute('alt') || '';
