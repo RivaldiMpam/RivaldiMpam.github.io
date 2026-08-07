@@ -7,9 +7,8 @@ permalink: /
 <section class="hero full-bleed" style="background-image: url('/images/sampul-banner.jpg');">
   <div class="hero-content">
     <div class="hero-top">
+      <h1 class="i18n" data-id="Halo, Selamat Datang" data-en="Hello, Welcome">Halo, Selamat Datang</h1>
       <p class="eyebrow hero-eyebrow i18n" data-id="Land Surveyor · GIS Analyst · Urban Planning" data-en="Land Surveyor · GIS Analyst · Urban Planning">Land Surveyor · GIS Analyst · Urban Planning</p>
-      <h1 class="i18n" data-id="Halo, Selamat Datang" data-en="Hello, Welcome">Halo, 
-        Selamat Datang</h1>
     </div>
     <div class="hero-actions">
       <a href="/projects/" class="btn btn-primary i18n" data-id="Lihat Proyek" data-en="View Projects">Lihat Proyek</a>
