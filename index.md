@@ -24,17 +24,12 @@ permalink: /
     </div>
     <div class="stat-item">
       <div class="stat-number">GIS &amp; GNSS</div>
-      <div class="stat-label i18n" data-id="Spatial Analysis Tools" data-en="Spatial Analysis Tools">Spatial Analysis Tools</div>
+      <div class="stat-label i18n" data-id="Measure & Spatial Analysis Tools" data-en="Measure & Spatial Analysis Tools">Measure & Spatial Analysis Tools</div>
     </div>
     <div class="stat-item">
       <div class="stat-number">Sem. 5</div>
       <div class="stat-label i18n" data-id="S1 Perencanaan Wilayah &amp; Kota" data-en="Urban &amp; Regional Planning, BSc">S1 Perencanaan Wilayah &amp; Kota</div>
     </div>
-    <div class="stat-item">
-      <div class="stat-number">9,2 Km</div>
-      <div class="stat-label i18n" data-id="Jalan Kawasan Diawasi" data-en="Area Road Supervised">Jalan Kawasan Diawasi</div>
-    </div>
-  </div>
 </section>
 
 <section class="section">
@@ -137,7 +132,7 @@ permalink: /
       </div>
       <div class="timeline-item">
         <div class="timeline-date">2022 – 2025</div>
-        <h3 class="i18n" data-id="Asisten Surveyor > lalu Surveyor - PT Kalimantan Industrial Park Indonesia" data-en="Surveyor Assistant > Surveyor - PT Kalimantan Industrial Park Indonesia">Asisten Surveyor > Surveyor - PT Kalimantan Industrial Park Indonesia</h3>
+        <h3 class="i18n" data-id="Asisten Surveyor > Surveyor - PT Kalimantan Industrial Park Indonesia" data-en="Surveyor Assistant > Surveyor - PT Kalimantan Industrial Park Indonesia">Asisten Surveyor > Surveyor - PT Kalimantan Industrial Park Indonesia</h3>
         <p class="i18n" data-id="Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare." data-en="Grew from community land surveys to supervising land development across hundreds of hectares of industrial area.">Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare.</p>
       </div>
       <div class="timeline-item">
