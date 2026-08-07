@@ -339,14 +339,19 @@
       flex-direction: column;
       justify-content: space-between;
     }
-    .hero-top,
+    .hero-top { max-width: 640px; }
     .hero-actions { max-width: 420px; }
     .hero-eyebrow { color: #ffffff; opacity: 0.85; }
     .hero-content h1 {
       color: #ffffff;
-      font-size: clamp(2rem, 3.6vw, 2.9rem);
-      max-width: 16ch;
-      margin: 14px 0 18px;
+      font-size: clamp(1.7rem, 3.1vw, 2.5rem);
+      max-width: none;
+      white-space: nowrap;
+      margin: 0 0 12px;
+    }
+    .hero-top .eyebrow {
+      font-size: 0.7rem;
+      white-space: nowrap;
     }
     .hero-content p {
       color: rgba(255,255,255,0.88);
@@ -764,6 +769,9 @@
       .section { padding: 56px 0; }
       .hero { min-height: 68vh; }
       .hero-content { padding-top: 40px; }
+      .hero-content h1 { white-space: normal; font-size: clamp(1.5rem, 6vw, 2rem); }
+      .hero-top .eyebrow { white-space: normal; }
+      .hero-top { max-width: 100%; }
       .story-block { padding: 40px 0; }
       .story-cover { aspect-ratio: 4 / 3; }
       .story-gallery-strip { grid-template-columns: repeat(2, 1fr); }
