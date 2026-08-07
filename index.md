@@ -7,8 +7,8 @@ permalink: /
 <section class="hero full-bleed" style="background-image: url('/images/sampul-banner.jpg');">
   <div class="hero-content">
     <p class="eyebrow hero-eyebrow i18n" data-id="Land Surveyor · GIS Analyst · Urban Planning" data-en="Land Surveyor · GIS Analyst · Urban Planning">Land Surveyor · GIS Analyst · Urban Planning</p>
-    <h1 class="i18n" data-id="Surveyor yang Menjembatani Data Lapangan dan Perencanaan Kota" data-en="A Surveyor Bridging Field Data and City Planning">Halo, Saya Rivaldi Fiqriyansah</h1>
-    <p class="i18n" data-id="Saya mengukur, mengolah, dan menganalisis data spasial untuk mendukung proyek konstruksi dan perencanaan wilayah — mulai dari pengukuran lapangan sampai jadi peta digital yang siap dipakai." data-en="I measure, process, and analyze spatial data to support construction projects and regional planning — from field surveys to ready-to-use digital maps.">Memiliki latar belakang di Teknik Geomatika dan Geospasial. Dengan pengalaman lebih dari 3 tahun sebagai seorang surveyor. Kini saya mendalami ilmu tata ruang melalui studi S1 Perencanaan Wilayah dan Kota. Memiliki ketertarikan pada analisis geospasial, dengan memadukan pengalaman teknis di lapangan dan pengembangan karier menjadi seorang Perencana Wilayah dan GIS Analyst.</p>
+    <h1 class="i18n" data-id="Surveyor yang Menjembatani Data Lapangan dan Perencanaan Kota" data-en="A Surveyor Bridging Field Data and City Planning">Surveyor yang Menjembatani Data Lapangan dan Perencanaan Kota</h1>
+    <p class="i18n" data-id="Saya mengukur, mengolah, dan menganalisis data spasial untuk mendukung proyek konstruksi dan perencanaan wilayah — mulai dari pengukuran lapangan sampai jadi peta digital yang siap dipakai." data-en="I measure, process, and analyze spatial data to support construction projects and regional planning — from field surveys to ready-to-use digital maps.">Saya mengukur, mengolah, dan menganalisis data spasial untuk mendukung proyek konstruksi dan perencanaan wilayah — mulai dari pengukuran lapangan sampai jadi peta digital yang siap dipakai.</p>
     <div class="hero-actions">
       <a href="/projects/" class="btn btn-primary i18n" data-id="Lihat Proyek" data-en="View Projects">Lihat Proyek</a>
       <a href="/cv/" class="btn btn-outline i18n" data-id="Unduh CV" data-en="Download CV">Unduh CV</a>
@@ -137,17 +137,17 @@ permalink: /
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-date">2022</div>
-        <h3 class="i18n" data-id="Magang di PT Kalimantan Industrial Park Indonesia" data-en="Internship at PT Kalimantan Industrial Park Indonesia">Magang - PT Kalimantan Industrial Park Indonesia</h3>
+        <h3 class="i18n" data-id="Magang di PT Kalimantan Industrial Park Indonesia" data-en="Internship at PT Kalimantan Industrial Park Indonesia">Magang di PT Kalimantan Industrial Park Indonesia</h3>
         <p class="i18n" data-id="Langkah pertama sebagai Asisten GIS Analis, mengolah data lahan dan belajar dasar-dasar pemetaan lapangan." data-en="First step as a GIS Analyst Assistant, processing land data and learning the basics of field mapping.">Langkah pertama sebagai Asisten GIS Analis, mengolah data lahan dan belajar dasar-dasar pemetaan lapangan.</p>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">2022 – 2025</div>
-        <h3 class="i18n" data-id="Asisten Surveyor, lalu Surveyor di PT KIPI" data-en="Surveyor Assistant, then Surveyor at PT KIPI">Asisten Surveyor > Surveyor - PT Kalimantan Industrial Park Indonesia</h3>
-        <p class="i18n" data-id="Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare." data-en="Grew from community land surveys to supervising land development across hundreds of hectares of industrial area.">Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area kawasan.</p>
+        <h3 class="i18n" data-id="Asisten Surveyor, lalu Surveyor di PT KIPI" data-en="Surveyor Assistant, then Surveyor at PT KIPI">Asisten Surveyor, lalu Surveyor di PT KIPI</h3>
+        <p class="i18n" data-id="Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare." data-en="Grew from community land surveys to supervising land development across hundreds of hectares of industrial area.">Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare.</p>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">2026 – Sekarang</div>
-        <h3 class="i18n" data-id="Land Surveyor di PT Inti Innovaco, sambil kuliah PWK" data-en="Land Surveyor at PT Inti Innovaco, while studying PWK">Land Surveyor - PT Inti Innovaco</h3>
+        <h3 class="i18n" data-id="Land Surveyor di PT Inti Innovaco, sambil kuliah PWK" data-en="Land Surveyor at PT Inti Innovaco, while studying PWK">Land Surveyor di PT Inti Innovaco, sambil kuliah PWK</h3>
         <p class="i18n" data-id="Kembali ke Bogor, kerja mandiri tanpa tim, sambil mulai serius menekuni jalur perencanaan wilayah dan kota." data-en="Back in Bogor, working independently without a team, while starting to seriously pursue the urban and regional planning path.">Kembali ke Bogor, kerja mandiri tanpa tim, sambil mulai serius menekuni jalur perencanaan wilayah dan kota.</p>
       </div>
     </div>
