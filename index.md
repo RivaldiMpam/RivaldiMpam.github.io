@@ -7,8 +7,8 @@ permalink: /
 <section class="hero full-bleed" style="background-image: url('/images/sampul-banner.jpg');">
   <div class="hero-content">
     <p class="eyebrow hero-eyebrow i18n" data-id="Land Surveyor · GIS Analyst · Urban Planning" data-en="Land Surveyor · GIS Analyst · Urban Planning">Land Surveyor · GIS Analyst · Urban Planning</p>
-    <h1 class="i18n" data-id="Surveyor yang Menjembatani Data Lapangan dan Perencanaan Kota" data-en="A Surveyor Bridging Field Data and City Planning">Surveyor yang Menjembatani Data Lapangan dan Perencanaan Kota</h1>
-    <p class="i18n" data-id="Saya mengukur, mengolah, dan menganalisis data spasial untuk mendukung proyek konstruksi dan perencanaan wilayah — mulai dari pengukuran lapangan sampai jadi peta digital yang siap dipakai." data-en="I measure, process, and analyze spatial data to support construction projects and regional planning — from field surveys to ready-to-use digital maps.">Saya mengukur, mengolah, dan menganalisis data spasial untuk mendukung proyek konstruksi dan perencanaan wilayah — mulai dari pengukuran lapangan sampai jadi peta digital yang siap dipakai.</p>
+    <h1 class="i18n" data-id="Halo, Selamat Datang" data-en="Hello, Welcome">Halo, Selamat Datang</h1>
+    <p class="i18n" data-id="Memiliki latar belakang di Teknik Geomatika dan Geospasial. Dengan pengalaman lebih dari 3 tahun sebagai seorang surveyor. Kini saya mendalami ilmu tata ruang melalui studi S1 Perencanaan Wilayah dan Kota. Memiliki ketertarikan pada analisis geospasial, dengan memadukan pengalaman teknis di lapangan dan pengembangan karier menjadi seorang Perencana Wilayah dan GIS Analyst.">Memiliki latar belakang di Teknik Geomatika dan Geospasial. Dengan pengalaman lebih dari 3 tahun sebagai seorang surveyor. Kini saya mendalami ilmu tata ruang melalui studi S1 Perencanaan Wilayah dan Kota. Memiliki ketertarikan pada analisis geospasial, dengan memadukan pengalaman teknis di lapangan dan pengembangan karier menjadi seorang Perencana Wilayah dan GIS Analyst.</p>
     <div class="hero-actions">
       <a href="/projects/" class="btn btn-primary i18n" data-id="Lihat Proyek" data-en="View Projects">Lihat Proyek</a>
       <a href="/cv/" class="btn btn-outline i18n" data-id="Unduh CV" data-en="Download CV">Unduh CV</a>
@@ -30,6 +30,11 @@ permalink: /
       <div class="stat-number">Sem. 5</div>
       <div class="stat-label i18n" data-id="S1 Perencanaan Wilayah &amp; Kota" data-en="Urban &amp; Regional Planning, BSc">S1 Perencanaan Wilayah &amp; Kota</div>
     </div>
+     <div class="stat-item">
+      <div class="stat-number">9,2 Km</div>
+      <div class="stat-label i18n" data-id="Pengawas Perbaikan Jalan" data-en="Supervised Road Maintenance">Pengawas Perbaikan Jalan</div>
+    </div>
+  </div>
 </section>
 
 <section class="section">
