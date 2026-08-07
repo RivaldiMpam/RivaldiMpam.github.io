@@ -23,16 +23,16 @@ permalink: /
       <div class="stat-label i18n" data-id="Tahun Pengalaman Lapangan" data-en="Years of Field Experience">Tahun Pengalaman Lapangan</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">142 Ha</div>
-      <div class="stat-label i18n" data-id="Area Topografi Tersurvei" data-en="Topographic Area Surveyed">Area Topografi Tersurvei</div>
+      <div class="stat-number">GIS &amp; GNSS</div>
+      <div class="stat-label i18n" data-id="Spatial Analysis Tools" data-en="Spatial Analysis Tools">Spatial Analysis Tools</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">Sem. 4</div>
+      <div class="stat-number">Sem. 5</div>
       <div class="stat-label i18n" data-id="S1 Perencanaan Wilayah &amp; Kota" data-en="Urban &amp; Regional Planning, BSc">S1 Perencanaan Wilayah &amp; Kota</div>
     </div>
     <div class="stat-item">
-      <div class="stat-number">5+</div>
-      <div class="stat-label i18n" data-id="Instrumen &amp; Software Survei" data-en="Survey Instruments &amp; Software">Instrumen &amp; Software Survei</div>
+      <div class="stat-number">9,2 Km</div>
+      <div class="stat-label i18n" data-id="Jalan Kawasan Diawasi" data-en="Area Road Supervised">Jalan Kawasan Diawasi</div>
     </div>
   </div>
 </section>
@@ -43,14 +43,9 @@ permalink: /
       <p class="eyebrow i18n" data-id="Tentang Saya" data-en="About Me">Tentang Saya</p>
       <h2 class="i18n" data-id="Dari Lapangan ke Perencanaan Wilayah" data-en="From the Field to Regional Planning">Dari Lapangan ke Perencanaan Wilayah</h2>
       <p class="i18n"
-         data-id="Saya lulusan Teknik Geomatika &amp; Geospasial, dengan pengalaman sebagai surveyor dan pengawas lapangan di berbagai proyek konstruksi. Saya terbiasa mengumpulkan, mengolah, dan menganalisis data spasial pakai berbagai software GIS, perangkat GPS, dan teknologi pemetaan modern lainnya."
-         data-en="I'm a Geomatics &amp; Geospatial Engineering graduate with experience as a surveyor and field supervisor on various construction projects. I'm used to collecting, processing, and analyzing spatial data using GIS software, GPS devices, and other modern mapping technology.">
-        Saya lulusan Teknik Geomatika &amp; Geospasial, dengan pengalaman sebagai surveyor dan pengawas lapangan di berbagai proyek konstruksi. Saya terbiasa mengumpulkan, mengolah, dan menganalisis data spasial pakai berbagai software GIS, perangkat GPS, dan teknologi pemetaan modern lainnya.
-      </p>
-      <p class="i18n"
-         data-id="Sekarang saya bekerja sebagai Land Surveyor di PT Inti Innovaco, sambil menempuh studi S1 Perencanaan Wilayah dan Kota (PWK) di Universitas Terbuka. Minat saya ada di sistem informasi geografis, teknologi perkotaan, dan perencanaan berkelanjutan — dan saya berkomitmen terus mengembangkan keahlian ini ke level yang lebih jauh."
-         data-en="I currently work as a Land Surveyor at PT Inti Innovaco, while pursuing a bachelor's degree in Urban and Regional Planning (PWK) at Universitas Terbuka. My interests lie in geographic information systems, urban technology, and sustainable planning — and I'm committed to keep growing these skills further.">
-        Sekarang saya bekerja sebagai Land Surveyor di PT Inti Innovaco, sambil menempuh studi S1 Perencanaan Wilayah dan Kota (PWK) di Universitas Terbuka. Minat saya ada di sistem informasi geografis, teknologi perkotaan, dan perencanaan berkelanjutan — dan saya berkomitmen terus mengembangkan keahlian ini ke level yang lebih jauh.
+         data-id="Berlatar belakang Teknik Geomatika dan Geospasial, dengan pengalaman di survei dan pengawasan proyek konstruksi. Terbiasa mengolah data spasial menggunakan GIS, GNSS, dan teknologi pemetaan modern. Saat ini bekerja sebagai Land Surveyor dan menempuh studi Perencanaan Wilayah dan Kota, dengan fokus pada pengembangan solusi berbasis data untuk perencanaan berkelanjutan."
+         data-en="Background in Geomatics and Geospatial Engineering, with experience in surveying and construction project supervision. Used to processing spatial data using GIS, GNSS, and modern mapping technology. Currently working as a Land Surveyor while studying Urban and Regional Planning, with a focus on developing data-driven solutions for sustainable planning.">
+        Berlatar belakang Teknik Geomatika dan Geospasial, dengan pengalaman di survei dan pengawasan proyek konstruksi. Terbiasa mengolah data spasial menggunakan GIS, GNSS, dan teknologi pemetaan modern. Saat ini bekerja sebagai Land Surveyor dan menempuh studi Perencanaan Wilayah dan Kota, dengan fokus pada pengembangan solusi berbasis data untuk perencanaan berkelanjutan.
       </p>
       <a href="/journey/" class="btn btn-outline i18n" data-id="Baca Perjalanan Lengkap" data-en="Read Full Journey">Baca Perjalanan Lengkap</a>
     </div>
@@ -137,17 +132,17 @@ permalink: /
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-date">2022</div>
-        <h3 class="i18n" data-id="Magang di PT Kalimantan Industrial Park Indonesia" data-en="Internship at PT Kalimantan Industrial Park Indonesia">Magang di PT Kalimantan Industrial Park Indonesia</h3>
+        <h3 class="i18n" data-id="Magang - PT Kalimantan Industrial Park Indonesia" data-en="Internship - PT Kalimantan Industrial Park Indonesia">Magang - PT Kalimantan Industrial Park Indonesia</h3>
         <p class="i18n" data-id="Langkah pertama sebagai Asisten GIS Analis, mengolah data lahan dan belajar dasar-dasar pemetaan lapangan." data-en="First step as a GIS Analyst Assistant, processing land data and learning the basics of field mapping.">Langkah pertama sebagai Asisten GIS Analis, mengolah data lahan dan belajar dasar-dasar pemetaan lapangan.</p>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">2022 – 2025</div>
-        <h3 class="i18n" data-id="Asisten Surveyor, lalu Surveyor di PT KIPI" data-en="Surveyor Assistant, then Surveyor at PT KIPI">Asisten Surveyor, lalu Surveyor di PT KIPI</h3>
+        <h3 class="i18n" data-id="Asisten Surveyor > lalu Surveyor - PT Kalimantan Industrial Park Indonesia" data-en="Surveyor Assistant > Surveyor - PT Kalimantan Industrial Park Indonesia">Asisten Surveyor > Surveyor - PT Kalimantan Industrial Park Indonesia</h3>
         <p class="i18n" data-id="Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare." data-en="Grew from community land surveys to supervising land development across hundreds of hectares of industrial area.">Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare.</p>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">2026 – Sekarang</div>
-        <h3 class="i18n" data-id="Land Surveyor di PT Inti Innovaco, sambil kuliah PWK" data-en="Land Surveyor at PT Inti Innovaco, while studying PWK">Land Surveyor di PT Inti Innovaco, sambil kuliah PWK</h3>
+        <h3 class="i18n" data-id="Land Surveyor - PT Inti Innovaco" data-en="Land Surveyor - PT Inti Innovaco">Land Surveyor - PT Inti Innovaco</h3>
         <p class="i18n" data-id="Kembali ke Bogor, kerja mandiri tanpa tim, sambil mulai serius menekuni jalur perencanaan wilayah dan kota." data-en="Back in Bogor, working independently without a team, while starting to seriously pursue the urban and regional planning path.">Kembali ke Bogor, kerja mandiri tanpa tim, sambil mulai serius menekuni jalur perencanaan wilayah dan kota.</p>
       </div>
     </div>
