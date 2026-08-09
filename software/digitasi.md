@@ -8,6 +8,7 @@ category: "GIS & Spatial Analysis"
 category_en: "GIS & Spatial Analysis"
 cover_image: "/images/software/Hasil-digitasi-arcgispro.jpg"
 permalink: /software/arcgis/digitasi/
+description: "Studi kasus digitasi on-screen peta PDF untuk recovery aset lahan seluas 10.7 ha (60 bidang) di Cigombong menggunakan ArcGIS Pro, oleh Rivaldi Fiqriyansah."
 ---
 
 <div class="lang-id" markdown="1">
