@@ -8,6 +8,7 @@ category: "Urban Planning"
 category_en: "Urban Planning"
 cover_image: "/images/software/hasil-peta-topografi.jpg"
 permalink: /software/arcgis/model-builder/
+description: "Automasi ekstraksi topografi tingkat kecamatan dari data DEMNAS menggunakan ModelBuilder ArcGIS Pro, oleh Rivaldi Fiqriyansah."
 ---
 
 <div class="lang-id" markdown="1">
