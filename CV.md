@@ -2,11 +2,12 @@
 layout: default
 title: Tentang
 permalink: /cv/
+description: "Riwayat karier, pendidikan, dan keahlian Rivaldi Fiqriyansah — Land Surveyor & GIS Analyst dengan pengalaman di PT Kalimantan Industrial Park Indonesia dan PT Inti Innovaco."
 ---
 
 <div class="section-inner page-header">
   <p class="eyebrow i18n" data-id="Tentang" data-en="About">Tentang</p>
-  <h1 class="i18n" data-id="Rivaldi Fiqriyansyah" data-en="Rivaldi Fiqriyansyah">Rivaldi Fiqriyansyah</h1>
+  <h1 class="i18n" data-id="Rivaldi Fiqriyansah" data-en="Rivaldi Fiqriyansah">Rivaldi Fiqriyansah</h1>
   <p class="i18n"
      data-id-html="Lulusan Teknik Geomatika dengan pengalaman sebagai surveyor dan pengawas lapangan di berbagai proyek konstruksi. Terbiasa mengumpulkan, mengolah, dan menganalisis data spasial menggunakan berbagai software GIS, perangkat GPS, dan teknologi pemetaan modern lainnya."
      data-en-html="A Geomatics Engineering graduate with experience as a surveyor and field supervisor on various construction projects. Used to collecting, processing, and analyzing spatial data using GIS software, GPS devices, and other modern mapping technology.">
