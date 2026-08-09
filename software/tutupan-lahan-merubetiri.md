@@ -8,6 +8,7 @@ category: "GIS & Spatial Analysis"
 category_en: "GIS & Spatial Analysis"
 cover_image: "/images/software/SS-GEE-merubetiri.jpg"
 permalink: /software/gee/tutupan-lahan-merubetiri/
+description: "Klasifikasi tutupan lahan Taman Nasional Meru Betiri untuk analisis Forest Canopy Density berbasis Random Forest di Google Earth Engine, oleh Rivaldi Fiqriyansah."
 ---
 
 <div class="lang-id" markdown="1">
