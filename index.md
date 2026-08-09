@@ -2,6 +2,7 @@
 layout: default
 title: Home
 permalink: /
+description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor & GIS Analyst, mahasiswa Perencanaan Wilayah dan Kota. Portofolio proyek pemetaan, survei, dan analisis spasial."
 ---
 
 <section class="hero full-bleed" style="background-image: url('/images/sampul-banner.jpg');">
@@ -52,7 +53,7 @@ permalink: /
       <a href="/journey/" class="btn btn-outline i18n" data-id="Baca Perjalanan Lengkap" data-en="Read Full Journey">Baca Perjalanan Lengkap</a>
     </div>
     <div class="about-media">
-      <img src="/images/foto-profil.jpg" alt="Rivaldi Fiqriyansyah" class="cool-photo">
+      <img src="/images/foto-profil.jpg" alt="Rivaldi Fiqriyansah" class="cool-photo">
     </div>
   </div>
 </section>
