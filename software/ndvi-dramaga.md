@@ -8,6 +8,7 @@ category: "GIS & Spatial Analysis"
 category_en: "GIS & Spatial Analysis"
 cover_image: "/images/software/peta-ndvi-dramaga.jpg"
 permalink: /software/gee/ndvi-dramaga/
+description: "Analisis kerapatan vegetasi (NDVI) Kecamatan Dramaga berbasis citra Sentinel-2 menggunakan Google Earth Engine dan QGIS, oleh Rivaldi Fiqriyansah."
 ---
 
 <div class="lang-id" markdown="1">
