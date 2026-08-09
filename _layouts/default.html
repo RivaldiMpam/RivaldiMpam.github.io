@@ -3,8 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | Rivaldi Fiqriyansyah</title>
-  <meta name="description" content="Rivaldi Fiqriyansyah — Land Surveyor, GIS &amp; Spatial Data Analyst, Urban Planning Student.">
+
+  {% assign page_desc = page.description | default: site.description %}
+  {% assign canonical_url = site.url | append: page.url %}
+  {% if page.url == "/" %}
+  <title>Rivaldi Fiqriyansah | Land Surveyor & GIS Analyst</title>
+  {% else %}
+  <title>{{ page.title }} | Rivaldi Fiqriyansah</title>
+  {% endif %}
+  <meta name="description" content="{{ page_desc }}">
+  <meta name="author" content="Rivaldi Fiqriyansah">
+  <link rel="canonical" href="{{ canonical_url }}">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Rivaldi Fiqriyansah">
+  <meta property="og:title" content="{% if page.url == '/' %}Rivaldi Fiqriyansah | Land Surveyor & GIS Analyst{% else %}{{ page.title }} | Rivaldi Fiqriyansah{% endif %}">
+  <meta property="og:description" content="{{ page_desc }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:image" content="{{ site.url }}/images/foto-profil.jpg">
+  <meta property="og:locale" content="id_ID">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.url == '/' %}Rivaldi Fiqriyansah{% else %}{{ page.title }} | Rivaldi Fiqriyansah{% endif %}">
+  <meta name="twitter:description" content="{{ page_desc }}">
+  <meta name="twitter:image" content="{{ site.url }}/images/foto-profil.jpg">
+
+  {% if page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rivaldi Fiqriyansah",
+    "alternateName": ["Rivaldi Mpam"],
+    "url": "{{ site.url }}/",
+    "image": "{{ site.url }}/images/foto-profil.jpg",
+    "jobTitle": "Land Surveyor",
+    "description": "{{ site.description }}",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "PT Inti Innovaco"
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Universitas Terbuka"
+      }
+    ],
+    "knowsAbout": ["GIS", "Land Surveying", "Urban and Regional Planning", "Remote Sensing", "GNSS Geodetic Survey"],
+    "sameAs": [
+      "https://linkedin.com/in/rivaldifiqriyansyah",
+      "https://github.com/RivaldiMpam"
+    ]
+  }
+  </script>
+  {% endif %}
 
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
@@ -811,7 +863,7 @@
   <header class="site-header">
     <div class="nav-container">
       <a href="/" class="nav-brand">
-        <span class="brand-name">Rivaldi Fiqriyansyah</span>
+        <span class="brand-name">Rivaldi Fiqriyansah</span>
         <span class="brand-sub i18n" data-id="LAND SURVEYOR · GIS ANALYST · URBAN PLANNING" data-en="LAND SURVEYOR · GIS ANALYST · URBAN PLANNING">LAND SURVEYOR · GIS ANALYST · URBAN PLANNING</span>
       </a>
 
@@ -853,8 +905,8 @@
   <footer>
     <div class="footer-container">
       <div class="footer-brand">
-        <h4>Rivaldi Fiqriyansyah</h4>
-        <p class="i18n" data-id="Lulusan Teknik Geomatika yang berfokus pada analisis spasial, pemetaan digital, dan perencanaan wilayah berkelanjutan." data-en="Geomatics Engineering graduate focused on spatial analysis, digital mapping, and sustainable regional planning.">Lulusan Teknik Geomatika yang berfokus pada analisis spasial, pemetaan digital, dan perencanaan wilayah berkelanjutan.</p>
+        <h4>Rivaldi Fiqriyansah</h4>
+        <p class="i18n" data-id="Dikenal juga sebagai Rivaldi Mpam. Lulusan Teknik Geomatika yang berfokus pada analisis spasial, pemetaan digital, dan perencanaan wilayah berkelanjutan." data-en="Also known as Rivaldi Mpam. Geomatics Engineering graduate focused on spatial analysis, digital mapping, and sustainable regional planning.">Dikenal juga sebagai Rivaldi Mpam. Lulusan Teknik Geomatika yang berfokus pada analisis spasial, pemetaan digital, dan perencanaan wilayah berkelanjutan.</p>
       </div>
       <div class="footer-links">
         <div class="footer-col">
@@ -876,7 +928,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Rivaldi Fiqriyansyah</p>
+      <p>&copy; 2026 Rivaldi Fiqriyansah</p>
       <p class="i18n" data-id="Dibuat dengan Jekyll & GitHub Pages" data-en="Built with Jekyll & GitHub Pages">Dibuat dengan Jekyll & GitHub Pages</p>
     </div>
   </footer>
