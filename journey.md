@@ -2,6 +2,7 @@
 layout: default
 title: Journey
 permalink: /journey/
+description: "Perjalanan karier Rivaldi Fiqriyansah dari pendidikan Teknik Geomatika hingga menjadi Land Surveyor dan GIS Analyst."
 ---
 
 <div class="section-inner page-header">
