@@ -2,6 +2,7 @@
 layout: default
 title: Projects Portfolio
 permalink: /projects/
+description: "Portofolio proyek GIS dan pemetaan Rivaldi Fiqriyansah: ekstraksi topografi ArcGIS Pro, digitasi aset lahan, dan analisis NDVI menggunakan Google Earth Engine."
 ---
 
 <div style="text-align: center; margin: 0 auto 40px; max-width: 640px;">
