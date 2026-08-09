@@ -1,0 +1,14 @@
+title: "Rivaldi Fiqriyansah"
+description: "Portofolio resmi Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor, GIS & Spatial Data Analyst, mahasiswa Perencanaan Wilayah dan Kota (S1 PWK, Universitas Terbuka)."
+url: "https://rivaldimpam.github.io"
+lang: id
+author: "Rivaldi Fiqriyansah"
+
+plugins:
+  - jekyll-sitemap
+
+# File/folder yang tidak perlu ikut di-build ke output
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
