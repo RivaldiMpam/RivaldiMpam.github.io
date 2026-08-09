@@ -36,4 +36,13 @@ permalink: /projects/
       <p class="i18n" data-id="Analisis kerapatan vegetasi berbasis citra Sentinel-2 di Google Earth Engine, dilanjutkan layouting kartografis di QGIS." data-en="Vegetation density analysis based on Sentinel-2 imagery in Google Earth Engine, followed by cartographic layouting in QGIS.">Analisis kerapatan vegetasi berbasis citra Sentinel-2 di Google Earth Engine, dilanjutkan layouting kartografis di QGIS.</p>
     </div>
   </a>
+
+  <a href="/software/gee/tutupan-lahan-merubetiri/" class="work-card">
+    <img src="/images/software/peta-tutupan-lahan-merubetiri.jpg" alt="Klasifikasi Tutupan Lahan TN Meru Betiri" class="work-card-img">
+    <div class="work-card-body">
+      <div class="work-card-tag i18n" data-id="GIS &amp; SPATIAL ANALYSIS · GEE" data-en="GIS &amp; SPATIAL ANALYSIS · GEE">GIS &amp; SPATIAL ANALYSIS · GEE</div>
+      <h3 class="i18n" data-id="Klasifikasi Tutupan Lahan TN Meru Betiri" data-en="Meru Betiri National Park Land Cover Classification">Klasifikasi Tutupan Lahan TN Meru Betiri</h3>
+      <p class="i18n" data-id="Klasifikasi hutan vs non-hutan berbasis Random Forest di Google Earth Engine sebagai data dasar untuk analisis Forest Canopy Density." data-en="Random Forest-based forest vs non-forest classification in Google Earth Engine as base data for Forest Canopy Density analysis.">Klasifikasi hutan vs non-hutan berbasis Random Forest di Google Earth Engine sebagai data dasar untuk analisis Forest Canopy Density.</p>
+    </div>
+  </a>
 </div>
