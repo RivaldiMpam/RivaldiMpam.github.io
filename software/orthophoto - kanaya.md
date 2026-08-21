@@ -7,7 +7,7 @@ subtitle_en: "Documenting Drone Aerial Mapping for Site Plan Basemap Overlay in 
 category: "Drone Mapping & Photogrammetry"
 category_en: "Drone Mapping & Photogrammetry"
 cover_image: "/images/software/ortofoto-kanaya.jpg"
-permalink: /software/webodm/orthophoto-kanaya/
+permalink: /software/orthophoto-kanaya/
 description: "Dokumentasi pengolahan foto udara drone DJI Air 3 menggunakan WebODM untuk menghasilkan orthophoto sebagai basemap overlay site plan dan pemantauan progres lahan, oleh Rivaldi Fiqriyansah."
 ---
 
