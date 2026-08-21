@@ -2,7 +2,7 @@
 layout: default
 title: Projects Portfolio
 permalink: /projects/
-description: "Portofolio proyek GIS dan pemetaan Rivaldi Fiqriyansah: ekstraksi topografi ArcGIS Pro, digitasi aset lahan, dan analisis NDVI menggunakan Google Earth Engine."
+description: "Portofolio proyek GIS dan pemetaan Rivaldi Fiqriyansah: ekstraksi topografi ArcGIS Pro, digitasi aset lahan, analisis NDVI di Google Earth Engine, dan pengolahan orthophoto drone dengan WebODM."
 ---
 
 <div style="text-align: center; margin: 0 auto 40px; max-width: 640px;">
@@ -44,6 +44,15 @@ description: "Portofolio proyek GIS dan pemetaan Rivaldi Fiqriyansah: ekstraksi 
       <div class="work-card-tag i18n" data-id="GIS &amp; SPATIAL ANALYSIS · GEE" data-en="GIS &amp; SPATIAL ANALYSIS · GEE">GIS &amp; SPATIAL ANALYSIS · GEE</div>
       <h3 class="i18n" data-id="Klasifikasi Tutupan Lahan TN Meru Betiri" data-en="Meru Betiri National Park Land Cover Classification">Klasifikasi Tutupan Lahan TN Meru Betiri</h3>
       <p class="i18n" data-id="Klasifikasi hutan vs non-hutan berbasis Random Forest di Google Earth Engine sebagai data dasar untuk analisis Forest Canopy Density." data-en="Random Forest-based forest vs non-forest classification in Google Earth Engine as base data for Forest Canopy Density analysis.">Klasifikasi hutan vs non-hutan berbasis Random Forest di Google Earth Engine sebagai data dasar untuk analisis Forest Canopy Density.</p>
+    </div>
+  </a>
+
+  <a href="/software/orthophoto-kanaya/" class="work-card">
+    <img src="/images/software/ortofoto-kanaya.jpg" alt="Pengolahan Orthophoto Menggunakan WebODM" class="work-card-img">
+    <div class="work-card-body">
+      <div class="work-card-tag i18n" data-id="DRONE MAPPING · WebODM" data-en="DRONE MAPPING · WebODM">DRONE MAPPING · WebODM</div>
+      <h3 class="i18n" data-id="Pengolahan Orthophoto Menggunakan WebODM" data-en="Orthophoto Processing Using WebODM">Pengolahan Orthophoto Menggunakan WebODM</h3>
+      <p class="i18n" data-id="Pengolahan foto udara drone DJI Air 3 di WebODM untuk menghasilkan orthophoto sebagai basemap overlay site plan dan pemantauan progres lahan." data-en="Processing DJI Air 3 aerial imagery in WebODM to produce an orthophoto as a site plan basemap overlay and for monitoring site progress.">Pengolahan foto udara drone DJI Air 3 di WebODM untuk menghasilkan orthophoto sebagai basemap overlay site plan dan pemantauan progres lahan.</p>
     </div>
   </a>
 </div>
