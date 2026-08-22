@@ -102,7 +102,7 @@ DSM-nya nunjukin rentang elevasi 209 sampai 240 meter, atau beda tinggi sekitar 
 Satu catatan lain dari quality report, rata-rata satu titik di tanah cuma keliatan di 3,62 foto. Angka itu tergolong tipis. Peta cakupan di report juga nunjukin bagian tengah aman dengan cakupan empat foto atau lebih, sementara tepiannya cuma dua sampai tiga foto. Ini konsekuensi wajar dari terbang manual yang overlap-nya nggak terkontrol. Artinya metode ini masih aman di skala 4–8 hektare, tapi buat area yang jauh lebih luas kemungkinan besar bakal bermasalah.
 
 ### Pemanfaatan di ArcGIS Pro
-<img src="/images/software/overlay-siteplan-kanaya.jpg" alt="Overlay layer site plan di atas orthophoto" class="inline-image">
+<img src="/images/software/overlay-siteplan-kanaya.png" alt="Overlay layer site plan di atas orthophoto" class="inline-image">
 
 Setelah masuk ArcGIS Pro, orthophoto ini jadi latar buat layer perencanaan seperti kavling, area komersial, RTH, marketing gallery, dan area parkir. Manfaatnya ada tiga.
 
@@ -220,7 +220,7 @@ The DSM shows an elevation range from 209 to 240 meters, or around 31 meters of 
 Another note from the quality report: on average, a single ground point is only visible in 3.62 photos. That figure is on the thin side. The coverage map in the report also shows the central area is safe with four or more photos, while the edges have only two to three. This is a reasonable consequence of a manual flight where overlap isn't controlled. It means the method is still safe at a 4–8 hectare scale, but for a much larger area it would likely run into trouble.
 
 ### Use in ArcGIS Pro
-<img src="/images/software/overlay-siteplan-kanaya.jpg" alt="Site plan layers overlaid on the orthophoto" class="inline-image">
+<img src="/images/software/overlay-siteplan-kanaya.png" alt="Site plan layers overlaid on the orthophoto" class="inline-image">
 
 Once in ArcGIS Pro, this orthophoto becomes the backdrop for planning layers such as parcels, commercial area, green space, marketing gallery, and parking areas. There are three benefits.
 
