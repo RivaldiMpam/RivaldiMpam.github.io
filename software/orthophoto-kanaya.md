@@ -11,6 +11,75 @@ permalink: /software/orthophoto-kanaya/
 description: "Dokumentasi pengolahan foto udara drone DJI Air 3 menggunakan WebODM untuk menghasilkan orthophoto sebagai basemap overlay site plan dan pemantauan progres lahan, oleh Rivaldi Fiqriyansah."
 ---
 
+<style>
+.lang-id table,
+.lang-en table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 28px 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.lang-id thead th,
+.lang-en thead th {
+  text-align: left;
+  font-weight: 700;
+  padding: 12px 16px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.45);
+  white-space: nowrap;
+}
+
+.lang-id tbody td,
+.lang-en tbody td {
+  padding: 12px 16px;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.22);
+}
+
+.lang-id tbody tr:last-child td,
+.lang-en tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.lang-id tbody td:first-child,
+.lang-en tbody td:first-child {
+  width: 34%;
+  font-weight: 600;
+}
+
+.lang-id table code,
+.lang-en table code {
+  white-space: nowrap;
+  font-size: 0.88em;
+}
+
+@media (max-width: 640px) {
+  .lang-id table,
+  .lang-en table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 0.88rem;
+  }
+  .lang-id tbody td,
+  .lang-en tbody td,
+  .lang-id thead th,
+  .lang-en thead th {
+    padding: 10px 12px;
+  }
+  .lang-id tbody td:first-child,
+  .lang-en tbody td:first-child {
+    width: auto;
+  }
+  .lang-id tbody td:last-child,
+  .lang-en tbody td:last-child {
+    white-space: normal;
+    min-width: 260px;
+  }
+}
+</style>
+
 <div class="lang-id" markdown="1">
 
 ## Latar Belakang
