@@ -875,12 +875,12 @@
 
       <div class="nav-menu-wrapper" id="navMenuWrapper">
         <ul class="nav-menu">
-          <li><a href="/" class="nav-link{% if page.url == '/' %} active{% endif %} i18n" data-id="Beranda" data-en="Home">Beranda</a></li>
-          <li><a href="/journey/" class="nav-link{% if page.url contains '/journey/' %} active{% endif %} i18n" data-id="Perjalanan" data-en="Journey">Perjalanan</a></li>
-          <li><a href="/cv/" class="nav-link{% if page.url contains '/cv/' %} active{% endif %} i18n" data-id="Tentang" data-en="About">Tentang</a></li>
-          <li><a href="/projects/" class="nav-link{% if page.url contains '/projects/' %} active{% endif %} i18n" data-id="Proyek" data-en="Projects">Proyek</a></li>
-          <li><a href="/gallery/" class="nav-link{% if page.url contains '/gallery/' %} active{% endif %} i18n" data-id="Galeri" data-en="Gallery">Galeri</a></li>
-        </ul>
+  <li><a href="/" class="nav-link{% if page.url == '/' %} active{% endif %} i18n" data-id="Beranda" data-en="Home">Beranda</a></li>
+  <li><a href="/projects/" class="nav-link{% if page.url contains '/projects/' or page.url contains '/software/' %} active{% endif %} i18n" data-id="Proyek" data-en="Projects">Proyek</a></li>
+  <li><a href="/writing/" class="nav-link{% if page.url contains '/writing/' %} active{% endif %} i18n" data-id="Tulisan" data-en="Writing">Tulisan</a></li>
+  <li><a href="/journey/" class="nav-link{% if page.url contains '/journey/' %} active{% endif %} i18n" data-id="Perjalanan" data-en="Journey">Perjalanan</a></li>
+  <li><a href="/about/" class="nav-link{% if page.url contains '/about/' %} active{% endif %} i18n" data-id="Tentang" data-en="About">Tentang</a></li>
+</ul>
 
         <div class="nav-utils">
           <button id="langToggle" class="util-btn" aria-label="Switch language / Ganti bahasa">EN</button>
