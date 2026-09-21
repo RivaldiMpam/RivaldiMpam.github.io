@@ -13,7 +13,7 @@ description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor & GIS Analyst
     </div>
     <div class="hero-actions">
       <a href="/projects/" class="btn btn-primary i18n" data-id="Lihat Proyek" data-en="View Projects">Lihat Proyek</a>
-      <a href="/cv/" class="btn btn-outline i18n" data-id="Unduh CV" data-en="Download CV">Unduh CV</a>
+      <a href="/files/CV_RIVALDI-FIQRIYANSAH.pdf" download class="btn btn-outline i18n" data-id="Unduh CV" data-en="Download CV">Unduh CV</a>
     </div>
 
   </div>
@@ -33,9 +33,9 @@ description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor & GIS Analyst
       <div class="stat-number">Sem. 5</div>
       <div class="stat-label i18n" data-id="S1 Perencanaan Wilayah &amp; Kota" data-en="Urban &amp; Regional Planning, BSc">S1 Perencanaan Wilayah &amp; Kota</div>
     </div>
-     <div class="stat-item">
-      <div class="stat-number">9,2 Km</div>
-      <div class="stat-label i18n" data-id="Pengawas Perbaikan Jalan" data-en="Supervised Road Maintenance">Pengawas Perbaikan Jalan</div>
+    <div class="stat-item">
+      <div class="stat-number">5</div>
+      <div class="stat-label i18n" data-id="Proyek di Portfolio" data-en="Portfolio Projects">Proyek di Portfolio</div>
     </div>
   </div>
 </section>
