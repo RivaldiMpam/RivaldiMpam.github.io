@@ -32,7 +32,7 @@ description: "Profil Rivaldi Fiqriyansah — Land Surveyor dan GIS Analyst denga
           Saat ini bekerja sebagai Land Surveyor di PT Inti Innovaco, Bogor Utara, sambil menempuh S1 Perencanaan Wilayah dan Kota di Universitas Terbuka. Sedang aktif mengembangkan kemampuan analisis spasial ke arah GIS Specialist — mencakup remote sensing, network analysis, dan pemrograman Python/JavaScript untuk GIS.
         </p>
         <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:8px;">
-          <a href="/images/cv-rivaldi-fiqriyansah.pdf" download class="btn btn-primary i18n" data-id="Unduh CV" data-en="Download CV">Unduh CV</a>
+          <a href="/files/CV_RIVALDI-FIQRIYANSAH.pdf" download class="btn btn-primary i18n" data-id="Unduh CV" data-en="Download CV">Unduh CV</a>
           <a href="https://linkedin.com/in/rivaldifiqriyansyah" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
           <a href="mailto:rivaldifiqriyansah@gmail.com" class="btn btn-outline i18n" data-id="Hubungi" data-en="Contact">Hubungi</a>
         </div>
