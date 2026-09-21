@@ -46,14 +46,17 @@ description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor & GIS Analyst
       <p class="eyebrow i18n" data-id="Tentang Saya" data-en="About Me">Tentang Saya</p>
       <h2 class="i18n" data-id="Dari Lapangan ke Perencanaan Wilayah" data-en="From the Field to Regional Planning">Dari Lapangan ke Perencanaan Wilayah</h2>
       <p class="i18n"
-         data-id="Berlatar belakang Teknik Geomatika dan Geospasial, dengan pengalaman di survei dan pengawasan proyek konstruksi. Terbiasa mengolah data spasial menggunakan GIS, GNSS, dan teknologi pemetaan modern. Saat ini bekerja sebagai Land Surveyor dan menempuh studi Perencanaan Wilayah dan Kota, dengan fokus pada pengembangan solusi berbasis data untuk perencanaan berkelanjutan."
-         data-en="Background in Geomatics and Geospatial Engineering, with experience in surveying and construction project supervision. Used to processing spatial data using GIS, GNSS, and modern mapping technology. Currently working as a Land Surveyor while studying Urban and Regional Planning, with a focus on developing data-driven solutions for sustainable planning.">
-        Berlatar belakang Teknik Geomatika dan Geospasial, dengan pengalaman di survei dan pengawasan proyek konstruksi. Terbiasa mengolah data spasial menggunakan GIS, GNSS, dan teknologi pemetaan modern. Saat ini bekerja sebagai Land Surveyor dan menempuh studi Perencanaan Wilayah dan Kota, dengan fokus pada pengembangan solusi berbasis data untuk perencanaan berkelanjutan.
+         data-id="Tiga tahun lebih di lapangan — ngukur lahan, operasiin drone, awasi konstruksi — sekarang gue kombinasiin pengalaman itu sama analisis spasial dan perencanaan kota. Bukan cuma orang yang bisa bikin peta, tapi yang ngerti konteks di baliknya."
+         data-en="Three-plus years in the field — surveying land, flying drones, supervising construction — now combining that experience with spatial analysis and urban planning. Not just someone who makes maps, but someone who understands the context behind them.">
+        Tiga tahun lebih di lapangan — ngukur lahan, operasiin drone, awasi konstruksi — sekarang gue kombinasiin pengalaman itu sama analisis spasial dan perencanaan kota. Bukan cuma orang yang bisa bikin peta, tapi yang ngerti konteks di baliknya.
       </p>
-      <a href="/journey/" class="btn btn-outline i18n" data-id="Baca Perjalanan Lengkap" data-en="Read Full Journey">Baca Perjalanan Lengkap</a>
+      <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:8px;">
+        <a href="/journey/" class="btn btn-outline i18n" data-id="Lihat Perjalanan" data-en="My Journey">Lihat Perjalanan</a>
+        <a href="/about/" class="btn btn-outline i18n" data-id="Profil & Keahlian" data-en="Profile & Skills">Profil & Keahlian</a>
+      </div>
     </div>
     <div class="about-media">
-      <img src="/images/foto-profil.jpg" alt="Rivaldi Fiqriyansah" class="cool-photo">
+      <img src="/images/foto-profil.jpg" alt="Rivaldi Fiqriyansah" class="cool-photo" loading="lazy">
     </div>
   </div>
 </section>
