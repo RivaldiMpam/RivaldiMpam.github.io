@@ -2,16 +2,16 @@
 layout: default
 title: Tentang
 permalink: /about/
-description: "Profil Rivaldi Fiqriyansah — Land Surveyor dan GIS Analyst dengan latar belakang SMK Teknik Geomatika dan Geospasial, saat ini menempuh S1 Perencanaan Wilayah dan Kota."
+description: "Profil Rivaldi Fiqriyansah — Land Surveyor dengan fokus GNSS, UAV mapping, ArcGIS Pro dan QGIS, berlatar belakang SMK Teknik Geomatika dan Geospasial, saat ini menempuh S1 Perencanaan Wilayah dan Kota."
 ---
 
 <div class="section-inner page-header">
   <p class="eyebrow i18n" data-id="Tentang Saya" data-en="About Me">Tentang Saya</p>
   <h1 class="i18n" data-id="Rivaldi Fiqriyansah" data-en="Rivaldi Fiqriyansah">Rivaldi Fiqriyansah</h1>
   <p class="i18n"
-     data-id="Land Surveyor · GIS Analyst · Mahasiswa PWK"
-     data-en="Land Surveyor · GIS Analyst · Urban Planning Student">
-    Land Surveyor · GIS Analyst · Mahasiswa PWK
+     data-id="Land Surveyor · GNSS & UAV Mapping · ArcGIS Pro & QGIS · Mahasiswa PWK"
+     data-en="Land Surveyor · GNSS & UAV Mapping · ArcGIS Pro & QGIS · Urban Planning">
+    Land Surveyor · GNSS & UAV Mapping · ArcGIS Pro & QGIS · Mahasiswa PWK
   </p>
   <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:20px;">
     <a href="/files/CV_RIVALDI-FIQRIYANSAH.pdf" download class="btn btn-primary i18n" data-id="Unduh CV" data-en="Download CV">Unduh CV</a>
@@ -39,7 +39,6 @@ description: "Profil Rivaldi Fiqriyansah — Land Surveyor dan GIS Analyst denga
         <p class="eyebrow i18n" data-id="Survei & Pemetaan Lapangan" data-en="Field Survey & Mapping">Survei & Pemetaan Lapangan</p>
         <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px; color:var(--text-muted); font-size:0.9rem;">
           <li>GNSS Geodetik RTK — FOIF A60 Pro</li>
-          <li>Total Station</li>
           <li>Drone DJI Air 3</li>
           <li>Agisoft Metashape · WebODM</li>
         </ul>
@@ -86,7 +85,7 @@ description: "Profil Rivaldi Fiqriyansah — Land Surveyor dan GIS Analyst denga
         <div style="display:grid; grid-template-columns:120px 1fr; gap:16px;">
           <span style="color:var(--text-muted); font-size:0.85rem; padding-top:2px;">Mei – Agu 2022</span>
           <div>
-            <div style="font-weight:500;">Asisten GIS Analis <span style="color:var(--text-muted); font-weight:400;">(Magang)</span></div>
+            <div style="font-weight:500;">Magang</div>
             <div style="color:var(--text-muted); font-size:0.9rem;">PT Kalimantan Industrial Park Indonesia · Kalimantan Utara</div>
           </div>
         </div>
