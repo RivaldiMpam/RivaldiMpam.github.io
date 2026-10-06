@@ -102,7 +102,7 @@ description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor dengan fokus 
     </div>
     <div class="work-grid">
       <a href="/software/arcgis/digitasi/" class="work-card">
-        <img src="/images/software/georeference-pdf.jpg" alt="Spatial Data Recovery" class="work-card-img">
+        <img src="/images/software/georeference-pdf.jpg" alt="Spatial Data Recovery" class="work-card-img" loading="lazy" decoding="async">
         <div class="work-card-body">
           <div class="work-card-tag i18n" data-id="GIS &amp; Spatial Analysis" data-en="GIS &amp; Spatial Analysis">GIS &amp; Spatial Analysis</div>
           <h3 class="i18n" data-id="Spatial Data Recovery" data-en="Spatial Data Recovery">Spatial Data Recovery</h3>
@@ -110,7 +110,7 @@ description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor dengan fokus 
         </div>
       </a>
       <a href="/software/arcgis/model-builder/" class="work-card">
-        <img src="/images/software/hasil-peta-topografi.jpg" alt="Automasi Ekstraksi Topografi" class="work-card-img">
+        <img src="/images/software/hasil-peta-topografi.jpg" alt="Automasi Ekstraksi Topografi" class="work-card-img" loading="lazy" decoding="async">
         <div class="work-card-body">
           <div class="work-card-tag i18n" data-id="Urban Planning" data-en="Urban Planning">Urban Planning</div>
           <h3 class="i18n" data-id="Automasi Ekstraksi Topografi" data-en="Topographic Extraction Automation">Automasi Ekstraksi Topografi</h3>
@@ -118,7 +118,7 @@ description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor dengan fokus 
         </div>
       </a>
       <a href="/software/gee/ndvi-dramaga/" class="work-card">
-        <img src="/images/software/peta-ndvi-dramaga.jpg" alt="Analisis NDVI Kecamatan Dramaga" class="work-card-img">
+        <img src="/images/software/peta-ndvi-dramaga.jpg" alt="Analisis NDVI Kecamatan Dramaga" class="work-card-img" loading="lazy" decoding="async">
         <div class="work-card-body">
           <div class="work-card-tag i18n" data-id="GIS &amp; Spatial Analysis" data-en="GIS &amp; Spatial Analysis">GIS &amp; Spatial Analysis</div>
           <h3 class="i18n" data-id="Analisis NDVI Kecamatan Dramaga" data-en="Dramaga Sub-District NDVI Analysis">Analisis NDVI Kecamatan Dramaga</h3>
