@@ -46,9 +46,9 @@ description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor & GIS Analyst
       <p class="eyebrow i18n" data-id="Tentang Saya" data-en="About Me">Tentang Saya</p>
       <h2 class="i18n" data-id="Dari Lapangan ke Perencanaan Wilayah" data-en="From the Field to Regional Planning">Dari Lapangan ke Perencanaan Wilayah</h2>
       <p class="i18n"
-         data-id="Tiga tahun lebih di lapangan — ngukur lahan, operasiin drone, awasi konstruksi — sekarang gue kombinasiin pengalaman itu sama analisis spasial dan perencanaan kota. Bukan cuma orang yang bisa bikin peta, tapi yang ngerti konteks di baliknya."
-         data-en="Three-plus years in the field — surveying land, flying drones, supervising construction — now combining that experience with spatial analysis and urban planning. Not just someone who makes maps, but someone who understands the context behind them.">
-        Tiga tahun lebih di lapangan — ngukur lahan, operasiin drone, awasi konstruksi — sekarang gue kombinasiin pengalaman itu sama analisis spasial dan perencanaan kota. Bukan cuma orang yang bisa bikin peta, tapi yang ngerti konteks di baliknya.
+         data-id="Tiga tahun lebih di lapangan — ngukur lahan, operasiin drone, bantu pengawasan konstruksi — sekarang gue kombinasiin pengalaman itu sama analisis spasial dan perencanaan kota. Bukan cuma orang yang bisa bikin peta, tapi yang ngerti konteks di baliknya."
+         data-en="Three-plus years in the field — surveying land, flying drones, supporting construction supervision — now combining that experience with spatial analysis and urban planning. Not just someone who makes maps, but someone who understands the context behind them.">
+        Tiga tahun lebih di lapangan — ngukur lahan, operasiin drone, bantu pengawasan konstruksi — sekarang gue kombinasiin pengalaman itu sama analisis spasial dan perencanaan kota. Bukan cuma orang yang bisa bikin peta, tapi yang ngerti konteks di baliknya.
       </p>
       <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:8px;">
         <a href="/journey/" class="btn btn-outline i18n" data-id="Lihat Perjalanan" data-en="My Journey">Lihat Perjalanan</a>
@@ -143,12 +143,12 @@ description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor & GIS Analyst
       <div class="timeline-item">
         <div class="timeline-date">2022 – 2025</div>
         <h3 class="i18n" data-id="Asisten Surveyor > Surveyor - PT Kalimantan Industrial Park Indonesia" data-en="Surveyor Assistant > Surveyor - PT Kalimantan Industrial Park Indonesia">Asisten Surveyor > Surveyor - PT Kalimantan Industrial Park Indonesia</h3>
-        <p class="i18n" data-id="Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare." data-en="Grew from community land surveys to supervising land development across hundreds of hectares of industrial area.">Berkembang dari pengukuran lahan masyarakat sampai mengawasi land development area industri seluas ratusan hektare.</p>
+        <p class="i18n" data-id="Berkembang dari pengukuran lahan masyarakat sampai mendukung pengawasan land development area industri seluas ratusan hektare." data-en="Grew from community land surveys to supporting supervision of land development across hundreds of hectares of industrial area.">Berkembang dari pengukuran lahan masyarakat sampai mendukung pengawasan land development area industri seluas ratusan hektare.</p>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">2026 – Sekarang</div>
         <h3 class="i18n" data-id="Land Surveyor - PT Inti Innovaco" data-en="Land Surveyor - PT Inti Innovaco">Land Surveyor - PT Inti Innovaco</h3>
-        <p class="i18n" data-id="Kembali ke Bogor, kerja mandiri tanpa tim, sambil mulai serius menekuni jalur perencanaan wilayah dan kota." data-en="Back in Bogor, working independently without a team, while starting to seriously pursue the urban and regional planning path.">Kembali ke Bogor, kerja mandiri tanpa tim, sambil mulai serius menekuni jalur perencanaan wilayah dan kota.</p>
+        <p class="i18n" data-id="Kembali ke Bogor sebagai Land Surveyor, bekerja bersama arsitek dan tim engineering, sambil mulai serius menekuni jalur perencanaan wilayah dan kota." data-en="Back in Bogor as a Land Surveyor, working with architects and the engineering team, while starting to seriously pursue the urban and regional planning path.">Kembali ke Bogor sebagai Land Surveyor, bekerja bersama arsitek dan tim engineering, sambil mulai serius menekuni jalur perencanaan wilayah dan kota.</p>
       </div>
     </div>
   </div>
@@ -160,7 +160,7 @@ description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor & GIS Analyst
     <p class="i18n" data-id="Terbuka buat ngobrolin proyek survei, pemetaan, atau riset spasial. Hubungi saya lewat email atau LinkedIn." data-en="Open to talk about survey, mapping, or spatial research projects. Reach out via email or LinkedIn.">Terbuka buat ngobrolin proyek survei, pemetaan, atau riset spasial. Hubungi saya lewat email atau LinkedIn.</p>
     <div class="cta-actions">
       <a href="mailto:rivaldifiqriyansah@gmail.com" class="btn btn-primary i18n" data-id="Hubungi Saya" data-en="Get in Touch">Hubungi Saya</a>
-      <a href="https://linkedin.com/in/rivaldifiqriyansyah" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/rivaldi-fiqriyansah-b6b1b3282" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
     </div>
   </div>
 </section>
