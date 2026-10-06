@@ -57,21 +57,6 @@ description: "Perjalanan karier Rivaldi Fiqriyansah — dari magang pertama di K
       </div>
 
       <div class="timeline-item">
-        <div class="timeline-date i18n" data-id="2023 – Sekarang" data-en="2023 – Present">2023 – Sekarang</div>
-        <h3 class="i18n" data-id="S1 Perencanaan Wilayah dan Kota" data-en="BSc Urban & Regional Planning">S1 Perencanaan Wilayah dan Kota
-          <span style="font-weight:400; color:var(--text-muted);"> · Pendidikan</span>
-        </h3>
-        <div style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">
-          Universitas Terbuka · Semester 5
-        </div>
-        <p class="i18n"
-           data-id="Mendalami sisi perencanaan dari data yang selama ini dikumpulkan langsung di lapangan. Dijalani paralel dengan pekerjaan penuh waktu."
-           data-en="Going deeper into the planning side of data collected directly in the field. Pursued in parallel with full-time work.">
-          Mendalami sisi perencanaan dari data yang selama ini dikumpulkan langsung di lapangan. Dijalani paralel dengan pekerjaan penuh waktu.
-        </p>
-      </div>
-
-      <div class="timeline-item">
         <div class="timeline-date i18n" data-id="Januari 2026 – Sekarang" data-en="January 2026 – Present">Januari 2026 – Sekarang</div>
         <h3 class="i18n" data-id="Land Surveyor" data-en="Land Surveyor">Land Surveyor
           <span style="font-weight:400; color:var(--accent);"> · Sekarang</span>
