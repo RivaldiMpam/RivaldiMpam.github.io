@@ -2,7 +2,7 @@
 layout: default
 title: Gallery
 permalink: /gallery/
-description: "Dokumentasi foto perjalanan karier Rivaldi Fiqriyansah sebagai Land Surveyor dan GIS Analyst di lapangan."
+description: "Dokumentasi foto perjalanan karier Rivaldi Fiqriyansah sebagai Land Surveyor di lapangan."
 ---
 
 <div class="section-inner page-header">
