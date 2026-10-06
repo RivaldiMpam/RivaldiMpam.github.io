@@ -12,7 +12,7 @@ description: "Portofolio proyek GIS dan pemetaan Rivaldi Fiqriyansah: ekstraksi 
 
 <div class="work-grid">
   <a href="/software/arcgis/model-builder/" class="work-card">
-    <img src="/images/software/hasil-peta-topografi.jpg" alt="Automasi Ekstraksi Topografi" class="work-card-img">
+    <img src="/images/software/hasil-peta-topografi.jpg" alt="Automasi Ekstraksi Topografi" class="work-card-img" loading="lazy" decoding="async">
     <div class="work-card-body">
       <div class="work-card-tag i18n" data-id="AUTOMATION · ArcGIS Pro" data-en="AUTOMATION · ArcGIS Pro">AUTOMATION · ArcGIS Pro</div>
       <h3 class="i18n" data-id="Automasi Ekstraksi Topografi" data-en="Topographic Extraction Automation">Automasi Ekstraksi Topografi</h3>
@@ -21,7 +21,7 @@ description: "Portofolio proyek GIS dan pemetaan Rivaldi Fiqriyansah: ekstraksi 
   </a>
 
   <a href="/software/arcgis/digitasi/" class="work-card">
-    <img src="/images/software/Hasil-digitasi-arcgispro.jpg" alt="Spatial Data Recovery" class="work-card-img">
+    <img src="/images/software/Hasil-digitasi-arcgispro.jpg" alt="Spatial Data Recovery" class="work-card-img" loading="lazy" decoding="async">
     <div class="work-card-body">
       <div class="work-card-tag i18n" data-id="DATA RECOVERY · GIS" data-en="DATA RECOVERY · GIS">DATA RECOVERY · GIS</div>
       <h3 class="i18n" data-id="Spatial Data Recovery" data-en="Spatial Data Recovery">Spatial Data Recovery</h3>
@@ -30,7 +30,7 @@ description: "Portofolio proyek GIS dan pemetaan Rivaldi Fiqriyansah: ekstraksi 
   </a>
 
   <a href="/software/gee/ndvi-dramaga/" class="work-card">
-    <img src="/images/software/peta-ndvi-dramaga.jpg" alt="Analisis NDVI Kecamatan Dramaga" class="work-card-img">
+    <img src="/images/software/peta-ndvi-dramaga.jpg" alt="Analisis NDVI Kecamatan Dramaga" class="work-card-img" loading="lazy" decoding="async">
     <div class="work-card-body">
       <div class="work-card-tag i18n" data-id="GIS &amp; SPATIAL ANALYSIS · GEE / QGIS" data-en="GIS &amp; SPATIAL ANALYSIS · GEE / QGIS">GIS &amp; SPATIAL ANALYSIS · GEE / QGIS</div>
       <h3 class="i18n" data-id="Analisis NDVI Kecamatan Dramaga" data-en="Dramaga Sub-District NDVI Analysis">Analisis NDVI Kecamatan Dramaga</h3>
@@ -39,7 +39,7 @@ description: "Portofolio proyek GIS dan pemetaan Rivaldi Fiqriyansah: ekstraksi 
   </a>
 
   <a href="/software/gee/tutupan-lahan-merubetiri/" class="work-card">
-    <img src="/images/software/peta-tutupan-lahan-merubetiri.jpg" alt="Klasifikasi Tutupan Lahan TN Meru Betiri" class="work-card-img">
+    <img src="/images/software/peta-tutupan-lahan-merubetiri.jpg" alt="Klasifikasi Tutupan Lahan TN Meru Betiri" class="work-card-img" loading="lazy" decoding="async">
     <div class="work-card-body">
       <div class="work-card-tag i18n" data-id="GIS &amp; SPATIAL ANALYSIS · GEE" data-en="GIS &amp; SPATIAL ANALYSIS · GEE">GIS &amp; SPATIAL ANALYSIS · GEE</div>
       <h3 class="i18n" data-id="Klasifikasi Tutupan Lahan TN Meru Betiri" data-en="Meru Betiri National Park Land Cover Classification">Klasifikasi Tutupan Lahan TN Meru Betiri</h3>
@@ -48,7 +48,7 @@ description: "Portofolio proyek GIS dan pemetaan Rivaldi Fiqriyansah: ekstraksi 
   </a>
 
   <a href="/software/orthophoto-kanaya/" class="work-card">
-    <img src="/images/software/ortofoto-kanaya.jpg" alt="Pengolahan Orthophoto Menggunakan WebODM" class="work-card-img">
+    <img src="/images/software/ortofoto-kanaya.jpg" alt="Pengolahan Orthophoto Menggunakan WebODM" class="work-card-img" loading="lazy" decoding="async">
     <div class="work-card-body">
       <div class="work-card-tag i18n" data-id="DRONE MAPPING · WebODM" data-en="DRONE MAPPING · WebODM">DRONE MAPPING · WebODM</div>
       <h3 class="i18n" data-id="Pengolahan Orthophoto Menggunakan WebODM" data-en="Orthophoto Processing Using WebODM">Pengolahan Orthophoto Menggunakan WebODM</h3>
