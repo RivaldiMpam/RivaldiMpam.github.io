@@ -46,9 +46,9 @@ description: "Perjalanan karier Rivaldi Fiqriyansah — dari magang pertama di K
           PT Kalimantan Industrial Park Indonesia · Kalimantan Utara
         </div>
         <p class="i18n"
-           data-id="Berkembang dari pengukuran lahan masyarakat ke pengawasan land development kawasan industri. Dibimbing langsung Geodetic Engineer, tanggani mandiri 9,2 km maintenance jalan dan ratusan hektare area. Migrasi penuh ke ArcGIS Pro dan mulai pakai GNSS Geodetic."
-           data-en="Grew from community land surveys to supervising industrial land development. Mentored by a Geodetic Engineer, independently handled 9.2 km of road maintenance and hundreds of hectares. Fully migrated to ArcGIS Pro and started using Geodetic GNSS.">
-          Berkembang dari pengukuran lahan masyarakat ke pengawasan land development kawasan industri. Dibimbing langsung Geodetic Engineer, tanggani mandiri 9,2 km maintenance jalan dan ratusan hektare area. Migrasi penuh ke ArcGIS Pro dan mulai pakai GNSS Geodetic.
+           data-id="Berkembang dari pengukuran lahan masyarakat ke dukungan pengawasan land development kawasan industri. Dibimbing langsung Geodetic Engineer, membantu pengawasan lapangan perbaikan jalan 9,3 km dan menangani survei ratusan hektare area. Migrasi penuh ke ArcGIS Pro dan mulai pakai GNSS Geodetic."
+           data-en="Grew from community land surveys to supporting supervision of industrial land development. Mentored by a Geodetic Engineer, supported field supervision of a 9.3 km road improvement project and handled surveys across hundreds of hectares. Fully migrated to ArcGIS Pro and started using Geodetic GNSS.">
+          Berkembang dari pengukuran lahan masyarakat ke dukungan pengawasan land development kawasan industri. Dibimbing langsung Geodetic Engineer, membantu pengawasan lapangan perbaikan jalan 9,3 km dan menangani survei ratusan hektare area. Migrasi penuh ke ArcGIS Pro dan mulai pakai GNSS Geodetic.
         </p>
         <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;">
           <span style="font-size:0.75rem; padding:3px 10px; border-radius:100px; background:var(--surface-2); color:var(--text-muted);">Total Station Topcon GM-50</span>
@@ -82,9 +82,9 @@ description: "Perjalanan karier Rivaldi Fiqriyansah — dari magang pertama di K
           PT Inti Innovaco · Bogor Utara
         </div>
         <p class="i18n"
-           data-id="Pertama kali bekerja mandiri total tanpa tim surveyor — semua ditangani sendiri dari pengukuran sampai dokumentasi. Paralel menempuh S1 PWK dan aktif mengembangkan kemampuan GIS dan analisis spasial."
-           data-en="First time working fully independently without a survey team — handling everything solo from measurement to documentation. Simultaneously pursuing an Urban Planning degree and actively developing GIS and spatial analysis skills.">
-          Pertama kali bekerja mandiri total tanpa tim surveyor — semua ditangani sendiri dari pengukuran sampai dokumentasi. Paralel menempuh S1 PWK dan aktif mengembangkan kemampuan GIS dan analisis spasial.
+           data-id="Pertama kali bekerja tanpa tim surveyor pendamping — menangani pengukuran sampai dokumentasi, sambil berkolaborasi dengan arsitek dan tim engineering. Paralel menempuh S1 PWK dan aktif mengembangkan kemampuan GIS dan analisis spasial."
+           data-en="First time working without a supporting survey team — handling measurement through documentation, while collaborating with architects and the engineering team. Simultaneously pursuing an Urban Planning degree and actively developing GIS and spatial analysis skills.">
+          Pertama kali bekerja tanpa tim surveyor pendamping — menangani pengukuran sampai dokumentasi, sambil berkolaborasi dengan arsitek dan tim engineering. Paralel menempuh S1 PWK dan aktif mengembangkan kemampuan GIS dan analisis spasial.
         </p>
         <div style="display:flex; flex-wrap:wrap; gap:6px; margin-top:12px;">
           <span style="font-size:0.75rem; padding:3px 10px; border-radius:100px; background:var(--surface-2); color:var(--text-muted);">GNSS FOIF A60 Pro</span>
