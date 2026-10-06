@@ -2,7 +2,7 @@
 layout: default
 title: Tentang
 permalink: /cv/
-description: "Riwayat karier, pendidikan, dan keahlian Rivaldi Fiqriyansah — Land Surveyor & GIS Analyst dengan pengalaman di PT Kalimantan Industrial Park Indonesia dan PT Inti Innovaco."
+description: "Riwayat karier, pendidikan, dan keahlian Rivaldi Fiqriyansah — Land Surveyor dengan fokus GNSS, UAV mapping, ArcGIS Pro dan QGIS, dengan pengalaman di PT Kalimantan Industrial Park Indonesia dan PT Inti Innovaco."
 ---
 
 <div class="section-inner page-header">
@@ -61,7 +61,6 @@ description: "Riwayat karier, pendidikan, dan keahlian Rivaldi Fiqriyansah — L
 
     <h2 class="i18n" data-id="Kemampuan" data-en="Skills">Kemampuan</h2>
     <div style="display:flex; flex-wrap:wrap; gap:8px; margin: 4px 0 20px;">
-      <span class="chip">Total Station GM 50 Series</span>
       <span class="chip">GNSS Geodetic (EFIX &amp; FOIF)</span>
       <span class="chip">GPS Handheld</span>
       <span class="chip">Auto Level / Waterpass</span>
@@ -75,9 +74,9 @@ description: "Riwayat karier, pendidikan, dan keahlian Rivaldi Fiqriyansah — L
     <h2 class="i18n" data-id="Kegiatan Lain" data-en="Other Activities">Kegiatan Lain</h2>
     <p><strong class="i18n" data-id="Freelance Surveyor" data-en="Freelance Surveyor">Freelance Surveyor</strong> — <span class="i18n" data-id="Pengukuran Stake-Out Kavling Perumahan, Bogor" data-en="Housing Plot Stake-Out Survey, Bogor">Pengukuran Stake-Out Kavling Perumahan, Bogor</span> <em>(November 2025)</em></p>
     <p class="i18n"
-       data-id="Melaksanakan pengukuran stake-out kavling menggunakan Total Station untuk penentuan batas dan posisi bangunan."
-       data-en="Conducting plot stake-out surveys using a Total Station to determine boundaries and building positions.">
-      Melaksanakan pengukuran stake-out kavling menggunakan Total Station untuk penentuan batas dan posisi bangunan.
+       data-id="Melaksanakan pengukuran stake-out kavling menggunakan GNSS untuk penentuan batas dan posisi bangunan."
+       data-en="Conducting plot stake-out surveys using GNSS to determine boundaries and building positions.">
+      Melaksanakan pengukuran stake-out kavling menggunakan GNSS untuk penentuan batas dan posisi bangunan.
     </p>
 
     <p style="margin-top:20px;"><strong class="i18n" data-id="Penelitian Lapangan" data-en="Field Research">Penelitian Lapangan</strong> — <span class="i18n" data-id="Tim Gabungan UGM, ESDM, dan Universitas Hasanuddin (Tompobulu, Maros)" data-en="Joint Team of UGM, ESDM, and Universitas Hasanuddin (Tompobulu, Maros)">Tim Gabungan UGM, ESDM, dan Universitas Hasanuddin (Tompobulu, Maros)</span> <em>(Desember 2025)</em></p>
