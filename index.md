@@ -2,14 +2,14 @@
 layout: default
 title: Home
 permalink: /
-description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor & GIS Analyst, mahasiswa Perencanaan Wilayah dan Kota. Portofolio proyek pemetaan, survei, dan analisis spasial."
+description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor dengan fokus GNSS, UAV mapping, ArcGIS Pro dan QGIS, mahasiswa Perencanaan Wilayah dan Kota. Portofolio proyek pemetaan, survei, dan analisis spasial."
 ---
 
 <section class="hero full-bleed" style="background-image: url('/images/sampul-banner.jpg');">
   <div class="hero-content">
     <div class="hero-top">
       <h1 class="i18n" data-id="Halo, Selamat Datang" data-en="Hello, Welcome">Halo, Selamat Datang</h1>
-      <p class="eyebrow hero-eyebrow i18n" data-id="Land Surveyor · GIS Analyst · Urban Planning" data-en="Land Surveyor · GIS Analyst · Urban Planning">Land Surveyor · GIS Analyst · Urban Planning</p>
+      <p class="eyebrow hero-eyebrow i18n" data-id="Land Surveyor · GNSS & UAV Mapping · ArcGIS Pro & QGIS · Urban Planning" data-en="Land Surveyor · GNSS & UAV Mapping · ArcGIS Pro & QGIS · Urban Planning">Land Surveyor · GNSS & UAV Mapping · ArcGIS Pro & QGIS · Urban Planning</p>
     </div>
     <div class="hero-actions">
       <a href="/projects/" class="btn btn-primary i18n" data-id="Lihat Proyek" data-en="View Projects">Lihat Proyek</a>
@@ -74,7 +74,7 @@ description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor & GIS Analyst
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v4M12 21v-4M5 12H3M21 12h-2"/><circle cx="12" cy="12" r="5"/></svg>
         </div>
         <h3 class="i18n" data-id="Land Surveying" data-en="Land Surveying">Land Surveying</h3>
-        <p class="i18n" data-id="Pengukuran lapangan pakai Total Station, GNSS Geodetic, dan drone — mulai dari topografi, pemasangan patok batas, sampai stake-out konstruksi." data-en="Field surveying with Total Station, Geodetic GNSS, and drones — from topographic surveys and boundary staking to construction stake-out.">Pengukuran lapangan pakai Total Station, GNSS Geodetic, dan drone — mulai dari topografi, pemasangan patok batas, sampai stake-out konstruksi.</p>
+        <p class="i18n" data-id="Pengukuran lapangan pakai GNSS Geodetic dan drone — mulai dari topografi, pemasangan patok batas, sampai stake-out konstruksi." data-en="Field surveying with Geodetic GNSS and drones — from topographic surveys and boundary staking to construction stake-out.">Pengukuran lapangan pakai GNSS Geodetic dan drone — mulai dari topografi, pemasangan patok batas, sampai stake-out konstruksi.</p>
       </div>
       <div class="focus-card">
         <div class="focus-icon">
@@ -138,7 +138,7 @@ description: "Rivaldi Fiqriyansah (Rivaldi Mpam) — Land Surveyor & GIS Analyst
       <div class="timeline-item">
         <div class="timeline-date">2022</div>
         <h3 class="i18n" data-id="Magang - PT Kalimantan Industrial Park Indonesia" data-en="Internship - PT Kalimantan Industrial Park Indonesia">Magang - PT Kalimantan Industrial Park Indonesia</h3>
-        <p class="i18n" data-id="Langkah pertama sebagai Asisten GIS Analis, mengolah data lahan dan belajar dasar-dasar pemetaan lapangan." data-en="First step as a GIS Analyst Assistant, processing land data and learning the basics of field mapping.">Langkah pertama sebagai Asisten GIS Analis, mengolah data lahan dan belajar dasar-dasar pemetaan lapangan.</p>
+        <p class="i18n" data-id="Langkah pertama di dunia kerja sebagai peserta magang, mengolah data lahan dan belajar dasar-dasar pemetaan lapangan." data-en="First step into work as an intern, processing land data and learning the basics of field mapping.">Langkah pertama di dunia kerja sebagai peserta magang, mengolah data lahan dan belajar dasar-dasar pemetaan lapangan.</p>
       </div>
       <div class="timeline-item">
         <div class="timeline-date">2022 – 2025</div>
