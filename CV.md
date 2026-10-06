@@ -9,9 +9,9 @@ description: "Riwayat karier, pendidikan, dan keahlian Rivaldi Fiqriyansah — L
   <p class="eyebrow i18n" data-id="Tentang" data-en="About">Tentang</p>
   <h1 class="i18n" data-id="Rivaldi Fiqriyansah" data-en="Rivaldi Fiqriyansah">Rivaldi Fiqriyansah</h1>
   <p class="i18n"
-     data-id-html="Lulusan Teknik Geomatika dengan pengalaman sebagai surveyor dan pengawas lapangan di berbagai proyek konstruksi. Terbiasa mengumpulkan, mengolah, dan menganalisis data spasial menggunakan berbagai software GIS, perangkat GPS, dan teknologi pemetaan modern lainnya."
-     data-en-html="A Geomatics Engineering graduate with experience as a surveyor and field supervisor on various construction projects. Used to collecting, processing, and analyzing spatial data using GIS software, GPS devices, and other modern mapping technology.">
-    Lulusan Teknik Geomatika dengan pengalaman sebagai surveyor dan pengawas lapangan di berbagai proyek konstruksi. Terbiasa mengumpulkan, mengolah, dan menganalisis data spasial menggunakan berbagai software GIS, perangkat GPS, dan teknologi pemetaan modern lainnya.
+     data-id-html="Lulusan SMK Teknik Geomatika dan Geospasial dengan pengalaman sebagai surveyor dan pendukung pengawasan lapangan di berbagai proyek konstruksi. Terbiasa mengumpulkan, mengolah, dan menganalisis data spasial menggunakan berbagai software GIS, perangkat GPS, dan teknologi pemetaan modern lainnya."
+     data-en-html="A vocational high school graduate in Geomatics and Geospatial Engineering with experience as a surveyor and field supervision support on various construction projects. Used to collecting, processing, and analyzing spatial data using GIS software, GPS devices, and other modern mapping technology.">
+    Lulusan SMK Teknik Geomatika dan Geospasial dengan pengalaman sebagai surveyor dan pendukung pengawasan lapangan di berbagai proyek konstruksi. Terbiasa mengumpulkan, mengolah, dan menganalisis data spasial menggunakan berbagai software GIS, perangkat GPS, dan teknologi pemetaan modern lainnya.
   </p>
   <div class="hero-actions" style="margin-top:20px;">
     <a href="/files/CV_RIVALDI-FIQRIYANSAH.pdf" class="btn btn-primary i18n" data-id="Unduh CV (PDF)" data-en="Download CV (PDF)">Unduh CV (PDF)</a>
