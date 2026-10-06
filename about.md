@@ -2,7 +2,7 @@
 layout: default
 title: Tentang
 permalink: /about/
-description: "Profil Rivaldi Fiqriyansah — Land Surveyor dan GIS Analyst dengan latar belakang Teknik Geomatika, saat ini menempuh S1 Perencanaan Wilayah dan Kota."
+description: "Profil Rivaldi Fiqriyansah — Land Surveyor dan GIS Analyst dengan latar belakang SMK Teknik Geomatika dan Geospasial, saat ini menempuh S1 Perencanaan Wilayah dan Kota."
 ---
 
 <div class="section-inner page-header">
@@ -15,7 +15,7 @@ description: "Profil Rivaldi Fiqriyansah — Land Surveyor dan GIS Analyst denga
   </p>
   <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:20px;">
     <a href="/files/CV_RIVALDI-FIQRIYANSAH.pdf" download class="btn btn-primary i18n" data-id="Unduh CV" data-en="Download CV">Unduh CV</a>
-    <a href="https://linkedin.com/in/rivaldifiqriyansyah" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/rivaldi-fiqriyansah-b6b1b3282" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn</a>
     <a href="mailto:rivaldifiqriyansah@gmail.com" class="btn btn-outline i18n" data-id="Hubungi" data-en="Contact">Hubungi</a>
   </div>
 </div>
