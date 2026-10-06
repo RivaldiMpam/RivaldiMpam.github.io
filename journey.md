@@ -2,7 +2,7 @@
 layout: default
 title: Journey
 permalink: /journey/
-description: "Perjalanan karier Rivaldi Fiqriyansah — dari magang pertama di Kalimantan hingga transisi ke GIS Analyst dan Urban Planner."
+description: "Perjalanan karier Rivaldi Fiqriyansah — dari magang pertama di Kalimantan hingga menjadi Land Surveyor yang menekuni GIS dan perencanaan wilayah."
 ---
 
 <div class="section-inner page-header">
@@ -21,9 +21,7 @@ description: "Perjalanan karier Rivaldi Fiqriyansah — dari magang pertama di K
 
       <div class="timeline-item">
         <div class="timeline-date i18n" data-id="Mei – Agustus 2022" data-en="May – August 2022">Mei – Agustus 2022</div>
-        <h3 class="i18n" data-id="Asisten GIS Analis" data-en="GIS Analyst Assistant">Asisten GIS Analis
-          <span style="font-weight:400; color:var(--text-muted);"> · Magang</span>
-        </h3>
+        <h3 class="i18n" data-id="Magang" data-en="Internship">Magang</h3>
         <div style="font-size:0.85rem; color:var(--text-muted); margin-bottom:10px;">
           PT Kalimantan Industrial Park Indonesia · Kalimantan Utara
         </div>
